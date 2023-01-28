@@ -1,0 +1,18 @@
+
+.buttonContainer{
+    cursor: pointer;
+}
+
+.button{
+    width: fit-content;
+    border-radius: 30px;
+    padding: 25px;
+    background-color: #DAE9F2;
+    box-shadow: inset 0px 0px 10px #000000;
+}
+
+
+
+.button span{
+    font-weight: 700;
+}
