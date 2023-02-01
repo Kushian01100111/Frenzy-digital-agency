@@ -1,4 +1,5 @@
 import "./../testimonials/Testimonial.css"
+import {motion as m} from "framer-motion"
 
 const Testimonials = ({name,company,exp,img}) => {
   return (
@@ -6,18 +7,20 @@ const Testimonials = ({name,company,exp,img}) => {
       <div className="cardTest">
         <div className="content">
             <div>
-                <h3>{name}</h3>
+                <h2>{name}</h2>
                 <span>{company}</span>
             </div>
             <div>
                 <p>{exp}</p>
             </div>
         </div>
-        <div className="preContainerTest">
+        <m.div
+          animate={{y:5}} 
+          className="preContainerTest">
             <div className="containerTest">
                 <div style={{backgroundImage: `url(${img})`}} className="imgTest"></div>
             </div>
-        </div>
+        </m.div>
       </div>
     </div>
   )

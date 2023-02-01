@@ -1,9 +1,10 @@
 import express  from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import path from "path"
+import path from "path";
+import connectDB from "./config/database.js";
 import { fileURLToPath } from "url";
-import formRoute from "./form/formController"
+// import formRoute from "./form/formController"
 
 
 // __Firname __dirname 
@@ -12,6 +13,9 @@ const __dirname = path.dirname(__filename)
 
 //dotenv configurition
 dotenv.config({path: "./config/.env"})
+
+//Connect to Database
+connectDB() 
 
 const app = express()
 
@@ -25,9 +29,7 @@ app.use(cors({
 app.use(express.static("frontend"))
 
 //Setup routes
-
-
-app.use("/api/form", formRoute)
+// app.use("/api/form", formRoute)
 app.use("*",(_, res)=>{
     res.sendFile(path.join(__dirname, 'frontend/build/index.html'))
 } )

@@ -13,17 +13,35 @@
 }
 
 .preContainerTest{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;  
 }
 
 .cardTest{
-    max-width: 420px;
+    max-width: 350px;
+    max-height: 350px;
     border: black solid 1px;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 
 .content{
-    padding: 40px;
+    padding: 20px;
 }
+
+.content h2{
+    font-size: 1.8rem;
+    font-family: inherit;
+}
+
+.content span{
+    font-weight: 100;
+}
+
+.content p {
+    font-size: 1.4rem;
+    line-height: 15px;
+    padding-top: 10px;
+}
+
