@@ -1,0 +1,13 @@
+
+.serviceCard{
+    width: 520px;
+    font-family: inherit;
+    font-size: 2rem;
+    border-radius: 30px;
+    height: auto;
+    padding: 10px;
+    background-color: #DAE9F2;
+    box-shadow: inset 0px 0px 10px #000000;
+    border: none;
+    margin: 10px 0;
+}
