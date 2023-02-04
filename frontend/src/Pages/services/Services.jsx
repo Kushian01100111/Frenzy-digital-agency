@@ -3,6 +3,7 @@ import ServicesCards from "../../components/services cards/ServicesCards"
 import { useState } from "react"
 import Blossom from "./../../assects/imgs/blossom.png"
 import Selva from "./../../assects/imgs/selva.png"
+import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 
 const Services = () => {
   const [active, setActive]= useState(false)
@@ -15,11 +16,11 @@ const Services = () => {
   return (
     <div className="services">
       <div>
-        <div><ServicesCards title={"Social media management"} condicional={active}/></div>
-        <div><ServicesCards title={"Paid media management"} condicional={active}/></div>
-        <div><ServicesCards title={"Creacion de contenidos"} condicional={active}/></div>
-        <div><ServicesCards title={"Diseño grafico"} condicional={active}/></div>
-        <div><ServicesCards title={"Influencer marketing"} condicional={active}/></div>
+        {/* <div><ServicesCards title={"Social media management"} condicional={active} icon={<VideoLibraryIcon/>}/></div>
+        <div><ServicesCards title={"Paid media management"} condicional={active}/></div> */}
+        <div><ServicesCards title={"Creacion de contenidos"} condicional={active} icon={<VideoLibraryIcon sx={{fontSize: 30}}/>}/></div>
+        {/* <div><ServicesCards title={"Diseño grafico"} condicional={active}/></div>
+        <div><ServicesCards title={"Influencer marketing"} condicional={active}/></div> */}
       </div>
       <div>
         <div>
