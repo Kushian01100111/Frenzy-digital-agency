@@ -1,4 +1,47 @@
 
 .services{
     margin-top: 100px;
+    display: flex;
+    flex-direction:  row;
+    align-items: center;
+}
+
+.selectService{
+    width: fit-content;
+}
+
+.containerService{
+    width: fit-content;
+    margin: 0;
+}
+
+
+.parent2{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    min-width: 820px;
+}
+
+.parent2 p{
+    font-size: 1.8rem;
+    text-align: end;
+    padding-top: 15px;
+    letter-spacing: 1.5px;
+    
+}
+
+.parent2 h2{
+    text-align: end;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.div22{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 150px;
 }

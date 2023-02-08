@@ -1,15 +1,15 @@
 
 .serviceCard{
-    width: 520px;
+    width: 450px;
     font-family: inherit;
     font-size: 2rem;
     border-radius: 30px;
     height: auto;
-    padding: 7px;
+    padding: 10px 10px 7px 10px;
     background-color: #DAE9F2;
     box-shadow: inset 0px 0px 10px #000000;
     border: none;
-    margin: 10px 0;
+    margin: 14px 0;
 }
 
 .parent {
@@ -27,6 +27,6 @@
         justify-content: center; }
 
 .div2 span{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     text-transform: uppercase;
 }
