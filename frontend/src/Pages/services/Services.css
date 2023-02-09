@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
-    min-width: 820px;
+    min-width: 840px;
 }
 
 .parent2 p{
