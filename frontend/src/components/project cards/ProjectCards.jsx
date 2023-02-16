@@ -7,7 +7,7 @@ const ProjectCards = () => {
   const [hoverCard, setHover] =  useState(false)
   return (
     <m.div 
-    initial={{y:50, display: "hidden"}}
+    initial={{y:-120, display: "hidden"}}
     className="container"
     onMouseEnter={()=> setHover(!hoverCard)}
     onMouseLeave={()=> setHover(!hoverCard)}

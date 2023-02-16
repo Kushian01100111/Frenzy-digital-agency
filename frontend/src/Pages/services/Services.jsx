@@ -22,7 +22,7 @@ const Services = () => {
     <div className="services">
       <div className="selectService">
         <m.div 
-        initial={{x:-50, display: "hidden"}}
+        initial={{x:-120, display: "hidden"}}
         whileInView={{x: 0, display: "bloc", transition: {
           type: "spring",
           bounce: 0.4,
