@@ -1,6 +1,14 @@
 header{
-    width: 98vw;
+    width: 100vw;
     height: 120px;
+    box-shadow: 253px 98px 109px rgba(0, 0, 0, 0.01), 143px 55px 92px rgba(0, 0, 0, 0.05), 63px 24px 68px rgba(0, 0, 0, 0.09), 16px 6px 37px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.stiky{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
 }
 
 .navbar{

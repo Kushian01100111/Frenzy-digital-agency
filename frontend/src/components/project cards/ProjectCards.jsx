@@ -6,10 +6,17 @@ import { useState } from "react"
 const ProjectCards = () => {
   const [hoverCard, setHover] =  useState(false)
   return (
-    <div 
+    <m.div 
+    initial={{y:50, display: "hidden"}}
     className="container"
     onMouseEnter={()=> setHover(!hoverCard)}
-    onMouseLeave={()=> setHover(!hoverCard)}>
+    onMouseLeave={()=> setHover(!hoverCard)}
+    whileInView={{y: 0, display: "bloc", transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1
+    }}}
+    viewport={{once: true}}>
      <a href="https://www.instagram.com/pedro_comas/" target="_blank" rel="noopener noreferrer">
         <m.div 
         className="card"
@@ -45,7 +52,7 @@ const ProjectCards = () => {
             </m.div>
         </m.div>
      </a>
-    </div>
+    </m.div>
   )
 }
 

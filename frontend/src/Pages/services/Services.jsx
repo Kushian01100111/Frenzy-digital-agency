@@ -21,7 +21,15 @@ const Services = () => {
   return (
     <div className="services">
       <div className="selectService">
-        <div onMouseEnter={()=>{
+        <m.div 
+        initial={{x:-50, display: "hidden"}}
+        whileInView={{x: 0, display: "bloc", transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 1
+        }}}
+        viewport={{once: true}}
+        onMouseEnter={()=>{
           if(!s1){setS1(!s1)}
           setS2(false)
           setS3(false)
@@ -35,8 +43,16 @@ const Services = () => {
           setS4(false)
           setS5(false)
         }}>
-        <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></div>
-        <div onMouseEnter={()=>{
+        <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></m.div>
+        <m.div 
+        initial={{x:-50, display: "hidden"}}
+        whileInView={{x: 0, display: "bloc", transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 1.2
+        }}}
+        viewport={{once: true}}
+        onMouseEnter={()=>{
           setS1(false)
           if(!s2){setS2(!s2)}
           setS3(false)
@@ -50,8 +66,16 @@ const Services = () => {
           setS4(false)
           setS5(false)
         }}>
-        <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></div>
-        <div onMouseEnter={()=>{
+        <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></m.div>
+        <m.div 
+        initial={{x:-50, display: "hidden"}}
+        whileInView={{x: 0, display: "bloc", transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 1.5
+        }}}
+        viewport={{once: true}}
+        onMouseEnter={()=>{
           setS1(false)
           setS2(false)
           if(!s3){setS3(!s3)}
@@ -65,8 +89,16 @@ const Services = () => {
           setS4(false)
           setS5(false)
         }}>
-        <ServicesCards title={"Creacion de contenidos"} condicional={s3} icon={<VideoLibraryIcon sx={{fontSize: 30}}/>}/></div>
-        <div onMouseEnter={()=>{
+        <ServicesCards title={"Creacion de contenidos"} condicional={s3} icon={<VideoLibraryIcon sx={{fontSize: 30}}/>}/></m.div>
+        <m.div 
+        initial={{x:-50, display: "hidden"}}
+        whileInView={{x: 0, display: "bloc", transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 1.8
+        }}}
+        viewport={{once: true}}
+        onMouseEnter={()=>{
           setS1(false)
           setS2(false)
           setS3(false)
@@ -80,8 +112,16 @@ const Services = () => {
           if(!s4){setS4(!s4)}
           setS5(false)
         }}>
-        <ServicesCards title={"Diseño grafico"} condicional={s4} icon={<DesignServicesIcon sx={{fontSize: 30}}/>}/></div>
-        <div onMouseEnter={()=>{
+        <ServicesCards title={"Diseño grafico"} condicional={s4} icon={<DesignServicesIcon sx={{fontSize: 30}}/>}/></m.div>
+        <m.div 
+        initial={{x:-50, display: "hidden"}}
+        whileInView={{x: 0, display: "bloc", transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 2
+        }}}
+        viewport={{once: true}}
+        onMouseEnter={()=>{
           setS1(false)
           setS2(false)
           setS3(false)
@@ -95,7 +135,7 @@ const Services = () => {
           setS4(false)
           if(!s5){setS5(!s5)}
         }}>
-        <ServicesCards title={"Influencer marketing"} condicional={s5} icon={<img src={InfluImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></div>
+        <ServicesCards title={"Influencer marketing"} condicional={s5} icon={<img src={InfluImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></m.div>
       </div>
       <m.div 
       initial={{opacity:0, display:"none", x:100 }}

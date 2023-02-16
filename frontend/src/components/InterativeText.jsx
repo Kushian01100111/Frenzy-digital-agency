@@ -15,14 +15,11 @@ const InterativeText = ({Text}) => {
     }))
   };
 
-  const endMouse = (i) =>{
+  const endMouse = () =>{
     setArrOfStyles(arrOfStyles.map((e,index) =>{
         return "notHover"
     }))
   }
-
- 
-  console.log(arrOfStyles)
   return (
     <div>
       {splitedText.map((elm,i)=>{
