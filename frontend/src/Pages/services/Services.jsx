@@ -22,11 +22,11 @@ const Services = () => {
     <div className="services">
       <div className="selectService">
         <m.div 
-        initial={{x:-120, display: "hidden"}}
-        whileInView={{x: 0, display: "bloc", transition: {
+        initial={{x:-120, display: "hidden", opacity: 0}}
+        whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
-          duration: 1
+          duration: 2
         }}}
         viewport={{once: true}}
         onMouseEnter={()=>{
@@ -45,11 +45,11 @@ const Services = () => {
         }}>
         <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></m.div>
         <m.div 
-        initial={{x:-50, display: "hidden"}}
-        whileInView={{x: 0, display: "bloc", transition: {
+        initial={{x:-120, display: "hidden", opacity: 0}}
+        whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
-          duration: 1.2
+          duration: 2.3
         }}}
         viewport={{once: true}}
         onMouseEnter={()=>{
@@ -68,11 +68,11 @@ const Services = () => {
         }}>
         <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg} style={{height: "30px", width:"30px"}} alt="icon"/>}/></m.div>
         <m.div 
-        initial={{x:-50, display: "hidden"}}
-        whileInView={{x: 0, display: "bloc", transition: {
+        initial={{x:-120, display: "hidden", opacity: 0}}
+        whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
-          duration: 1.5
+          duration: 2.8
         }}}
         viewport={{once: true}}
         onMouseEnter={()=>{
@@ -91,11 +91,11 @@ const Services = () => {
         }}>
         <ServicesCards title={"Creacion de contenidos"} condicional={s3} icon={<VideoLibraryIcon sx={{fontSize: 30}}/>}/></m.div>
         <m.div 
-        initial={{x:-50, display: "hidden"}}
-        whileInView={{x: 0, display: "bloc", transition: {
+        initial={{x:-120, display: "hidden", opacity: 0}}
+        whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
-          duration: 1.8
+          duration: 3.2
         }}}
         viewport={{once: true}}
         onMouseEnter={()=>{
@@ -114,11 +114,11 @@ const Services = () => {
         }}>
         <ServicesCards title={"Diseño grafico"} condicional={s4} icon={<DesignServicesIcon sx={{fontSize: 30}}/>}/></m.div>
         <m.div 
-        initial={{x:-50, display: "hidden"}}
-        whileInView={{x: 0, display: "bloc", transition: {
+        initial={{x:-120, display: "hidden", opacity: 0}}
+        whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
-          duration: 2
+          duration: 3.7
         }}}
         viewport={{once: true}}
         onMouseEnter={()=>{
