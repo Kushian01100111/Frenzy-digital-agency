@@ -103,6 +103,7 @@ const Services = () => {
           setS2(false)
           setS3(false)
           if(!s4){setS4(!s4)}
+          
           setS5(false)
         }} className="containerService"
         onTouchStart={()=>{
