@@ -32,11 +32,9 @@ const Navbar = () => {
             </div>
             <div>
                 <ul className="links">
-                    <li><a href="#"><InterativeText Text={"Sobre nosotros"}/></a></li>
-                    <li><a href="#"><InterativeText Text={"Proyectos"}/></a></li>
-                    <li><a href="#"><InterativeText Text={"Servicios"}/></a></li>
-                    <li><a href="#"><InterativeText Text={"Testimonios"}/></a></li>
-                    <li><a href="#"><InterativeText Text={"Contacto"}/></a></li>
+                    <li><a href="#"><InterativeText Text={"projects"}/></a></li>
+                    <li><a href="#"><InterativeText Text={"about us"}/></a></li>
+                    <li><a href="#"><InterativeText Text={"contact"}/></a></li>
                     <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
                     <li><a href="#"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>

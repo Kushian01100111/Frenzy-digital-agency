@@ -12,6 +12,23 @@
       url("./assects/fonts/HaasGrotDisp-55Roman.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "GothicStd-Heavy";
+  src: url("./assects/fonts/SackersGothicStd-Heavy.woff") format('woff'),
+      url("./assects/fonts/SackersGothicStd-Heavy.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "GothicStd-Light";
+  src: url("./assects/fonts/SackersGothicStd-Light.woff") format('woff'),
+      url("./assects/fonts/SackersGothicStd-Light.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "FrankGoth";
+  src: url("./assects/fonts/FrankGothMT-ExtraCondensed.woff") format('woff'),
+      url("./assects/fonts/FrankGothMT-ExtraCondensed.ttf") format('truetype');
+}
 
 html{
   font-size: 62.5% !important;
@@ -33,5 +50,8 @@ code {
 }
 
 h1, h2, h3, h4{
+  font-family: "FrankGoth", "Clearface",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif ;
   font-size: 2rem;
 }
