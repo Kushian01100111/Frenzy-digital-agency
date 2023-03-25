@@ -55,3 +55,11 @@ h1, h2, h3, h4{
   sans-serif ;
   font-size: 2rem;
 }
+
+span{
+  font-family: 'GothicStd-Heavy';
+}
+
+p{
+  font-family: 'GothicStd-Light';
+}

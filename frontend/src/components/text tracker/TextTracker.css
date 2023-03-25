@@ -1,0 +1,37 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  section > div {
+    position: relative;
+    font-size: 2rem;
+  }
+
+  .main{
+    width: 522px;
+    height: auto;
+  }
+
+  .ref{
+    display: flex;
+  }
+
+  .other{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  .others{
+    width: 410px;
+    height: auto;
+  }
+
+  .progress{
+    position: sticky;
+    top: 0;
+  }

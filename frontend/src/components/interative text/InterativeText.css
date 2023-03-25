@@ -1,0 +1,25 @@
+
+
+
+.notHover{
+    font-family: 'GothicStd-Heavy';
+    font-size: 2rem;
+    font-weight: 200;
+    transition: all ease-out;
+}
+
+.closeHover{
+    font-family: 'GothicStd-Heavy';
+    font-size: 2rem;
+    color: #4B767F;
+    font-weight: 500;
+    transition: all ease-out;
+}
+
+.Hover{
+    font-family: 'GothicStd-Heavy';
+    font-size: 2rem;
+    color: #4B767F;
+    font-weight: 600;
+    transition: all ease-out;
+}

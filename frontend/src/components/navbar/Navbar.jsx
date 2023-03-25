@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import InterativeText from "../InterativeText";
+import InterativeText from "../interative text/InterativeText";
 import Frenzy from "./../../assects/imgs/Frenzy_05.png";
 import LinkeDin from "./../../assects/imgs/Link.png";
 import Instagram from "./../../assects/imgs/Insta.png";
