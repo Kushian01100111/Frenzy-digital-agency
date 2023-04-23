@@ -1,11 +1,11 @@
 import "./Services.css"
-import ServicesCards from "../../components/services cards/ServicesCards"
+import ServicesCards from "../../services cards/ServicesCards"
 import { useState } from "react"
 import {motion as m} from "framer-motion"
-import Blossom from "./../../assects/imgs/blossom.png"
-import Selva from "./../../assects/imgs/selva.png"
-import SocialImg from "./../../assects/imgs/d-B.png"
-import InfluImg from "./../../assects/imgs/I-B.png"
+import Blossom from "../../../assects/imgs/blossom.png"
+import Selva from "../../../assects/imgs/selva.png"
+import SocialImg from "../../../assects/imgs/d-B.png"
+import InfluImg from "../../../assects/imgs/I-B.png"
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 

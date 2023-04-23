@@ -41,7 +41,11 @@ body {
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 1310px;
+  
+}
+
+html, body{
+  overflow: hidden;
 }
 
 code {

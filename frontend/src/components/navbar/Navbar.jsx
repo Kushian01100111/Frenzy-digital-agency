@@ -22,7 +22,11 @@ const Navbar = () => {
         }
         setYPosition(v)})
     }, [scrollYProgress])
+
+    console.log(yPosition)
+
   return (
+
     <m.header className={yPosition > 0.2 ? "color" : ""}
         animate={hidden && yPosition > 0.2 ? {display: "hidden", y: -120} : {display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
