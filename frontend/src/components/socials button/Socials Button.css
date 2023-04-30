@@ -1,0 +1,17 @@
+.linksButton{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding: 5px 3px;
+    background-color: #fff;
+}
+
+.buttonLinks{
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+}
+
+.containerLinks{
+}

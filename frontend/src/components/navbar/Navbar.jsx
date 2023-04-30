@@ -1,10 +1,12 @@
 import "./Navbar.css"
 import InterativeText from "../interative text/InterativeText";
+import SocialsButton from "../socials button/Socials Button";
 import Frenzy from "./../../assects/imgs/Frenzy_05.png";
 import LinkeDin from "./../../assects/imgs/Link.png";
 import Instagram from "./../../assects/imgs/Insta.png";
 import WhatsApp from "./../../assects/imgs/What.png"
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import {motion as m, useScroll} from "framer-motion"
 
 const Navbar = () => {
@@ -26,13 +28,14 @@ const Navbar = () => {
     console.log(yPosition)
 
   return (
-
+    <>
+    { yPosition > 0.2 ? 
     <m.header className={yPosition > 0.2 ? "color" : ""}
         animate={hidden && yPosition > 0.2 ? {display: "hidden", y: -120} : {display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
             <div>
-                <img src={Frenzy} alt="Logo" className="logo" />
+                <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
             </div>
             <div>
                 <ul className="links">
@@ -45,8 +48,19 @@ const Navbar = () => {
                 </ul>
             </div>
         </div>
-    </m.header>
+    </m.header> : 
+    <header className="firstNav">
+        <div className="navbar">
+            <div>
+            <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
+            </div>
+            <SocialsButton/>
+        </div>
+    </header>
+    }
+    
+    </>
   )
 }
 
-export default Navbar
+export default Navbar;

@@ -30,6 +30,10 @@
       url("./assects/fonts/FrankGothMT-ExtraCondensed.ttf") format('truetype');
 }
 
+*{
+  box-sizing: border-box;
+}
+
 html{
   font-size: 62.5% !important;
 }
@@ -44,9 +48,6 @@ body {
   
 }
 
-html, body{
-  overflow: hidden;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -67,3 +68,11 @@ span{
 p{
   font-family: 'GothicStd-Light';
 }
+
+html {
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scroll-padding: 5px;
+}
+

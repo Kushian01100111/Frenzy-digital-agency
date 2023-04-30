@@ -4,7 +4,7 @@
     font-family: "GothicStd-Heavy";
     font-size: 2rem;
     border-radius: 30px;
-    height: auto;
+    height: fit-content;
     padding: 10px 10px 7px 10px;
     background-color: #DAE9F2;
     box-shadow: inset 0px 0px 10px #000000;
