@@ -1,0 +1,50 @@
+.contentPoten{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+.poten{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    align-items: center;
+    gap: 60px;
+}
+
+.poten div+div{
+    text-align: left;
+}
+
+
+.marcas{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.imgsMarcas{
+    display: flex;
+    flex-direction: row;
+    width: 54vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 55px;
+    row-gap: 5px;
+    height: 100%;
+}
+
+.nameMarcas{
+    width: 40vw;
+}
+
+.nameMarcas  div{
+    font-size: 2.2rem;
+    font-family: "GothicStd-Light" !important;
+    text-align: right;
+    margin-right: 25px;
+}

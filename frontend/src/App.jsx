@@ -7,6 +7,7 @@ import Testimonials from './components/testimonials/Testimonials';
 import Services from './components/homepage componets/services/Services';
 import Navbar from './components/navbar/Navbar';
 import Typewriter from './components/typewriter/Typewriter';
+import Potenciamos from './components/homepage componets/potenciamos/Potenciamos';
 import TextTracker from './components/text tracker/TextTracker';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
             <Typewriter/>
         </div>
         <div className='contents'>
-
+            <Potenciamos/>
         </div>
         <div className='contents'>
           {/* <ProjectCards />  Problems 23/04*/}

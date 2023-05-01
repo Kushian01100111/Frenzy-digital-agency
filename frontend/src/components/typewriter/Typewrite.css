@@ -1,0 +1,15 @@
+.typewriter{
+    font-size: 10.2rem;
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    text-align: start;
+    padding-left: 25px;
+}
+
+.Typewriter__wrapper{
+    line-height: 0.2px;
+    letter-spacing: -5px;
+}
