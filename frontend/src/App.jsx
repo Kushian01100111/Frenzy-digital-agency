@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { useScroll } from 'framer-motion';
-import ProjectCards from './components/homepage componets/proyects/Proyects';
+import ProjectCards from './components/project cards/ProjectCards';
 import Button from './components/Button/Button';
 import Testimonials from './components/testimonials/Testimonials';
 import Services from './components/homepage componets/services/Services';
@@ -21,7 +21,7 @@ function App() {
             <Potenciamos/>
         </div>
         <div className='contents'>
-          {/* <ProjectCards />  Problems 23/04*/}
+          <ProjectCards /> 
           {/* <Button text={"Mas proyectos"} /> */}
         </div>
         <div className='contents'>

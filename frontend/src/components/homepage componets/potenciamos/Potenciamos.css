@@ -1,8 +1,7 @@
 .contentPoten{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -22,8 +21,8 @@
 .marcas{
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .imgsMarcas{

@@ -1,9 +1,9 @@
 import "./ProjectCards.css"
 import {motion as m } from "framer-motion"
 import { useState } from "react"
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 
-const ProjectCards = () => {
+const ProjectCards = ({img,link,title,description}) => {
   const [hoverCard, setHover] =  useState(false)
   return (
     <m.div 
@@ -17,7 +17,7 @@ const ProjectCards = () => {
       duration: 1
     }}}
     viewport={{once: true}}>
-     <a href="https://www.instagram.com/pedro_comas/" target="_blank" rel="noopener noreferrer">
+     <Link to={`${link}`}>
         <m.div 
         className="card"
         animate={hoverCard?{ 
@@ -26,7 +26,7 @@ const ProjectCards = () => {
             <div className="containerImg">
                 <m.div 
                 className="img" 
-                style={{backgroundImage: "linear-gradient(314.36deg, rgba(0, 0, 0, 0.4) 2.29%, rgba(0, 0, 0, 0) 98.94%), url(https://images.unsplash.com/photo-1671726203382-8ea3393d7ad6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"}}
+                style={{backgroundImage: `linear-gradient(314.36deg, rgba(0, 0, 0, 0.4) 2.29%, rgba(0, 0, 0, 0) 98.94%), url(${img})`}}
                 animate={
                   hoverCard?{ 
                     height:"75%",
@@ -45,13 +45,13 @@ const ProjectCards = () => {
                 y:-120 }
             }
             transition={{duration: 0.1}}>
-                <h3>Proyecto #1</h3>
+                <h3>{title}</h3>
                 <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  {description}
                 </span>
             </m.div>
         </m.div>
-     </a>
+      </Link>
     </m.div>
   )
 }

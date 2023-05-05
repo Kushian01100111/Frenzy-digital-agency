@@ -73,14 +73,24 @@ const Potenciamos = () => {
                 duration: 3
                 }}}/>
                 </div>
-                <div className="nameMarcas">
+                <m.div className="nameMarcas" initial={{x:-120, opacity: 0}}
+                whileInView={{x: 0,  opacity: 1, transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 2
+                }}}>
                   <h2>MARCAS EMERGENTES,
                     MARCAS ESTABLECIDAS,
                     MARCAS DE LUJO.</h2>
-                    <div>
+                    <m.div initial={{x:-120, opacity: 0}}
+                whileInView={{x: 0,  opacity: 1, transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 2
+                }}}>
                         <span>estas son algunas de las marcas que confían en nosotros.</span>
-                    </div>
-                </div>
+                    </m.div>
+                </m.div>
             </div>
     </div>
   )
