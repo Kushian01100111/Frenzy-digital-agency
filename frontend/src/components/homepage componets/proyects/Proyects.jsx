@@ -5,7 +5,7 @@ import EstudioBarcelona from "../../../assects/imgs/Rectangle 3852.png"
 const Proyects = () => {
   return (
     <div>
-      <ProjectCards img={EstudioBarcelona} link={"/projects/estudio_barcelona"} title={"estudio barcelona"} description={"rebranding"}/>
+      <ProjectCards img={EstudioBarcelona} link={"/projects/estudio_barcelona"} title={"estudio bar celona"} description={"rebranding"}/>
       {/* <ProjectCards/>
       <ProjectCards/>
       <ProjectCards/>
