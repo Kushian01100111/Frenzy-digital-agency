@@ -1,16 +1,19 @@
-import React from 'react'
+import "./Proyects.css"
 import ProjectCards from '../../project cards/ProjectCards'
-import EstudioBarcelona from "../../../assects/imgs/Rectangle 3852.png"
 
 const Proyects = () => {
   return (
-    <div>
-      <ProjectCards img={EstudioBarcelona} link={"/projects/estudio_barcelona"} title={"estudio bar celona"} description={"rebranding"}/>
-      {/* <ProjectCards/>
-      <ProjectCards/>
-      <ProjectCards/>
-      <ProjectCards/>
-      <ProjectCards/> */}
+    <div className="containerProjects">
+        <div><h2>PROYECTOS</h2></div>
+        <div className='projectsGrid'>
+          <ProjectCards link={"/projects/estudio_barcelona"} title={"Estudio Barcelona"} description={"rebranding"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1683483889/Frenzy/Rectangle_3852_yte9pp.png"}/>
+          <ProjectCards link={"/projects/by_sofía_leather"} title={"By Sofía Leather"} description={"Shooting"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1683484342/Frenzy/Rectangle_3865_x6dq4o.png"}/>
+          <ProjectCards/>
+          <ProjectCards/>
+          <ProjectCards/>
+          <ProjectCards/> 
+        </div>
+        <div></div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import {motion as m } from "framer-motion"
 import { useState } from "react"
 import {Link} from "react-router-dom"
 
-const ProjectCards = ({img,link,title,description}) => {
+const ProjectCards = ({img, link, title, description}) => {
   const [hoverCard, setHover] =  useState(false)
   return (
     <m.div 
@@ -44,7 +44,7 @@ const ProjectCards = ({img,link,title,description}) => {
               {opacity: 0,
                 y:-120 }
             }
-            transition={{duration: 0.1}}>
+            transition={{duration: 0.05}}>
                 <h3>{title}</h3>
                 <span>
                   {description}
