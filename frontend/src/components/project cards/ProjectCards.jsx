@@ -40,9 +40,9 @@ const ProjectCards = ({img, link, title, description}) => {
             animate={
               hoverCard ? 
               {opacity: 1,
-                y:-120 }: 
+                y:-80 }: 
               {opacity: 0,
-                y:-120 }
+                y:-80 }
             }
             transition={{duration: 0.05}}>
                 <h3>{title}</h3>

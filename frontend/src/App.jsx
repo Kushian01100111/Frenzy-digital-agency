@@ -1,7 +1,6 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { useScroll } from 'framer-motion';
-import Button from './components/Button/Button';
 import Testimonials from './components/testimonials/Testimonials';
 import Services from './components/homepage componets/services/Services';
 import Navbar from './components/navbar/Navbar';
@@ -22,7 +21,6 @@ function App() {
         </div>
         <div className='contents'>
           <Proyects /> 
-          {/* <Button text={"Mas proyectos"} /> */}
         </div>
         <div className='contents'>
           <Services />

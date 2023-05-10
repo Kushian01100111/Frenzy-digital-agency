@@ -1,11 +1,13 @@
 
 .buttonContainer{
     cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .button{
     width: fit-content;
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 25px;
     background-color: #DAE9F2;
     box-shadow: inset 0px 0px 10px #000000;
@@ -14,5 +16,6 @@
 
 
 .button span{
-    font-weight: 700;
+    font-family:"GothicStd-Light",'Courier New', Courier, monospace;
+    font-size: 2.2rem;
 }
