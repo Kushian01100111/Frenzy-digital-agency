@@ -1,6 +1,6 @@
 
 .serviceCard{
-    min-width: 600px;
+    width: 50vw;
     font-family: "GothicStd-Heavy";
     font-size: 2rem;
     border-radius: 30px;
@@ -27,6 +27,6 @@
         justify-content: center; }
 
 .div2 span{
-    font-size: 2.4rem;
+    font-size: 3rem;
     text-transform: uppercase;
 }
