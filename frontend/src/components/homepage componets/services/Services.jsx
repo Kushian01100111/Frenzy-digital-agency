@@ -6,8 +6,8 @@ import Blossom from "../../../assects/imgs/blossom.png"
 import Selva from "../../../assects/imgs/selva.png"
 import SocialImg from "../../../assects/imgs/d-B.png"
 import InfluImg from "../../../assects/imgs/I-B.png"
-import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import DesigImg from "../../../assects/imgs/Design.png"
+import VideoLiberyImg from "../../../assects/imgs/video-library.png"
 
 const Services = () => {
   const [s1, setS1] = useState(true);
@@ -20,8 +20,13 @@ const Services = () => {
 
   return (
     <div className="contentServices">
-      <div><h2>Servicios</h2>
-      <p>conocé nuestros servicios pasando el mousse por cada uno. pero recordá, nuestro foco siempre estará en adaptarnos a las necesidades de nuestros clientes, así que contactanos, contanos acerca de tu proyecto, y armamos una propuesta a medida</p></div>
+      <m.div className="textServices" initial={{x:-120, opacity: 0}}
+            whileInView={{x: 0, opacity: 1, transition: {
+              type: "spring",
+              bounce: 0.4,
+              duration: 1.8
+            }}}><h2>SERVICIOS</h2>
+      <p>conocé nuestros servicios pasando el mouse por cada uno. pero recordá, nuestro foco siempre estará en adaptarnos a las necesidades de nuestros clientes, así que contactanos, contanos acerca de tu proyecto, y armamos una propuesta a medida</p></m.div>
         <div className="services">
           <div className="selectService">
             <m.div 
@@ -31,7 +36,6 @@ const Services = () => {
               bounce: 0.4,
               duration: 2
             }}}
-            viewport={{once: true}}
             onMouseEnter={()=>{
               if(!s1){setS1(!s1)}
               setS2(false)
@@ -46,7 +50,7 @@ const Services = () => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg} style={{height: "100%", width:"auto"}} alt="icon"/>}/></m.div>
+            <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
@@ -54,7 +58,6 @@ const Services = () => {
               bounce: 0.4,
               duration: 2.3
             }}}
-            viewport={{once: true}}
             onMouseEnter={()=>{
               setS1(false)
               if(!s2){setS2(!s2)}
@@ -69,7 +72,7 @@ const Services = () => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg} style={{height: "100%", width:"auto"}} alt="icon"/>}/></m.div>
+            <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
@@ -77,7 +80,6 @@ const Services = () => {
               bounce: 0.4,
               duration: 2.8
             }}}
-            viewport={{once: true}}
             onMouseEnter={()=>{
               setS1(false)
               setS2(false)
@@ -92,7 +94,7 @@ const Services = () => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Creacion de contenidos"} condicional={s3} icon={<VideoLibraryIcon sx={{fontSize: 30}}/>}/></m.div>
+            <ServicesCards title={"CREACIÓN DE CONTENIDOS"} condicional={s3} icon={<img src={VideoLiberyImg} alt="icon"  className="imgCards"/>}/></m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
@@ -100,7 +102,6 @@ const Services = () => {
               bounce: 0.4,
               duration: 3.2
             }}}
-            viewport={{once: true}}
             onMouseEnter={()=>{
               setS1(false)
               setS2(false)
@@ -116,7 +117,8 @@ const Services = () => {
               if(!s4){setS4(!s4)}
               setS5(false)
             }}>
-            <ServicesCards title={"Diseño grafico"} condicional={s4} icon={<DesignServicesIcon sx={{fontSize: 30}}/>}/></m.div>
+            <ServicesCards title={"DISEÑO GRÁFICO"} condicional={s4} icon={<img src={DesigImg} alt="icon" className="imgCards"/>}/>
+            </m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
@@ -124,7 +126,6 @@ const Services = () => {
               bounce: 0.4,
               duration: 3.7
             }}}
-            viewport={{once: true}}
             onMouseEnter={()=>{
               setS1(false)
               setS2(false)
@@ -139,7 +140,7 @@ const Services = () => {
               setS4(false)
               if(!s5){setS5(!s5)}
             }}>
-            <ServicesCards title={"Influencer marketing"} condicional={s5} icon={<img src={InfluImg} style={{height: "100%", width:"auto"}} alt="icon"/>}/></m.div>
+            <ServicesCards title={"Influencer marketing"} condicional={s5} icon={<img src={InfluImg} alt="icon" className="imgCards"/>  }/></m.div>
           </div>
           <m.div 
           initial={{opacity:0, display:"none", x:100 }}

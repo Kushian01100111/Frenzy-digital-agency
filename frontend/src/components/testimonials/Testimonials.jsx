@@ -1,6 +1,7 @@
 import "./../testimonials/Testimonial.css"
 import {motion as m} from "framer-motion"
 
+
 const Testimonials = ({name,company,exp,img}) => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Testimonials = ({name,company,exp,img}) => {
                 <span>{company}</span>
             </div>
             <div>
-                <p>{exp}</p>
+               {exp}
             </div>
         </div>
         <m.div

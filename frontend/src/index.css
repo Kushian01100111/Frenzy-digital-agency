@@ -76,6 +76,11 @@ p{
   font-size: 2.2rem;
 }
 
+span, p{
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
 html {
   overflow-y: scroll;
   overflow-x: hidden;
