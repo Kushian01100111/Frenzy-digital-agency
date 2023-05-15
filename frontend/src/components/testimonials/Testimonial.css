@@ -13,16 +13,17 @@
 }
 
 .preContainerTest{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;  
 }
 
 .cardTest{
     max-width: 350px;
-    max-height: 350px;
+    height: auto;
     border: black solid 1px;
     border-radius: 30px;
+    background-color: #FFF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
 }
 
@@ -31,17 +32,47 @@
 }
 
 .content h2{
-    font-size: 1.8rem;
-    font-family: inherit;
+    font-family: "GothicStd-Heavy";
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .content span{
-    font-weight: 100;
+    color: #4F4F4F;
+    font-size: 1.6rem;
+    font-family: "chivo mono",'Courier New', Courier, monospace;
+}
+
+.content span+span{
+    font-style: italic;
+    display: block;
+    margin-top: -10px;
 }
 
 .content p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 15px;
     padding-top: 10px;
 }
 
+p .longtext{
+    height: 0;
+    transition: max-height 0.4s;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+p .clickReadMore{
+    cursor: pointer;
+    color: #2388FF ;
+}
+
+p .readMore{
+    max-height: 40.5rem;
+    font-size: 1.6rem;    
+    font-family: 'GothicStd-Light';
+    color: #000;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+}
