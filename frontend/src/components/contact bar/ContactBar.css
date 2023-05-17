@@ -1,11 +1,15 @@
 .contactBar{
-    position: relative;
-    right: 20px;
     height: 200px;
-    width: 100vw;
+    width: 100%;
     background-color: #001F28;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     color: #fff;
+    gap: 15vw;
+}
+
+.contactBar h3{
+    font-size: 4.5rem;
 }

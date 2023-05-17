@@ -8,6 +8,7 @@ import Typewriter from './components/typewriter/Typewriter';
 import Potenciamos from './components/homepage componets/potenciamos/Potenciamos';
 import Proyects from './components/homepage componets/proyects/Proyects';
 import ContactBar from './components/contact bar/ContactBar';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -28,7 +29,10 @@ function App() {
         </div>
         <div className='contentsLastSection'>
              <Testimonios/>
-             <ContactBar/>
+             <div>
+                <ContactBar/>
+                <Footer/>
+             </div>
         </div>
     </div>
   );
