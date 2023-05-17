@@ -10,9 +10,12 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
   }
 
   return (
-    <div>
-      <div className="cardTest">
-        <div className="content">
+    <div className="testContainers">
+      <m.div className="cardTest"
+      animate={readMore ? {
+        height: "auto"
+      }: ""}>
+        <div className="content" >
             <div>
                 <h2>{name}</h2>
                 <span>{company}</span>
@@ -29,7 +32,7 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
                 <div style={{backgroundImage: `url(${img})`}} className="imgTest"></div>
             </div>
         </m.div>
-      </div>
+      </m.div>
     </div>
   )
 }

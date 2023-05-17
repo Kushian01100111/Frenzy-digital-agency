@@ -33,7 +33,7 @@
   width: 100%;
 }
 
-.contents{
+.contents, .contentsLastSection{
   margin: 0 auto;
   height: 100vh;
   scroll-snap-align: start;
@@ -42,6 +42,12 @@
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+
+.contentsLastSection{
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 

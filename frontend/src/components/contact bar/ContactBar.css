@@ -1,0 +1,11 @@
+.contactBar{
+    position: relative;
+    right: 20px;
+    height: 200px;
+    width: 100vw;
+    background-color: #001F28;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}

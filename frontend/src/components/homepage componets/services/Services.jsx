@@ -2,8 +2,7 @@ import "./Services.css"
 import ServicesCards from "../../services cards/ServicesCards"
 import { useState } from "react"
 import {motion as m} from "framer-motion"
-import Blossom from "../../../assects/imgs/blossom.png"
-import Selva from "../../../assects/imgs/selva.png"
+import companiesImgs from "../../../assects/js files/companiesImgs"
 import SocialImg from "../../../assects/imgs/d-B.png"
 import InfluImg from "../../../assects/imgs/I-B.png"
 import DesigImg from "../../../assects/imgs/Design.png"
@@ -17,15 +16,22 @@ const Services = () => {
   const [s5, setS5] = useState(false);
   const [firstImg, setFirstImg] =  useState(false);
   const [secundImg, setSecundImg] = useState(false);
+  const firstAnimation = {
+    initial: {x:-120, opacity: 0},
+    whileInView :{x: 0, opacity: 1, transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1.8
+    }}
+  }
 
   return (
     <div className="contentServices">
-      <m.div className="textServices" initial={{x:-120, opacity: 0}}
-            whileInView={{x: 0, opacity: 1, transition: {
-              type: "spring",
-              bounce: 0.4,
-              duration: 1.8
-            }}}><h2>SERVICIOS</h2>
+      <m.div className="textServices" 
+      variants={firstAnimation}
+      initial="initial"
+      whileInView="whileInView">
+      <h2>SERVICIOS</h2>
       <p>conocé nuestros servicios pasando el mouse por cada uno. pero recordá, nuestro foco siempre estará en adaptarnos a las necesidades de nuestros clientes, así que contactanos, contanos acerca de tu proyecto, y armamos una propuesta a medida</p></m.div>
         <div className="services">
           <div className="selectService">
@@ -153,10 +159,10 @@ const Services = () => {
             <div className="div22">
               <m.img initial={{opacity: 0.5}} animate={s1 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
               onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={Blossom} alt="blossom" style={{width: "190px", height: "auto"}} />
+              src={companiesImgs[4]} alt="blossom" style={{width: "190px", height: "auto"}} />
               <m.img initial={{opacity: 0.5}} animate={s1 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
               onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={Selva} alt="Selva" style={{width: "180px", height: "auto"}}/>
+              src={companiesImgs[6]} alt="Selva" style={{width: "180px", height: "auto"}}/>
             </div>
           </m.div>
           <m.div 
@@ -170,10 +176,10 @@ const Services = () => {
             <div className="div22">
               <m.img initial={{opacity: 0.5}} animate={s2 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
               onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={Blossom} alt="blossom" style={{width: "190px", height: "auto"}} />
+              src={companiesImgs[4]} alt="blossom" style={{width: "190px", height: "auto"}} />
               <m.img initial={{opacity: 0.5}} animate={s2 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
               onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={Selva} alt="Selva" style={{width: "180px", height: "auto"}}/>
+              src={companiesImgs[6]} alt="Selva" style={{width: "180px", height: "auto"}}/>
             </div>
           </m.div>
           <m.div 
@@ -187,10 +193,10 @@ const Services = () => {
             <div className="div22">
               <m.img initial={{opacity: 0.5}} animate={s3 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
               onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={Blossom} alt="blossom" style={{width: "190px", height: "auto"}} />
+              src={companiesImgs[4]} alt="blossom" style={{width: "190px", height: "auto"}} />
               <m.img initial={{opacity: 0.5}} animate={s3 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
               onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={Selva} alt="Selva" style={{width: "180px", height: "auto"}}/>
+              src={companiesImgs[6]} alt="Selva" style={{width: "180px", height: "auto"}}/>
             </div>
           </m.div>
           <m.div 
@@ -204,10 +210,10 @@ const Services = () => {
             <div className="div22">
               <m.img initial={{opacity: 0.5}} animate={s4 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
               onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={Blossom} alt="blossom" style={{width: "190px", height: "auto"}} />
+              src={companiesImgs[4]} alt="blossom" style={{width: "190px", height: "auto"}} />
               <m.img initial={{opacity: 0.5}} animate={s4 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
               onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={Selva} alt="Selva" style={{width: "180px", height: "auto"}}/>
+              src={companiesImgs[6]} alt="Selva" style={{width: "180px", height: "auto"}}/>
             </div>
           </m.div>
           <m.div 
@@ -221,10 +227,10 @@ const Services = () => {
             <div className="div22">
               <m.img initial={{opacity: 0.5}} animate={s5 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
               onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={Blossom} alt="blossom" style={{width: "190px", height: "auto"}} />
+              src={companiesImgs[4]} alt="blossom" style={{width: "190px", height: "auto"}} />
               <m.img initial={{opacity: 0.5}} animate={s5 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
               onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={Selva} alt="Selva" style={{width: "180px", height: "auto"}}/>
+              src={companiesImgs[6]} alt="Selva" style={{width: "180px", height: "auto"}}/>
             </div>
           </m.div>
         </div>

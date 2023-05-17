@@ -7,7 +7,7 @@ import Navbar from './components/navbar/Navbar';
 import Typewriter from './components/typewriter/Typewriter';
 import Potenciamos from './components/homepage componets/potenciamos/Potenciamos';
 import Proyects from './components/homepage componets/proyects/Proyects';
-import TextTracker from './components/text tracker/TextTracker';
+import ContactBar from './components/contact bar/ContactBar';
 
 function App() {
   return (
@@ -26,8 +26,9 @@ function App() {
           <Services />
           {/* <TextTracker/>     Añadirlo mas adelante 23/04*/}
         </div>
-        <div className='contents'>
+        <div className='contentsLastSection'>
              <Testimonios/>
+             <ContactBar/>
         </div>
     </div>
   );
