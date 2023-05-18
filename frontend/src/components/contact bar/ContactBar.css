@@ -10,6 +10,11 @@
     gap: 15vw;
 }
 
+.contactBar .button{
+    color: #000;
+    border-radius: 0px;
+}
+
 .contactBar h3{
     font-size: 4.5rem;
 }

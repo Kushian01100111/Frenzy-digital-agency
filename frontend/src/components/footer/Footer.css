@@ -1,19 +1,30 @@
 .footer{
     background-color: #151515;
     width: 100%;
+    min-height: 150px;
     max-height: 200px;
     color: #fff;
 }
 
 .contentFooter{
     max-width: 1310px;
+    height: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    padding-top: 20px;
     align-items: center;
 }
 
 small{
     font-family: "Roboto Slab";
     font-size: 1.6rem;
+}
+
+.linksFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

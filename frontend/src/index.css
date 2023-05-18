@@ -36,6 +36,13 @@
       url("./assects/fonts/FrankGothMT-ExtraCondensed.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "Sackers Gothic Std";
+  src: url("./assects/fonts/SackersGothicStd-Heavy.woff") format('woff'),
+      url("./assects/fonts/SackersGothicStd-Heavy.ttf") format('truetype');
+}
+
+
 *{
   box-sizing: border-box;
 }

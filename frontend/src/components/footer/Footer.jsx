@@ -1,4 +1,5 @@
 import "./Footer.css"
+import { Link } from "react-router-dom";
 import Frenzy from "./../../assects/imgs/Frenzy_04.png";
 import LinkeDin from "./../../assects/imgs/LinkedIn.png";
 import Instagram from "./../../assects/imgs/Instagram.png";
@@ -13,10 +14,10 @@ const Footer = () => {
                 <small> &copy;2018 - {date} Frenzy, Boutique digital agency.</small>
             </div>
             <div>
-                <img src={Frenzy} alt="Logo" style={{width: "84px", height: "auto"}}/>
+                <Link to={"/"}><img src={Frenzy} alt="Logo" style={{width: "84px", height: "auto"}}/></Link>
             </div>
             <div>
-                <ul>
+                <ul className="linksFooter">
                     <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></li>
                     <li><a href="#"><img src={Instagram} alt="Instagram" style={{width:"35px"}}/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"35px"}}/></a></li>

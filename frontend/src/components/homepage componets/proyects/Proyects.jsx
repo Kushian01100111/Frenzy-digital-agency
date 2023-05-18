@@ -14,7 +14,7 @@ const Proyects = () => {
           <ProjectCards link={"/projects/sarapura"} title={"sarapura"} description={"diseño gráfico"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677470/Frenzy/Rectangle_385g2_oh94ow.png"}/>
           <ProjectCards link={"/projects/shooting_vichka"} title={"shooting vichka"} description={"shooting"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683679383/Frenzy/Rectangle_3904_cqwcpa.png"}/> 
         </div>
-        <div className="buttonMoreProjects"><Button text={"mas proyectos"}/></div>
+        <div className="buttonMoreProjects"><Button text={"MAS PROYECTOS"}/></div>
     </div>
   )
 }
