@@ -20,14 +20,12 @@
 
 @font-face {
   font-family: "GothicStd-Heavy";
-  src: url("./assects/fonts/SackersGothicStd-Heavy.woff") format('woff'),
-      url("./assects/fonts/SackersGothicStd-Heavy.ttf") format('truetype');
+  src: url("./assects/fonts/SackersGothicStd-Heavy.otf") format('opentype');
 }
 
 @font-face {
   font-family: "GothicStd-Light";
-  src: url("./assects/fonts/SackersGothicStd-Light.woff") format('woff'),
-      url("./assects/fonts/SackersGothicStd-Light.ttf") format('truetype');
+  src: url("./assects/fonts/SackersGothicStd-Light.otf") format('opentype');
 }
 
 @font-face {
@@ -36,11 +34,6 @@
       url("./assects/fonts/FrankGothMT-ExtraCondensed.ttf") format('truetype');
 }
 
-@font-face {
-  font-family: "Sackers Gothic Std";
-  src: url("./assects/fonts/SackersGothicStd-Heavy.woff") format('woff'),
-      url("./assects/fonts/SackersGothicStd-Heavy.ttf") format('truetype');
-}
 
 
 *{

@@ -1,6 +1,16 @@
+
+.carusel{
+    transform: scale(1);
+}
+
+
+
 .testShowCase{
+    cursor: grab;
+    overflow-x: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 auto;
     gap: 10px;
 }

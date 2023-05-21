@@ -18,13 +18,16 @@
 }
 
 .preContainerTest{
+    position: fixed;
+    bottom: -100px; 
+    transform: translatex(30%);
     width: 250px;
     height: 250px;
     margin: 0 auto;  
 }
 
 .cardTest{
-    max-width: 400px;
+    width: 400px;
     max-height: 500px;
     height: 400px;
     border: black solid 1px;

@@ -8,9 +8,19 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
   const onClick = ()=>{
     setReadMore(!readMore)
   }
+  const firstAnimation = {
+    initial: {y:50, opacity: 0},
+    whileInView :{y: 0, opacity: 1, transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1
+    }}
+  }
 
   return (
-    <div className="testContainers">
+    <m.div className="testContainers" variants={firstAnimation}
+    initial="initial"
+    whileInView="whileInView">
       <m.div className="cardTest"
       animate={readMore ? {
         height: "auto"
@@ -25,15 +35,14 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
                <p>{exp}<m.span className={`longtext ${readMore ? "readMore": "clickReadMore"}`} onClick={onClick}>{readMore ? extraExp: "..."}</m.span></p>
             </div>
         </div>
-        <m.div
-          animate={{y:50}} 
+        <div
           className="preContainerTest">
             <div className="containerTest">
                 <div style={{backgroundImage: `url(${img})`}} className="imgTest"></div>
             </div>
-        </m.div>
+        </div>
       </m.div>
-    </div>
+    </m.div>
   )
 }
 
