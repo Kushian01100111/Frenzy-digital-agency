@@ -1,4 +1,4 @@
-
+ 
 .carusel{
     transform: scale(1);
 }
@@ -6,8 +6,9 @@
 
 
 .testShowCase{
-    cursor: grab;
-    overflow-x: hidden;
+    /* cursor: grab;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain; */
     display: flex;
     flex-direction: row;
     justify-content: center;
