@@ -1,14 +1,15 @@
- 
-.carusel{
-    transform: scale(1);
+.balls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 120px;
 }
 
 
 
 .testShowCase{
-    /* cursor: grab;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain; */
     display: flex;
     flex-direction: row;
     justify-content: center;

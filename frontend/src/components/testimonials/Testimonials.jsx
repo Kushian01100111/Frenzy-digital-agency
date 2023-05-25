@@ -9,8 +9,8 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
     setReadMore(!readMore)
   }
   const firstAnimation = {
-    initial: {y:50, opacity: 0},
-    whileInView :{y: 0, opacity: 1, transition: {
+    initial: {x: -50, opacity: 0},
+    whileInView :{x: 0, opacity: 1, transition: {
       type: "spring",
       bounce: 0.4,
       duration: 1
@@ -35,12 +35,12 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
                <p>{exp}<m.span className={`longtext ${readMore ? "readMore": "clickReadMore"}`} onClick={onClick}>{readMore ? extraExp: "..."}</m.span></p>
             </div>
         </div>
-        <div
-          className="preContainerTest">
+        <m.div
+          className="preContainerTest" animate={{y: 30}}>
             <div className="containerTest">
                 <div style={{backgroundImage: `url(${img})`}} className="imgTest"></div>
             </div>
-        </div>
+        </m.div>
       </m.div>
     </m.div>
   )

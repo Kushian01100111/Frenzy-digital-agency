@@ -18,9 +18,6 @@
 }
 
 .preContainerTest{
-    position: fixed;
-    bottom: -100px; 
-    transform: translatex(30%);
     width: 250px;
     height: 250px;
     margin: 0 auto;  
