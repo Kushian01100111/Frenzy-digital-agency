@@ -36,27 +36,41 @@ const Potenciamos = () => {
             </div>
             <div className="marcas">
                 <div className="imgsMarcas">
-                    <m.img src={companiesImgs[0]} alt="Desiderata" style={{width: "266px"}}  variants={secundAnimation}
-                    initial="initial"
-                    whileInView="whileInView"/>
-                    <m.img src={companiesImgs[1]} alt="Galpon Palermo" style={{width: "160px"}} variants={secundAnimation}
-                    initial="initial"
-                    whileInView="whileInView"/>
-                    <m.img src={companiesImgs[2]} alt="Oleana" style={{width: "250px"}} variants={secundAnimation}
-                    initial="initial"
-                    whileInView="whileInView"/>
-                    <m.img src={companiesImgs[3]} alt="Sarapura" style={{width: "160px"}} variants={secundAnimation}
-                    initial="initial"
-                    whileInView="whileInView"/>
-                    <m.img src={companiesImgs[4]} alt="Blosoom Market" style={{width: "220px"}} variants={secundAnimation}
-                    initial="initial"
-                    whileInView="whileInView"/>   
-                    <m.img src={companiesImgs[5]} alt="Trebol" style={{width: "180px"}} variants={secundAnimation}
-                    initial="initial"
-                    whileInView="whileInView"/>
+                    <div className="div1">
+                      <m.img src={companiesImgs[0]} alt="Desiderata" style={{width: "10vw"}}  variants={secundAnimation}
+                      initial="initial"
+                      whileInView="whileInView"/>
+                    </div>
+                    <div className="div2">
+                      <m.img src={companiesImgs[1]} alt="Galpon Palermo" style={{width: "10vw"}} variants={secundAnimation}
+                      initial="initial"
+                      whileInView="whileInView"/>
+                    </div>
+                    <div className="div3">
+                      <m.img src={companiesImgs[2]} alt="Oleana" style={{width: "15vw"}} variants={secundAnimation}
+                      initial="initial"
+                      whileInView="whileInView"/>
+                    </div>
+                    <div className="div4">
+                      <m.img src={companiesImgs[3]} alt="Sarapura" style={{width: "8vw"}} variants={secundAnimation}
+                      initial="initial"
+                      whileInView="whileInView"/>
+                    </div>
+                    <div className="div5">
+                      <m.img src={companiesImgs[4]} alt="Blosoom Market" style={{width: "15vw"}} variants={secundAnimation}
+                      initial="initial"
+                      whileInView="whileInView"/>
+                    </div>
+                    <div className="div6">  
+                      <m.img src={companiesImgs[5]} alt="Trebol" style={{width: "10vw"}} variants={secundAnimation}
+                      initial="initial"
+                      whileInView="whileInView"/>
+                    </div> 
+                    <div className="div">
                     <m.img src={companiesImgs[6]} alt="Selva" style={{width: "180px"}} variants={secundAnimation}
                     initial="initial"
                     whileInView="whileInView"/>
+                    </div>
                 </div>
                 <m.div className="nameMarcas" variants={secundAnimation}
                     initial="initial"

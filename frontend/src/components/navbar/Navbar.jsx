@@ -25,7 +25,6 @@ const Navbar = () => {
         setYPosition(v)})
     }, [scrollYProgress])
 
-    console.log(yPosition)
 
   return (
     <>
