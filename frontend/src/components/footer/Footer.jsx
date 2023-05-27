@@ -18,8 +18,8 @@ const Footer = () => {
             </div>
             <div>
                 <ul className="linksFooter">
-                    <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></li>
-                    <li><a href="#"><img src={Instagram} alt="Instagram" style={{width:"35px"}}/></a></li>
+                    <li><a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/"  target="_blank"><img src={Instagram} alt="Instagram" style={{width:"35px"}}/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"35px"}}/></a></li>
                 </ul>
             </div>

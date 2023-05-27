@@ -49,3 +49,10 @@
     color: #656565;
     font-size: 2rem;
 }
+
+
+@media (max-width: 1090px) {
+    .text h3, .text span{
+        font-size: 1.6rem;
+    }
+}

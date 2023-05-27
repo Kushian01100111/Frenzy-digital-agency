@@ -18,3 +18,9 @@
     font-family: "GothicStd-Heavy" ,"GothicStd-Light",'Courier New', Courier, monospace;
     font-size: 2.2rem;
 }
+
+@media (max-width: 1090px) {
+    .button span{
+        font-size: 1.8rem;
+    }
+}

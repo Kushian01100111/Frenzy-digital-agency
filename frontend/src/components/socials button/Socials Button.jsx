@@ -39,8 +39,6 @@ const SocialsButton = () => {
 
   const onClick= () =>{
       setActive(!active)
-
-      console.log(active)
   }
 return (
   <>
@@ -48,9 +46,9 @@ return (
       <m.button onClick={onClick} className="buttonLinks"><ExpandMoreIcon sx={{ width: 35, height: 35 }}/></m.button>
       <m.ul className="linksButton" animate={active ? {y:0, opacity: 1}: ""} initial={{y:-10, opacity: 0}}>
                   <m.li variants={firstAnimation} initial="initial" animate={active ? "animate": ""} transition="transition">
-                  <a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></m.li>
+                  <a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></m.li>
                   <m.li variants={secundAnimation} initial="initial" animate={active ? "animate": ""} transition="transition">
-                  <a href="#"><img src={Instagram} alt="Instagram" style={{width:"35px"}}/></a></m.li>
+                  <a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"35px"}}/></a></m.li>
                   <m.li variants={thirdAnimation} initial="initial" animate={active ? "animate": ""} transition="transition">
                   <a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"35px"}}/></a></m.li>
       </m.ul>

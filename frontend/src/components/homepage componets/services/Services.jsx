@@ -123,8 +123,7 @@ const Services = () => {
               if(!s4){setS4(!s4)}
               setS5(false)
             }}>
-            <ServicesCards title={"DISEÑO GRÁFICO"} condicional={s4} icon={<img src={DesigImg} alt="icon" className="imgCards"/>}/>
-            </m.div>
+            <ServicesCards title={"DISEÑO GRÁFICO"} condicional={s4} icon={<img src={DesigImg} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {

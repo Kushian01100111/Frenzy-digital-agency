@@ -3,7 +3,7 @@ import {motion as m } from "framer-motion"
 import { useState } from "react"
 import {Link} from "react-router-dom"
 
-const ProjectCards = ({img, link, title, description}) => {
+const ProjectCards = ({img, link, title, description, pageWidth}) => {
   const [hoverCard, setHover] =  useState(false)
   const firstAnimation = {
     initial: {y:-120, opacity: 0},
@@ -21,6 +21,7 @@ const ProjectCards = ({img, link, title, description}) => {
       className="container"
       onMouseEnter={()=> setHover(!hoverCard)}
       onMouseLeave={()=> setHover(!hoverCard)}
+      style={ pageWidth <= 1210 ? {height: "33vh", minWidth: "29vw"}: ""}
       >
       <Link to={`${link}`}>
           <m.div 

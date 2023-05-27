@@ -1,6 +1,4 @@
 import './App.css';
-import { useEffect, useState } from 'react';
-import { useScroll } from 'framer-motion';
 import Testimonios from './components/homepage componets/testimonios/Testimonios';
 import Services from './components/homepage componets/services/Services';
 import Navbar from './components/navbar/Navbar';
@@ -13,8 +11,8 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <div className="App">
+      <Navbar/>
         <div className='principalBanner'>
-            <Navbar/>
             <Typewriter/>
         </div>
         <div className='contents'>

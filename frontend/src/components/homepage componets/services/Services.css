@@ -63,3 +63,25 @@
     width: auto;
     max-height: 56px;
 }
+
+
+@media (max-width: 1090px) {
+    .services{
+        flex-direction: column; 
+    }
+    .parent2{
+        margin-top: 20px;
+        width: 100%;
+        min-height: 297px;
+    }
+    .parent2 p{
+        text-align: center;
+    }
+    .parent2 h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .div22{
+        justify-content: space-evenly;
+    }
+}
