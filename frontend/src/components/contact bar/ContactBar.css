@@ -8,6 +8,7 @@
     justify-content: center;
     color: #fff;
     gap: 15vw;
+    margin-top: 10px;
 }
 
 .contactBar .button{
@@ -17,4 +18,15 @@
 
 .contactBar h3{
     font-size: 4.5rem;
+}
+
+
+@media (max-width: 1090px) {
+    .contactBar h3{
+        font-size: 3.5rem;
+        margin-top: 10px;
+    }
+    .contactBar .button span{
+        font-size: 1.6rem;
+    }
 }

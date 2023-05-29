@@ -21,7 +21,7 @@ const ProjectCards = ({img, link, title, description, pageWidth}) => {
       className="container"
       onMouseEnter={()=> setHover(!hoverCard)}
       onMouseLeave={()=> setHover(!hoverCard)}
-      style={ pageWidth <= 1210 ? {height: "33vh", minWidth: "29vw"}: ""}
+      style={ pageWidth <= 1090 ? {height: "40vw", minWidth: "29vw"}: ""}
       >
       <Link to={`${link}`}>
           <m.div 

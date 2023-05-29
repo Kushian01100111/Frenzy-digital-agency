@@ -62,6 +62,15 @@
 
 
 @media (max-width: 1090px) {
+
+    .poten{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .poten div+div{
+        text-align: center;
+    }
     .contentPoten{
         justify-content: center;
         gap: 40px;

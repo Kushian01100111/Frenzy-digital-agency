@@ -50,7 +50,7 @@ html {
   width: 100%;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  scroll-padding: 5px;
+  scroll-padding: 15px;
 }
 
 body {

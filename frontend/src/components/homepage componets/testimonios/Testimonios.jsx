@@ -1,6 +1,7 @@
 import "./Testimonios.css"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Testimonials from '../../testimonials/Testimonials'
+
 import {motion as m} from "framer-motion"
 
 const Testimonios = () => {
@@ -25,7 +26,7 @@ const Testimonios = () => {
 
   return (
     <>
-    <div className="parentCarusel">
+      <div className="parentCarusel">
       <h2>TESTIMONIOS</h2>
         <m.div className='testShowCase' animate={ activeN1 ? {opacity: 1, display: "flex"}: ""} initial={{opacity: 0, display: "none"}} drag={"x"} dragConstraints={{right: 0, left: 0}} onDrag={(e)=> {
           if(e.movementX < -5) changeActive("N2")
@@ -57,9 +58,11 @@ const Testimonios = () => {
               <m.div animate={activeN3 ? {borderRadius: 50, width: 21, height: 21, backgroundColor: "#000" }: {borderRadius: 50, width: 18, height: 18, backgroundColor: "#BFBFBF" }} 
               onClick={() => changeActive("N3")}></m.div>
           </div>
-    </div>
+      </div>
     </>
   )
+
+  
 }
 
 export default Testimonios

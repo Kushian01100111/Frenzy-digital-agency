@@ -48,12 +48,13 @@
     color: #4F4F4F;
     font-size: 1.6rem;
     font-family: "chivo mono",'Courier New', Courier, monospace;
+    margin-bottom: -5px;
 }
 
 .content span+span{
     font-style: italic;
     display: block;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 
 .content p {
@@ -81,4 +82,10 @@ p .readMore{
     color: #000;
     line-height: 15px;
     letter-spacing: 0.04em;
+}
+
+@media (max-width:  790px) {
+    .parentCarusel>h2{
+        margin-bottom: 50px;
+    }
 }

@@ -1,6 +1,6 @@
 .containerProjects{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .projectsGrid{
@@ -18,9 +18,3 @@
     justify-content: center;
 }
 
-
-@media (max-width: 1090px) {
-    .projectsGrid{
-        margin-top: 50px;
-    }
-}
