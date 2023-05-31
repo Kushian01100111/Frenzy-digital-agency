@@ -1,5 +1,5 @@
 import "./Testimonios.css"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Testimonials from '../../testimonials/Testimonials'
 
 import {motion as m} from "framer-motion"
