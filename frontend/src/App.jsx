@@ -24,7 +24,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar width={width}/>
         <div className='principalBanner'>
             <Typewriter/>
         </div>

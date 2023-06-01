@@ -17,3 +17,14 @@
     gap: 10px;
 }
 
+
+
+@media (max-width: 1090px) {
+    .testShowCase{
+        margin-top: 50px;
+    }
+
+    .parentCarusel{
+        margin-top: 20px;
+    }
+}
