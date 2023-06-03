@@ -59,3 +59,53 @@ header{
     font-weight: 600;
     color: #5AB7CC;
 }
+
+
+@media (max-width: 900px) {
+    .contentLinksSmaller{
+        background-color: #fff;
+        box-shadow: 0px 16px 12px 0px rgba(0, 0, 0, 0.09);
+    }
+    .linksSmaller{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 20px;
+        
+    }
+    .linksSmaller a {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: #000;
+        font-family: "GothicStd-Heavy";
+    }
+    .navbar{
+        margin-bottom: 0;
+    }
+    .socialsLinks{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+    header{
+        height: 80px;
+    }
+    .logo{
+        width: 40px;
+    }
+
+    .linksSmaller a {
+        font-size: 1.4rem;
+    }
+
+    .linkLogo{
+        width: 30px !important;
+    }
+}

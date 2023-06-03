@@ -53,4 +53,10 @@
 }
 
 
+@media (max-width: 500px) {
+  .contents, .contentsLastSection, .principalBanner{
+    height: 100lvh;
+  }
+}
+
 

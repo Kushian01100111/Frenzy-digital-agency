@@ -19,3 +19,12 @@
         font-size: 9.2rem;
     }
 }
+
+@media (max-width: 500px) {
+    .typewriter{
+        font-size: 5.2rem;
+        padding-left: 5px;
+        margin-bottom: 30px;
+        height: 75lvh;
+    }
+}

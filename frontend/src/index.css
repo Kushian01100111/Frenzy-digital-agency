@@ -117,4 +117,21 @@ span, p{
 }
 
 
+@media (max-width: 500px) {
+  
+  h1, h2{
+    font-size: 3.4rem;
+  }
+  
+  h3{
+    font-size: 1.8rem;
+  }
+  
+  p{
+    font-family: 'GothicStd-Light';
+    font-size: 1.4rem;
+  }
+}
+
+
 

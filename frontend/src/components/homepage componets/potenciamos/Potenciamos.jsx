@@ -50,37 +50,56 @@ const Potenciamos = () => {
             <div className="marcas">
                 <div className="imgsMarcas">
                     <div className="div1">
-                      <m.img src={companiesImgs[0]} alt="Desiderata" style={ width <= 1090 ? {width: "180px"} : {width: "10vw"}}  variants={secundAnimation}
+                      <m.img src={companiesImgs[0]} alt="Desiderata" style={
+                      width <= 500 ? {width: "80px"} 
+                      :width <= 1090 ? {width: "180px"}
+                      : {width: "10vw"}}  variants={secundAnimation}
                       initial="initial"
                       whileInView="whileInView"/>
                     </div>
                     <div className="div2">
-                      <m.img src={companiesImgs[1]} alt="Galpon Palermo" style={width <= 1090 ? {width: "120px"} : {width: "8vw"}} variants={secundAnimation}
+                      <m.img src={companiesImgs[1]} alt="Galpon Palermo" style={
+                      width <= 500 ? {width: "80px"} 
+                      : width <= 1090 ? {width: "120px"}
+                      : {width: "8vw"}} variants={secundAnimation}
                       initial="initial"
                       whileInView="whileInView"/>
                     </div>
                     <div className="div3">
-                      <m.img src={companiesImgs[2]} alt="Oleana" style={width <= 1090 ? {width: "250px"} : {width: "15vw"}} variants={secundAnimation}
+                      <m.img src={companiesImgs[2]} alt="Oleana" style={ 
+                      width <= 500 ? {width: "120px"} 
+                      : width <= 1090 ? {width: "250px"}
+                      : {width: "15vw"}} variants={secundAnimation}
                       initial="initial"
-                      whileInView="whileInView"/>
+                      whileInView="whileInView" 
+                      />
                     </div>
                     <div className="div4">
-                      <m.img src={companiesImgs[3]} alt="Sarapura" style={width <= 1090 ? {width: "120px"} : {width: "8vw"}} variants={secundAnimation}
+                      <m.img src={companiesImgs[3]} alt="Sarapura" style={
+                        width <= 500 ? {width: "60px"} 
+                        :width <= 1090 ? {width:"120px"}
+                        : {width: "8vw"}} variants={secundAnimation}
                       initial="initial"
                       whileInView="whileInView"/>
                     </div>
                     <div className="div5">
-                      <m.img src={companiesImgs[4]} alt="Blosoom Market" style={width <= 1090 ? {width: "180px"} : {width: "10vw"}} variants={secundAnimation}
+                      <m.img src={companiesImgs[4]} alt="Blosoom Market" style={
+                        width <= 500 ? {width:"80px"} : width <= 1090 ?{width:"180px"}
+                        : {width: "10vw"}} variants={secundAnimation}
                       initial="initial"
                       whileInView="whileInView"/>
                     </div>
                     <div className="div6">  
-                      <m.img src={companiesImgs[5]} alt="Trebol" style={width <= 1090 ? {width: "120px"} : {width: "10vw"}} variants={secundAnimation}
+                      <m.img src={companiesImgs[5]} alt="Trebol" style={
+                        width <= 500 ? {width:"60px"} : width <= 1090 ?{width:"120px"}
+                        : {width:"10vw"}} variants={secundAnimation}
                       initial="initial"
                       whileInView="whileInView"/>
                     </div> 
                     <div className="div7">
-                    <m.img src={companiesImgs[6]} alt="Selva" style={width <= 1090 ? {width: "180px"} : {width: "10vw"}} variants={secundAnimation}
+                    <m.img src={companiesImgs[6]} alt="Selva" style={
+                      width <= 1090 ? {width: "60px"} :width <= 500 ? {width: "180px"}
+                      :{width: "10vw"}} variants={secundAnimation}
                     initial="initial"
                     whileInView="whileInView"/>
                     </div>
