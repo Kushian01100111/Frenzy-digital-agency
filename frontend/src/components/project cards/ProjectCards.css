@@ -56,3 +56,9 @@
         font-size: 1.6rem;
     }
 }
+
+@media (max-width: 500px) {
+    .text h3, .text span{
+        font-size: 1.2rem;
+    } 
+}

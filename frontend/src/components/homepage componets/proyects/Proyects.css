@@ -17,3 +17,13 @@
     justify-content: center;
 }
 
+
+@media (max-width: 500px) {
+    .responsiveProyects{
+        height: auto;
+        padding-bottom: 10lvh;
+        margin-bottom: 50lvh;
+        padding-top: 20px;
+    }
+}
+
