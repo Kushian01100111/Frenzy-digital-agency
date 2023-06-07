@@ -24,3 +24,10 @@
         font-size: 1.8rem;
     }
 }
+
+
+@media (max-width: 500px) {
+    .button span{
+        font-size: 1.4rem;
+    }
+}

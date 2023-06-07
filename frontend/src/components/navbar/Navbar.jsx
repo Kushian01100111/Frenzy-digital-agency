@@ -27,10 +27,11 @@ const Navbar = ({width}) => {
         setYPosition(v)})
     }, [scrollYProgress])
 
+console.log(yPosition)
 
   return (
-    <>
-    { yPosition < 0.2 && location === "" ? <header className="firstNav">
+    <> 
+    { yPosition < 0.12 && location === "" ? <header className="firstNav">
         <div className="navbar">
             <div>
             <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>

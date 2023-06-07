@@ -89,3 +89,30 @@ p .readMore{
         margin-bottom: 50px;
     }
 }
+
+
+@media (max-width: 500px) {
+
+    .preContainerTest{
+        width: 150px;
+        height: 150px;
+    }
+    .cardTest{
+        height: 350px;
+    }
+    .content{
+        padding: 10px 10px 0 10px;
+    }
+    .content h2{
+        font-size: 1.6rem;
+    }
+    .content p {
+        font-size: 1.2rem;
+    }
+    .content span{
+        font-size: 1.2rem;
+    }
+    p .readMore{
+        font-size: 1.2rem;
+    }
+}

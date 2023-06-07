@@ -35,7 +35,7 @@ useEffect(() => {
           <Proyects /> 
         </div>
         <div className='contents'>
-          <Services />
+          <Services width={width}/>
         </div>
         <div className='contentsLastSection'>
             { width <= 1090 ? <TestimoniosTablet/> : <Testimonios/>}

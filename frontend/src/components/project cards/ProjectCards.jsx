@@ -19,11 +19,12 @@ const ProjectCards = ({img, link, title, description, pageWidth}) => {
                 initial="initial"
                 whileInView="whileInView"
       className="container"
-      onMouseEnter={()=> setHover(!hoverCard)}
-      onMouseLeave={()=> setHover(!hoverCard)}
-      ontou
+      onMouseEnter={()=> setHover(true)}
+      onMouseLeave={()=> setHover(false)}
+      onTouchStart={()=> setHover(true)}
+      onTouchEnd={()=> setHover(false)}
       style={
-        pageWidth <= 500 ? {height: "160px", minWidth: "160px"}
+        pageWidth <= 500 ? {height: "160px", minWidth: "150px"}
         : pageWidth <= 1090 ? {height: "37vh", minWidth: "29vw"}: ""}
       >
       <Link to={`${link}`}>
@@ -46,12 +47,11 @@ const ProjectCards = ({img, link, title, description, pageWidth}) => {
                   </m.div>
               </div>
               <m.div className="text"
-              animate={
-                hoverCard ? 
-                {opacity: 1,
-                  y:-80 }: 
-                {opacity: 0,
-                  y:-80 }
+              animate={ 
+              hoverCard && pageWidth <= 500  ? {opacity: 1, y:-35 }
+              : !hoverCard && pageWidth <= 500 ? {opacity: 0, y:-35}
+              : hoverCard ? {opacity: 1, y: -80} 
+              : {opacity: 0, y: -80} 
               }
               transition={{duration: 0.05}}>
                   <h3>{title}</h3>
