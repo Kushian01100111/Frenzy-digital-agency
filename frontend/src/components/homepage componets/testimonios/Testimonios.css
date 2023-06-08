@@ -27,4 +27,23 @@
     .parentCarusel{
         margin-top: 20px;
     }
+
+}
+
+@media (max-width:  790px) {
+    .parentCarusel>h2{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .testShowCase{
+        margin-top: 0px;
+    }
+    .parentCarusel>h2{
+        margin-bottom: 20px;
+    }
+    .balls{
+        margin-top: 80px;
+    }
 }

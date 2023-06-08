@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="contentFooter">
-            <div>
+            <div className="div41">
                 <small> &copy;2018 - {date} Frenzy, Boutique digital agency.</small>
             </div>
             <div>

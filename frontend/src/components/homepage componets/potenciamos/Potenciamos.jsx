@@ -98,7 +98,8 @@ const Potenciamos = () => {
                     </div> 
                     <div className="div7">
                     <m.img src={companiesImgs[6]} alt="Selva" style={
-                      width <= 1090 ? {width: "70px"} :width <= 500 ? {width: "180px"}
+                      width <= 500 ? {width: "70px"} 
+                      :width <= 1090 ? {width: "180px"}
                       :{width: "10vw"}} variants={secundAnimation}
                     initial="initial"
                     whileInView="whileInView"/>

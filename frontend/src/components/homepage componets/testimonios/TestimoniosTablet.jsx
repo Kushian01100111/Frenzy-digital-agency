@@ -82,15 +82,15 @@ const TestimoniosTablet = () => {
             <Testimonials name={"montserrat zaefferer"} company={"Sarapura DJs"} position={"Marketing Manager"} exp={"hace más de un año que trabajo con Frenzy y no dejan de soprenderme. fui parte de todo su crecimiento profesional y puedo dar fe que todo lo que hacen lo hacen con la mayor dedicación y profesionalismo, pero sobre todo con amor."} extraExp={"Estoy muy agradecida del gran equipo que me acompaña, asesora y ayuda a llevar mi marca al lugar que siempre soñé. Sin dudas hoy no estaríamos donde estamos sin la agencia. Vamos por más!."} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1684277664/Frenzy/Rectangleg_3857_gwtgo2.png"}/>
           </m.div>
             <div className="balls">
-                <m.div animate={activeN1 ? {borderRadius: 50, width: 21, height: 21, backgroundColor: "#000" }: {borderRadius: 50, width: 18, height: 18, backgroundColor: "#BFBFBF" }} 
+                <m.div animate={activeN1 ? {borderRadius: 50, width: 15, height: 15, backgroundColor: "#000" }: {borderRadius: 50, width: 10, height: 10, backgroundColor: "#BFBFBF" }} 
                 onClick={() => changeActive("N1")}></m.div>
-                <m.div animate={activeN2 ? {borderRadius: 50, width: 21, height: 21, backgroundColor: "#000" }: {borderRadius: 50, width: 18, height: 18, backgroundColor: "#BFBFBF" }} 
+                <m.div animate={activeN2 ? {borderRadius: 50, width: 15, height: 15, backgroundColor: "#000" }: {borderRadius: 50, width: 10, height: 10, backgroundColor: "#BFBFBF" }} 
                 onClick={() => changeActive("N2")}></m.div>
-                <m.div animate={activeN3 ? {borderRadius: 50, width: 21, height: 21, backgroundColor: "#000" }: {borderRadius: 50, width: 18, height: 18, backgroundColor: "#BFBFBF" }} 
+                <m.div animate={activeN3 ? {borderRadius: 50, width: 15, height: 15, backgroundColor: "#000" }: {borderRadius: 50, width: 10, height: 10, backgroundColor: "#BFBFBF" }} 
                 onClick={() => changeActive("N3")}></m.div>
-                <m.div animate={activeN4 ? {borderRadius: 50, width: 21, height: 21, backgroundColor: "#000" }: {borderRadius: 50, width: 18, height: 18, backgroundColor: "#BFBFBF" }} 
+                <m.div animate={activeN4 ? {borderRadius: 50, width: 15, height: 15, backgroundColor: "#000" }: {borderRadius: 50, width: 10, height: 10, backgroundColor: "#BFBFBF" }} 
                 onClick={() => changeActive("N4")}></m.div>
-                <m.div animate={activeN5 ? {borderRadius: 50, width: 21, height: 21, backgroundColor: "#000" }: {borderRadius: 50, width: 18, height: 18, backgroundColor: "#BFBFBF" }} 
+                <m.div animate={activeN5 ? {borderRadius: 50, width: 15, height: 15, backgroundColor: "#000" }: {borderRadius: 50, width: 10, height: 10, backgroundColor: "#BFBFBF" }} 
                 onClick={() => changeActive("N5")}></m.div>
             </div>
         </div>

@@ -29,3 +29,22 @@ small{
     justify-content: center;
     gap: 20px;
 }
+
+
+@media (max-width: 500px) {
+    .footer{
+        height: auto;
+        max-height: fit-content;
+    }
+    .contentFooter{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr) 0.5fr;
+    }
+    small{
+        font-size: 1.2rem;
+    }
+    .div41{
+        grid-area: 3 / 1 / 4 / 2;
+        padding-bottom: 20px;
+    }
+}

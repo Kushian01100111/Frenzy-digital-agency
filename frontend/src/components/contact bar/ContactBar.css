@@ -22,11 +22,38 @@
 
 
 @media (max-width: 1090px) {
+    .contactBar{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        justify-items: center;
+    }
+    .div31{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .div32{
+        grid-area: 1 / 2 / 2 / 3;
+    }
     .contactBar h3{
         font-size: 3.5rem;
         margin-top: 10px;
     }
     .contactBar .button span{
         font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactBar{
+        gap: 20px;
+    }
+    .contactBar h3{
+        font-size: 2.4rem;
+        margin-top: 10px;
+    }
+    .contactBar .button span{
+        font-size: 1.2rem;
     }
 }

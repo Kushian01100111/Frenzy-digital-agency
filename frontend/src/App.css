@@ -37,13 +37,13 @@
   margin: 0 auto;
   height: 100vh;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   max-width: 100%;
   padding: 0 20px;
   display: flex;
   text-align: center;
   justify-content: center;
 }
-
 
 
 .contentsLastSection{
@@ -53,9 +53,18 @@
 }
 
 
-@media (max-width: 500px) {
-  .contents, .contentsLastSection, .principalBanner{
-    height: 100lvh;
+@media (max-width: 1090px) {
+  .contents{
+    height: auto;
+    min-height: 100lvh;
+    padding-top: 10lvh;
+    padding-bottom: 10lvh;
+    margin-bottom: 20lvh;
+  }
+  .contentsLastSection{
+    height: auto;
+    min-height: 100lvh;
+    padding-top: 2.5lvh;
   }
 }
 

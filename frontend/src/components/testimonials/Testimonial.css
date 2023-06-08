@@ -84,35 +84,34 @@ p .readMore{
     letter-spacing: 0.04em;
 }
 
-@media (max-width:  790px) {
-    .parentCarusel>h2{
-        margin-bottom: 50px;
-    }
-}
 
 
 @media (max-width: 500px) {
-
     .preContainerTest{
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
     }
     .cardTest{
-        height: 350px;
+        height: 220px;
+        max-width: 200px;
     }
     .content{
         padding: 10px 10px 0 10px;
+        max-height: 130px;
+        min-height: 130px;
     }
     .content h2{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
     .content p {
-        font-size: 1.2rem;
+        font-size: 1rem;
+        line-height: 10px;
+        padding-top: 10px;
     }
     .content span{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     p .readMore{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
