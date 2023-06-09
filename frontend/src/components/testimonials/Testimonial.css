@@ -26,7 +26,7 @@
 .cardTest{
     max-width: 400px;
     max-height: 500px;
-    height: 400px;
+    height: 350px;
     border: black solid 1px;
     border-radius: 30px;
     background-color: #FFF;
@@ -36,6 +36,8 @@
 
 .content{
     padding: 20px 20px 0px 20px;
+    max-height: 175px;
+    min-height: 175px;
 }
 
 .content h2{
@@ -49,6 +51,7 @@
     font-size: 1.6rem;
     font-family: "chivo mono",'Courier New', Courier, monospace;
     margin-bottom: -5px;
+    line-height: 18px;
 }
 
 .content span+span{
@@ -59,7 +62,7 @@
 
 .content p {
     font-size: 1.6rem;
-    line-height: 15px;
+    line-height: 13px;
     padding-top: 10px;
 }
 
@@ -73,6 +76,7 @@ p .longtext{
 p .clickReadMore{
     cursor: pointer;
     color: #2388FF ;
+    line-height: 12px;
 }
 
 p .readMore{
@@ -80,13 +84,17 @@ p .readMore{
     font-size: 1.6rem;    
     font-family: 'GothicStd-Light';
     color: #000;
-    line-height: 15px;
+    line-height: 13px;
     letter-spacing: 0.04em;
 }
 
 
+@media (max-width: 1090px) {
 
-@media (max-width: 500px) {
+}
+
+
+@media (max-width: 700px) {
     .preContainerTest{
         width: 120px;
         height: 120px;
@@ -110,8 +118,13 @@ p .readMore{
     }
     .content span{
         font-size: 1rem;
+        line-height: 14px;
+        word-spacing: -2px;
     }
     p .readMore{
         font-size: 1rem;
+    }
+    p .clickReadMore{
+        line-height: 5px;
     }
 }

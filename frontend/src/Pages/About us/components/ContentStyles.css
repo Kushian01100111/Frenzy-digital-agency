@@ -1,0 +1,48 @@
+.mainAboutUs >div{
+    max-width: 1310px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.mainAboutUs h1{
+    text-align: center;
+}
+
+
+.contentCaro, .contentYanina{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.div51{
+    grid-area: 1 / 1 / 2 / 2; 
+}
+.caro{
+    text-align: right;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div61{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.yanina{
+    grid-area: 1 / 1 / 2 / 2; 
+    text-align: left;
+}
+
+.caro h3, .yanina h3{
+    font-size: 4.8rem;
+}
+
+.caro p, .yanina p{
+    word-spacing: 10px;
+    line-height: 35px;
+    font-size: 2.8rem;
+    margin-top: 50px;
+}

@@ -21,7 +21,6 @@ useEffect(() => {
         window.removeEventListener('resize', handleWindowSizeChange);
     }
 }, []);
-
   return (
     <div className="App">
       <Navbar width={width}/>

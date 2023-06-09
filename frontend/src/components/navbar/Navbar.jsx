@@ -64,7 +64,7 @@ console.log(yPosition)
         animate={active ? {x: 0 , y: -1, display: "block", opacity: 1, zIndex: 1} : ""} initial={{x: -1000,y: 0, display: "hidden", opacity: 0, zIndex: -1}} transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
             <ul className="linksSmaller">
                 <li><a href="#">PROJECTS</a></li>
-                <li><a href="#">ABOUT US</a></li>
+                <li><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li><a href="#">CONTACT</a></li>
                 <div className="socialsLinks">
                     <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
@@ -84,7 +84,7 @@ console.log(yPosition)
             <div>
                 <ul className="links">
                     <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><Link to={"/about_us"}>ABOUT US</Link></li>
                     <li><a href="#">CONTACT</a></li>
                     <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
                     <li><a href="#"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>

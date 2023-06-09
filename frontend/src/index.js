@@ -4,6 +4,7 @@ import './Reset.css'
 import './index.css';
 import App from './App';
 import Root from "./Root";
+import AboutUs from './Pages/About us/aboutUs';
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
@@ -15,6 +16,10 @@ const router = createBrowserRouter([{
         index: true,
         element: <App/>
       },
+      {
+        path: "/about_us",
+        element: <AboutUs/>
+      }
     ]
 }])
 

@@ -29,7 +29,7 @@
 
 .principalBanner{
   scroll-snap-align: start;
-  height: 100vh;
+  height: 100lvh;
   width: 100%;
 }
 
@@ -47,7 +47,11 @@
 
 
 .contentsLastSection{
+  height: auto;
+  min-height: 100lvh;
+  padding-top: 2.5lvh;
   flex-direction: column;
+  gap: 1lvh;
   padding: 0 0;
   justify-content: space-between;
 }
@@ -60,11 +64,6 @@
     padding-top: 10lvh;
     padding-bottom: 10lvh;
     margin-bottom: 20lvh;
-  }
-  .contentsLastSection{
-    height: auto;
-    min-height: 100lvh;
-    padding-top: 2.5lvh;
   }
 }
 

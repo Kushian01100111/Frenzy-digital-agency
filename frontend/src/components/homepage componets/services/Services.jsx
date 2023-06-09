@@ -3,7 +3,8 @@ import ServicesCards from "../../services cards/ServicesCards"
 import { useState } from "react"
 import {motion as m} from "framer-motion"
 import companiesImgs from "../../../assects/js files/companiesImgs"
-import SocialImg from "../../../assects/imgs/d-B.png"
+import SocialImg1 from "../../../assects/imgs/d-B.png"
+import SocialImg2 from "../../../assects/imgs/d-Bb.png"
 import InfluImg from "../../../assects/imgs/I-B.png"
 import DesigImg from "../../../assects/imgs/Design.png"
 import VideoLiberyImg from "../../../assects/imgs/video-library.png"
@@ -56,7 +57,7 @@ const Services = ({width}) => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg} alt="icon" className="imgCards"/>}/></m.div>
+            <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg1} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
@@ -78,7 +79,7 @@ const Services = ({width}) => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg} alt="icon" className="imgCards"/>}/></m.div>
+            <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg2} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
             initial={{x:-120, display: "hidden", opacity: 0}}
             whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
@@ -156,14 +157,19 @@ const Services = ({width}) => {
             <p>cómo llegar a tu cliente ideal, atraer nuevos usuarias y agrandar tu comunidad a través de una planificación y una estrategia de comunicación sólida y establecida en el tiempo.</p>
             </div>
             <div className="div22">
-              <m.img initial={{opacity: 0.5}} animate={s2 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
+            <m.img initial={{opacity: 0.5}} 
+              animate={s1 && firstImg ? {opacity: 1}: ""} 
+              onMouseEnter={()=> setFirstImg(!firstImg)} 
               onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={companiesImgs[4]} alt="blossom" style={width <= 500 ?{width: "100px", height: "auto"} 
-              :{width: "190px", height: "auto"}} />
-              <m.img initial={{opacity: 0.5}} animate={s2 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
+              src={companiesImgs[4]} alt="blossom" 
+              style={width <= 500 ?{width: "100px", height: "auto"} 
+                      :{width: "190px", height: "auto"}} />
+              <m.img initial={{opacity: 0.5}} 
+              animate={s1 && secundImg ? {opacity: 1}: ""} 
+              onMouseEnter={()=> setSecundImg(!secundImg)} 
               onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={companiesImgs[6]} alt="Selva" style={
-              width <= 500  ?{width: "90px", height: "auto"} 
+              src={companiesImgs[6]} alt="Selva" 
+              style={width <= 500  ?{width: "90px", height: "auto"} 
               : {width: "180px", height: "auto"} }/>
             </div>
           </m.div>
@@ -196,15 +202,20 @@ const Services = ({width}) => {
             <p>cómo mostrar tu producto de la forma mas atractiva y creativa</p>
             </div>
             <div className="div22">
-              <m.img initial={{opacity: 0.5}} animate={s2 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
-              onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={companiesImgs[4]} alt="blossom" style={width <= 500 ?{width: "100px", height: "auto"} 
-              :{width: "190px", height: "auto"}} />
-              <m.img initial={{opacity: 0.5}} animate={s2 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
-              onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={companiesImgs[6]} alt="Selva" style={
-              width <= 500  ?{width: "90px", height: "auto"} 
-              : {width: "180px", height: "auto"} }/>
+            <m.img initial={{opacity: 0.5}} 
+            animate={s3 && firstImg ? {opacity: 1}: ""} 
+            onMouseEnter={()=> setFirstImg(!firstImg)} 
+            onMouseLeave={()=> setFirstImg(!firstImg)}
+            src={companiesImgs[4]} alt="blossom" 
+            style={width <= 500 ?{width: "100px", height: "auto"} 
+            :{width: "190px", height: "auto"}} />
+            <m.img initial={{opacity: 0.5}} 
+            animate={s3 && secundImg ? {opacity: 1}: ""} 
+            onMouseEnter={()=> setSecundImg(!secundImg)} 
+            onMouseLeave={()=> setSecundImg(!secundImg)}
+            src={companiesImgs[6]} alt="Selva" 
+            style={width <= 500  ?{width: "90px", height: "auto"} 
+            : {width: "180px", height: "auto"} }/>
             </div>
           </m.div>
           <m.div 
@@ -216,15 +227,20 @@ const Services = ({width}) => {
             <p>diseño de comunicaciones visuales destinadas a trasmitir mensajes especificos.</p>
             </div>
             <div className="div22">
-              <m.img initial={{opacity: 0.5}} animate={s2 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
-              onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={companiesImgs[4]} alt="blossom" style={width <= 500 ?{width: "100px", height: "auto"} 
-              :{width: "190px", height: "auto"}} />
-              <m.img initial={{opacity: 0.5}} animate={s2 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
-              onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={companiesImgs[6]} alt="Selva" style={
-              width <= 500  ?{width: "90px", height: "auto"} 
-              : {width: "180px", height: "auto"} }/>
+            <m.img initial={{opacity: 0.5}} 
+            animate={s4 && firstImg ? {opacity: 1}: ""} 
+            onMouseEnter={()=> setFirstImg(!firstImg)} 
+            onMouseLeave={()=> setFirstImg(!firstImg)}
+            src={companiesImgs[4]} alt="blossom" 
+            style={width <= 500 ?{width: "100px", height: "auto"} 
+            :{width: "190px", height: "auto"}} />
+            <m.img initial={{opacity: 0.5}} 
+            animate={s4 && secundImg ? {opacity: 1}: ""} 
+            onMouseEnter={()=> setSecundImg(!secundImg)} 
+            onMouseLeave={()=> setSecundImg(!secundImg)}
+            src={companiesImgs[6]} alt="Selva" 
+            style={width <= 500  ?{width: "90px", height: "auto"} 
+            : {width: "180px", height: "auto"} }/>
             </div>
           </m.div>
           <m.div 
@@ -236,15 +252,20 @@ const Services = ({width}) => {
             <p>acciones con generadores de contenido que alineen con el mensaje de la marca, para dar a conocer el producto o servicio de una marva.</p>
             </div>
             <div className="div22">
-              <m.img initial={{opacity: 0.5}} animate={s2 && firstImg ? {opacity: 1}: ""} onMouseEnter={()=> setFirstImg(!firstImg)} 
-              onMouseLeave={()=> setFirstImg(!firstImg)}
-              src={companiesImgs[4]} alt="blossom" style={width <= 500 ?{width: "100px", height: "auto"} 
-              :{width: "190px", height: "auto"}} />
-              <m.img initial={{opacity: 0.5}} animate={s2 && secundImg ? {opacity: 1}: ""} onMouseEnter={()=> setSecundImg(!secundImg)} 
-              onMouseLeave={()=> setSecundImg(!secundImg)}
-              src={companiesImgs[6]} alt="Selva" style={
-              width <= 500  ?{width: "90px", height: "auto"} 
-              : {width: "180px", height: "auto"} }/>
+            <m.img initial={{opacity: 0.5}} 
+            animate={s5 && firstImg ? {opacity: 1}: ""} 
+            onMouseEnter={()=> setFirstImg(!firstImg)} 
+            onMouseLeave={()=> setFirstImg(!firstImg)}
+            src={companiesImgs[4]} alt="blossom" 
+            style={width <= 500 ?{width: "100px", height: "auto"} 
+                    :{width: "190px", height: "auto"}} />
+            <m.img initial={{opacity: 0.5}} 
+            animate={s5 && secundImg ? {opacity: 1}: ""} 
+            onMouseEnter={()=> setSecundImg(!secundImg)} 
+            onMouseLeave={()=> setSecundImg(!secundImg)}
+            src={companiesImgs[6]} alt="Selva" 
+            style={width <= 500  ?{width: "90px", height: "auto"} 
+            : {width: "180px", height: "auto"} }/>
             </div>
           </m.div>
         </div>
