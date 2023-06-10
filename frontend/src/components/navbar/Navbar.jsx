@@ -15,6 +15,7 @@ const Navbar = ({width}) => {
     const [yPosition, setYPosition] = useState(0);
     const [active, setActive] = useState(false)
     const location = useLocation().pathname.split("/")[1]
+    const locationState = useLocation()
   
     useEffect(()=>{
         
@@ -24,8 +25,11 @@ const Navbar = ({width}) => {
         }else if(scrollYProgress.getPrevious() < v ){
             setHidden(true)
         }
+
         setYPosition(v)})
     }, [scrollYProgress])
+
+
 
 console.log(yPosition)
 

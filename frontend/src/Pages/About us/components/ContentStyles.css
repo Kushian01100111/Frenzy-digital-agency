@@ -5,6 +5,7 @@
     gap: 30px;
     margin: 0 auto;
     color: #fff;
+    padding: 0 35px;
 }
 
 .mainAboutUs h1{
@@ -22,6 +23,11 @@
 
 .div51{
     grid-area: 1 / 1 / 2 / 2; 
+}
+
+.div51 img, .div61 img{
+    width: 100%;
+    height: auto;
 }
 .caro{
     text-align: right;
@@ -45,4 +51,68 @@
     line-height: 35px;
     font-size: 2.8rem;
     margin-top: 50px;
+}
+
+.caro p{
+    padding-left: 5px;
+}
+
+.yanina p{
+    padding-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    .caro p, .yanina p{
+        line-height: 30px;
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 1090px) {
+    .mainAboutUs h1{
+        font-size: 3;
+    }
+    .caro h3, .yanina h3{
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .caro p, .yanina p{
+        word-spacing: 5px;
+        line-height: 23px;
+        font-size: 2.0rem;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .caro p, .yanina p{
+        line-height: 15px;
+        font-size: 2vw;
+        margin-top: 15px;
+    }
+    .caro h3, .yanina h3{
+        font-size: 2.8rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .caro h3, .yanina h3{
+        font-size: 1.8rem;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainAboutUs >div{
+        padding: 0 10px;
+    }
+    .caro p, .yanina p{
+        margin-top: 5px;
+        word-spacing: 2px;
+        line-height: 10px;
+    }
 }

@@ -71,7 +71,7 @@ header{
         flex-direction: column;
         padding-top: 10px;
         gap: 20px;
-        
+        align-items: center;
     }
     .linksSmaller a {
         font-size: 1.8rem;

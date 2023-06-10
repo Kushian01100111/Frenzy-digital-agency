@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Root from "./Root";
 import AboutUs from './Pages/About us/aboutUs';
+import EstudioBarcelona from './Pages/EstudioBarcelona/EstudioBarcelona';
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 
@@ -19,6 +20,10 @@ const router = createBrowserRouter([{
       {
         path: "/about_us",
         element: <AboutUs/>
+      },
+      {
+        path: "/projects/estudio_barcelona",
+        element: <EstudioBarcelona/>
       }
     ]
 }])
@@ -29,7 +34,7 @@ const router = createBrowserRouter([{
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router}/>
   </React.StrictMode>
 );
 

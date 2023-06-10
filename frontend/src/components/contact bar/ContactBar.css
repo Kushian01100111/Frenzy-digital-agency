@@ -38,6 +38,7 @@
     .contactBar h3{
         font-size: 3.5rem;
         margin-top: 10px;
+        text-align: center;
     }
     .contactBar .button span{
         font-size: 1.6rem;

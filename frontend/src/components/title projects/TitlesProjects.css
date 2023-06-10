@@ -1,0 +1,34 @@
+.areaTitle{
+    min-height: 200px;
+    background-color: #001F28;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5lvh;
+}
+
+.areaTitle h1{
+    text-transform: uppercase;
+}
+
+.titleServices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+.titleServices span{
+    font-family: 'GothicStd-Light','Courier New', Courier, monospace;
+    font-size: 2rem; 
+    margin-top: -5px;
+}
+.titleBar{
+    text-align: left;
+    width: 15vw;
+    color: #fff;
+    display: block;
+    height: 0.5px;
+}

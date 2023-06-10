@@ -38,11 +38,13 @@ const Potenciamos = () => {
             <div className="poten">
                 <m.div variants={secundAnimation}
                 initial="initial"
-                whileInView="whileInView">
+                whileInView="whileInView"
+                viewport={{ once: true }}>
                 <h1>POTENCIAMOS TU EMPRESA</h1></m.div>
                 <m.div variants={firstAnimation}
                 initial="initial"
-                whileInView="whileInView">
+                whileInView="whileInView" 
+                viewport={{ once: true }}>
                 <p>somos un equipo multidisciplinario de comunicadores, creativos, diseñadores, y profesionales de marketing.</p>
                 <p>usamos la creatividad y la estrategia para hacer realidad los objetivos de nuestros clientes.</p>
                 </m.div>
@@ -55,7 +57,9 @@ const Potenciamos = () => {
                       :width <= 1090 ? {width: "180px"}
                       : {width: "10vw"}}  variants={secundAnimation}
                       initial="initial"
-                      whileInView="whileInView"/>
+                      whileInView="whileInView"
+                      viewport={{ once: true }}
+                      />
                     </div>
                     <div className="div2">
                       <m.img src={companiesImgs[1]} alt="Galpon Palermo" style={
@@ -63,7 +67,9 @@ const Potenciamos = () => {
                       : width <= 1090 ? {width: "120px"}
                       : {width: "8vw"}} variants={secundAnimation}
                       initial="initial"
-                      whileInView="whileInView"/>
+                      whileInView="whileInView"
+                      viewport={{ once: true }}
+                      />
                     </div>
                     <div className="div3">
                       <m.img src={companiesImgs[2]} alt="Oleana" style={ 
@@ -72,7 +78,7 @@ const Potenciamos = () => {
                       : {width: "15vw"}} variants={secundAnimation}
                       initial="initial"
                       whileInView="whileInView" 
-                      />
+                      viewport={{ once: true }}/>
                     </div>
                     <div className="div4">
                       <m.img src={companiesImgs[3]} alt="Sarapura" style={
@@ -80,21 +86,27 @@ const Potenciamos = () => {
                         :width <= 1090 ? {width:"120px"}
                         : {width: "8vw"}} variants={secundAnimation}
                       initial="initial"
-                      whileInView="whileInView"/>
+                      whileInView="whileInView"
+                      viewport={{ once: true }}
+                      />
                     </div>
                     <div className="div5">
                       <m.img src={companiesImgs[4]} alt="Blosoom Market" style={
                         width <= 500 ? {width:"90px"} : width <= 1090 ?{width:"180px"}
                         : {width: "10vw"}} variants={secundAnimation}
                       initial="initial"
-                      whileInView="whileInView"/>
+                      whileInView="whileInView"
+                      viewport={{ once: true }}
+                      />
                     </div>
                     <div className="div6">  
                       <m.img src={companiesImgs[5]} alt="Trebol" style={
                         width <= 500 ? {width:"70px"} : width <= 1090 ?{width:"120px"}
                         : {width:"10vw"}} variants={secundAnimation}
                       initial="initial"
-                      whileInView="whileInView"/>
+                      whileInView="whileInView"
+                      viewport={{ once: true }}
+                      />
                     </div> 
                     <div className="div7">
                     <m.img src={companiesImgs[6]} alt="Selva" style={
@@ -102,12 +114,14 @@ const Potenciamos = () => {
                       :width <= 1090 ? {width: "180px"}
                       :{width: "10vw"}} variants={secundAnimation}
                     initial="initial"
-                    whileInView="whileInView"/>
+                    whileInView="whileInView"
+                    viewport={{ once: true }}
+                    />
                     </div>
                 </div>
                 <m.div className="nameMarcas" variants={secundAnimation}
                     initial="initial"
-                    whileInView="whileInView">
+                    whileInView="whileInView" viewport={{ once: true }}>
                     <div>
                       <h2>MARCAS EMERGENTES,</h2>
                       <h2>MARCAS ESTABLECIDAS,</h2>
@@ -115,7 +129,7 @@ const Potenciamos = () => {
                     </div>
                     <m.div variants={secundAnimation}
                     initial="initial"
-                    whileInView="whileInView">
+                    whileInView="whileInView" viewport={{ once: true }}>
                         <span>estas son algunas de las marcas que confían en nosotros.</span>
                     </m.div>
                 </m.div>

@@ -18,6 +18,7 @@ const ProjectCards = ({img, link, title, description, pageWidth}) => {
       variants={firstAnimation}
                 initial="initial"
                 whileInView="whileInView"
+                viewport={{ once: true }}
       className="container"
       onMouseEnter={()=> setHover(true)}
       onMouseLeave={()=> setHover(false)}

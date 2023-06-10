@@ -20,7 +20,8 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
   return (
     <m.div className="testContainers" variants={firstAnimation}
     initial="initial"
-    whileInView="whileInView">
+    whileInView="whileInView"
+    viewport={{ once: true }}>
       <m.div className="cardTest"
       animate={readMore ? {
         height: "auto"

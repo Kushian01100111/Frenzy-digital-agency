@@ -2,3 +2,10 @@
     background-color: #000;
     padding: 100px 0;
 }
+
+
+@media (max-width: 600px) {
+    .mainAboutUs{
+        padding: 50px 0;
+    }
+}

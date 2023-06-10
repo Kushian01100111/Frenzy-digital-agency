@@ -31,7 +31,8 @@ const Services = ({width}) => {
       <m.div className="textServices" 
       variants={firstAnimation}
       initial="initial"
-      whileInView="whileInView">
+      whileInView="whileInView"
+      viewport={{ once: true }}>
       <h2>SERVICIOS</h2>
       <p>conocé nuestros servicios pasando el mouse por cada uno. pero recordá, nuestro foco siempre estará en adaptarnos a las necesidades de nuestros clientes, así que contactanos, contanos acerca de tu proyecto, y armamos una propuesta a medida</p></m.div>
         <div className="services">
@@ -43,6 +44,7 @@ const Services = ({width}) => {
               bounce: 0.4,
               duration: 2
             }}}
+            viewport={{ once: true }}
             onMouseEnter={()=>{
               if(!s1){setS1(!s1)}
               setS2(false)
@@ -65,6 +67,7 @@ const Services = ({width}) => {
               bounce: 0.4,
               duration: 2.3
             }}}
+            viewport={{ once: true }}
             onMouseEnter={()=>{
               setS1(false)
               if(!s2){setS2(!s2)}
@@ -87,6 +90,7 @@ const Services = ({width}) => {
               bounce: 0.4,
               duration: 2.8
             }}}
+            viewport={{ once: true }}
             onMouseEnter={()=>{
               setS1(false)
               setS2(false)
@@ -109,6 +113,7 @@ const Services = ({width}) => {
               bounce: 0.4,
               duration: 3.2
             }}}
+            viewport={{ once: true }}
             onMouseEnter={()=>{
               setS1(false)
               setS2(false)
@@ -132,6 +137,7 @@ const Services = ({width}) => {
               bounce: 0.4,
               duration: 3.7
             }}}
+            viewport={{ once: true }}
             onMouseEnter={()=>{
               setS1(false)
               setS2(false)

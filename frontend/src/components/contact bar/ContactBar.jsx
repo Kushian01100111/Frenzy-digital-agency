@@ -16,7 +16,8 @@ const ContactBar = () => {
       <div className="div31">
       <m.h3 variants={firstAnimation}
                 initial="initial"
-                whileInView="whileInView">POTENCIÁ TU EMPRESA</m.h3>
+                whileInView="whileInView"
+                viewport={{ once: true }}>POTENCIÁ TU EMPRESA</m.h3>
       </div>
       <div className="32">
         <Button text={"CONTACT US"}/>

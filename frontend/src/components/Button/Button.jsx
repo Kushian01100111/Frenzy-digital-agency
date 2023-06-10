@@ -18,7 +18,8 @@ const Button = ({text}) => {
             onMouseLeave={()=> setHover(!hoverState)}
             variants={firstAnimation}
                 initial="initial"
-                whileInView="whileInView">
+                whileInView="whileInView"
+                viewport={{ once: true }}>
                 <m.div className="button"
                 animate={hoverState ? {boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.75)" , backgroundColor: "#9CEDFF"}: 
                 ""}
