@@ -32,3 +32,17 @@
     display: block;
     height: 0.5px;
 }
+
+
+
+@media (max-width: 500px) {
+    .areaTitle{
+        gap: 5lvh;
+    }
+    .titleServices span{
+        font-size: 1.6rem;
+    }
+    .titleBar{
+        width: 35vw;
+    }
+}

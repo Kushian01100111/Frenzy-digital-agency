@@ -1,4 +1,32 @@
 .estudioContent{
-    max-width: 1310px;
+    max-width: 1290px;
     margin: 0 auto;
+    padding: 0 10px;
+}
+
+.mapSliceImgs{
+    padding-top: 50px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mapSliceImgs img{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1090px) {
+    .estudioContent{
+        padding: 0 50px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .estudioContent{
+        padding: 0 20px;
+    }
 }

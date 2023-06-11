@@ -15,7 +15,6 @@ const Navbar = ({width}) => {
     const [yPosition, setYPosition] = useState(0);
     const [active, setActive] = useState(false)
     const location = useLocation().pathname.split("/")[1]
-    const locationState = useLocation()
   
     useEffect(()=>{
         
@@ -28,11 +27,6 @@ const Navbar = ({width}) => {
 
         setYPosition(v)})
     }, [scrollYProgress])
-
-
-
-console.log(yPosition)
-
   return (
     <> 
     { yPosition < 0.12 && location === "" ? <header className="firstNav">
@@ -43,8 +37,8 @@ console.log(yPosition)
             <SocialsButton/>
         </div>
     </header>
-    : width <= 900 ? <m.header className={yPosition > 0.2 ? "color" : ""}
-        animate={hidden && yPosition > 0.2 ? {display: "hidden", y: -290} : {display: "bloc", y: 0}}
+    : width <= 900 ? <m.header className={yPosition > 0.01 ? "color" : ""}
+        animate={hidden && yPosition > 0.01 ? {display: "hidden", y: -290} : {display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
             <div>
@@ -69,17 +63,17 @@ console.log(yPosition)
             <ul className="linksSmaller">
                 <li><a href="#">PROJECTS</a></li>
                 <li><Link to={"/about_us"}>ABOUT US</Link></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
-                    <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
-                    <li><a href="#"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
                 </div>
             </ul>      
         </m.div>
     </m.header> 
-    : <m.header className={yPosition > 0.2 ? "color" : ""}
-        animate={hidden && yPosition > 0.2 ? {display: "hidden", y: -120} : {display: "bloc", y: 0}}
+    : <m.header className={yPosition > 0.01 ? "color" : ""}
+        animate={hidden && yPosition > 0.01 ? {display: "hidden", y: -120} : {display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
             <div>
@@ -89,9 +83,9 @@ console.log(yPosition)
                 <ul className="links">
                     <li><a href="#">PROJECTS</a></li>
                     <li><Link to={"/about_us"}>ABOUT US</Link></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
-                    <li><a href="#"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
+                    <li><Link to={"/contact"}>CONTACT</Link></li>
+                    <li><a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
                 </ul>
             </div>

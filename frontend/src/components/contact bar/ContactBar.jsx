@@ -1,5 +1,6 @@
 import "./ContactBar.css"
 import Button from "../Button/Button"
+import { Link } from "react-router-dom"
 import {motion as m}  from "framer-motion"
 
 const ContactBar = () => {
@@ -20,7 +21,7 @@ const ContactBar = () => {
                 viewport={{ once: true }}>POTENCIÁ TU EMPRESA</m.h3>
       </div>
       <div className="32">
-        <Button text={"CONTACT US"}/>
+      <Link to={"/contact"}><Button text={"CONTACT US"}/></Link>
       </div>
         
     </div>

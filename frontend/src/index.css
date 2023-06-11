@@ -100,6 +100,10 @@ span, p{
   letter-spacing: 0.04em;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 @media (max-width: 1090px) {
 
