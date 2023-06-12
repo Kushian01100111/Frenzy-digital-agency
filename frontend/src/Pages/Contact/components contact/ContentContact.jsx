@@ -13,8 +13,21 @@ const ContentContact = () => {
           mensaje: ""
         },
     })
+
+    const firstAnimation = {
+      initial: {y: 60, opacity: 0},
+      whileInView :{y: 0, opacity: 1, transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2
+      }}
+    }
   return (
-    <div className="contectContact">
+    <m.div className="contectContact"
+    variants={firstAnimation}
+                initial="initial"
+                whileInView="whileInView"
+                viewport={{ once: true }}>
         <div className="div91">
             <div>   
                 <h1>potenciá tu empresa</h1>
@@ -101,7 +114,7 @@ const ContentContact = () => {
         </div>
         <div className="div92">
         </div>
-    </div>
+    </m.div>
   )
 }
 

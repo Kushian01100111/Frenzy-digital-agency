@@ -14,7 +14,7 @@ useEffect(() => {
 
   return (
     <>
-
+    
     <Outlet context={{width}} />
     </>
   )

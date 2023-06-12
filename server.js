@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename)
 dotenv.config({path: "./config/.env"})
 
 //Connect to Database
-connectDB() 
+// connectDB() 
 
 const app = express()
 
@@ -31,7 +31,7 @@ app.use(express.static("frontend"))
 //Setup routes
 // app.use("/api/form", formRoute)
 app.use("*",(_, res)=>{
-    res.sendFile(path.join(__dirname, 'frontend/build/index.html'))
+    res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
 } )
 
 
