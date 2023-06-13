@@ -7,6 +7,7 @@ import App from './App';
 import Root from "./Root";
 import AboutUs from './Pages/About us/aboutUs';
 import Contact from './Pages/Contact/Contact';
+import PageTestimonios from './Pages/PageTestimonios/PageTestimonios';
 import EstudioBarcelona from './Pages/EstudioBarcelona/EstudioBarcelona';
 
 
@@ -28,6 +29,10 @@ const router = createBrowserRouter([{
       {
         path: "/contact",
         element: <Contact/>
+      },
+      {
+        path: "/testimonials",
+        element: <PageTestimonios/>
       },
       {
         path: "/projects/estudio_barcelona",

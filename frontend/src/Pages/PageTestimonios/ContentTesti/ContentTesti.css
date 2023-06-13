@@ -1,0 +1,43 @@
+.testiContent{
+    max-width: 1310px;
+    padding: 100px 10px;
+    margin: 0 auto;
+}
+
+#emilia, #agustina, #monserrat {
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr);
+    grid-template-rows: 0.5fr 0.2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
+#emilia h2, #agustina h2, #monserrat h2{
+    font-family: "GothicStd-Heavy";
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+#emilia span, #agustina span, #monserrat span{
+    color: #4F4F4F;
+    font-size: 1.6rem;
+    font-family: "chivo mono",'Courier New', Courier, monospace;
+    line-height: 18px;
+}
+
+#emilia span+span, #agustina span+span, #monserrat span+span{
+    font-style: italic;
+    display: block;
+    margin-top: -5px;
+}
+
+
+    
+    .div111 { grid-area: 1 / 1 / 2 / 2;
+                width: 250px;
+                height: 250px;
+                box-shadow: 0px 16px 12px 0px rgba(0, 0, 0, 0.09);
+            }
+    .div112 { grid-area: 1 / 2 / 2 / 4; }
+    .div113 { grid-area: 2 / 3 / 3 / 4; }

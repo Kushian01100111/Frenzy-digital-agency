@@ -1,13 +1,9 @@
 import "./../testimonials/Testimonial.css"
-import { useState } from "react"
+import { Link } from "react-router-dom"
 import {motion as m} from "framer-motion"
 
 
-const Testimonials = ({name,company,position,exp,extraExp,img}) => {
-  const [readMore, setReadMore] = useState(false)
-  const onClick = ()=>{
-    setReadMore(!readMore)
-  }
+const Testimonials = ({name,company,position,exp,img,link}) => {
   const firstAnimation = {
     initial: {x: -50, opacity: 0},
     whileInView :{x: 0, opacity: 1, transition: {
@@ -22,10 +18,7 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
     initial="initial"
     whileInView="whileInView"
     viewport={{ once: true }}>
-      <m.div className="cardTest"
-      animate={readMore ? {
-        height: "auto"
-      }: ""}>
+      <div className="cardTest">
         <div className="content" >
             <div>
                 <h2>{name}</h2>
@@ -33,7 +26,7 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
                 <span>{position}</span>
             </div>  
             <div>
-               <p>{exp}<m.span className={`longtext ${readMore ? "readMore": "clickReadMore"}`} onClick={onClick}>{readMore ? extraExp: "..."}</m.span></p>
+               <p>{exp}<Link to={`${link}`}><m.span className={"longtext"} >...</m.span></Link></p>
             </div>
         </div>
         <m.div
@@ -42,7 +35,7 @@ const Testimonials = ({name,company,position,exp,extraExp,img}) => {
                 <div style={{backgroundImage: `url(${img})`}} className="imgTest"></div>
             </div>
         </m.div>
-      </m.div>
+      </div>
     </m.div>
   )
 }

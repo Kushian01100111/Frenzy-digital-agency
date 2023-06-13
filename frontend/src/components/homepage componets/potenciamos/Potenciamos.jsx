@@ -24,6 +24,15 @@ const Potenciamos = () => {
         }}
       }
 
+      const treAnimation = {
+        initial: {x:-110, opacity: 0},
+        whileInView :{x: 0, opacity: 1, transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 2
+        }}
+      }
+
       function handleWindowSizeChange() {
         setWidth(window.innerWidth);
     }
@@ -55,7 +64,7 @@ const Potenciamos = () => {
                       <m.img src={companiesImgs[0]} alt="Desiderata" style={
                       width <= 500 ? {width: "80px"} 
                       :width <= 1090 ? {width: "180px"}
-                      : {width: "10vw"}}  variants={secundAnimation}
+                      : {width: "10vw"}}  variants={treAnimation}
                       initial="initial"
                       whileInView="whileInView"
                       viewport={{ once: true }}
@@ -84,9 +93,13 @@ const Potenciamos = () => {
                       <m.img src={companiesImgs[3]} alt="Sarapura" style={
                         width <= 500 ? {width: "60px"} 
                         :width <= 1090 ? {width:"120px"}
-                        : {width: "8vw"}} variants={secundAnimation}
-                      initial="initial"
-                      whileInView="whileInView"
+                        : {width: "8vw"}} 
+                      initial={{x: -100, opacity: 0}}
+                      whileInView={{x: 0, opacity: 1, transition: {
+                                type: "spring",
+                                bounce: 0.4,  
+                                duration: 2
+                              }}}
                       viewport={{ once: true }}
                       />
                     </div>

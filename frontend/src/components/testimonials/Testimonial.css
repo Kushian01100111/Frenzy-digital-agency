@@ -70,22 +70,11 @@ p .longtext{
     height: 0;
     transition: max-height 0.4s;
     display: inline-block;
-}
-
-
-p .clickReadMore{
     cursor: pointer;
     color: #2388FF ;
     line-height: 12px;
-}
-
-p .readMore{
-    max-height: 40.5rem;
-    font-size: 1.6rem;    
     font-family: 'GothicStd-Light';
-    color: #000;
-    line-height: 13px;
-    letter-spacing: 0.04em;
+    font-size: 1.6rem; 
 }
 
 
