@@ -1,12 +1,13 @@
 .typewriter{
     font-size: 10.2rem;
     width: 50vw;
-    height: 100lvh;
+    height: 95lvh;
     display: flex;
     align-items: end;
     justify-content: start;
     text-align: start;
     padding-left: 25px;
+    padding-bottom: 5lvh;
 }
 
 .Typewriter__wrapper{
