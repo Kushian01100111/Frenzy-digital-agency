@@ -5,8 +5,8 @@ import {motion as m} from "framer-motion"
 
 const Testimonials = ({name,company,position,exp,img,link}) => {
   const firstAnimation = {
-    initial: {x: -50, opacity: 0},
-    whileInView :{x: 0, opacity: 1, transition: {
+    initial: {y: 60, opacity: 0},
+    whileInView :{y: 0, opacity: 1, transition: {
       type: "spring",
       bounce: 0.4,
       duration: 1

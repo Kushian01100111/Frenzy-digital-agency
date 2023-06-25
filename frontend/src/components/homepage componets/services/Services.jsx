@@ -18,8 +18,8 @@ const Services = ({width}) => {
   const [firstImg, setFirstImg] =  useState(false);
   const [secundImg, setSecundImg] = useState(false);
   const firstAnimation = {
-    initial: {x:-120, opacity: 0},
-    whileInView :{x: 0, opacity: 1, transition: {
+    initial: {y:60, opacity: 0},
+    whileInView :{y: 0, opacity: 1, transition: {
       type: "spring",
       bounce: 0.4,
       duration: 1.8
@@ -38,8 +38,8 @@ const Services = ({width}) => {
         <div className="services">
           <div className="selectService">
             <m.div 
-            initial={{x:-120, display: "hidden", opacity: 0}}
-            whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
+            initial={{y:60, display: "hidden", opacity: 0}}
+            whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
               type: "spring",
               bounce: 0.4,
               duration: 2
@@ -61,11 +61,11 @@ const Services = ({width}) => {
             }}>
             <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg1} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
-            initial={{x:-120, display: "hidden", opacity: 0}}
-            whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
+            initial={{y:60, display: "hidden", opacity: 0}}
+            whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
               type: "spring",
               bounce: 0.4,
-              duration: 2.3
+              duration: 2
             }}}
             viewport={{ once: true }}
             onMouseEnter={()=>{
@@ -84,11 +84,11 @@ const Services = ({width}) => {
             }}>
             <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg2} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
-            initial={{x:-120, display: "hidden", opacity: 0}}
-            whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
+            initial={{y:60, display: "hidden", opacity: 0}}
+            whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
               type: "spring",
               bounce: 0.4,
-              duration: 2.8
+              duration: 2
             }}}
             viewport={{ once: true }}
             onMouseEnter={()=>{
@@ -107,11 +107,11 @@ const Services = ({width}) => {
             }}>
             <ServicesCards title={"CREACIÓN DE CONTENIDOS"} condicional={s3} icon={<img src={VideoLiberyImg} alt="icon"  className="imgCards"/>}/></m.div>
             <m.div 
-            initial={{x:-120, display: "hidden", opacity: 0}}
-            whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
+            initial={{y:60, display: "hidden", opacity: 0}}
+            whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
               type: "spring",
               bounce: 0.4,
-              duration: 3.2
+              duration: 2
             }}}
             viewport={{ once: true }}
             onMouseEnter={()=>{
@@ -131,11 +131,11 @@ const Services = ({width}) => {
             }}>
             <ServicesCards title={"DISEÑO GRÁFICO"} condicional={s4} icon={<img src={DesigImg} alt="icon" className="imgCards"/>}/></m.div>
             <m.div 
-            initial={{x:-120, display: "hidden", opacity: 0}}
-            whileInView={{x: 0, display: "bloc",  opacity: 1, transition: {
+            initial={{y:60, display: "hidden", opacity: 0}}
+            whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
               type: "spring",
               bounce: 0.4,
-              duration: 3.7
+              duration: 2
             }}}
             viewport={{ once: true }}
             onMouseEnter={()=>{
@@ -155,8 +155,8 @@ const Services = ({width}) => {
             <ServicesCards title={"Influencer marketing"} condicional={s5} icon={<img src={InfluImg} alt="icon" className="imgCards"/>  }/></m.div>
           </div>
           <m.div 
-          initial={{opacity:0, display:"none", x:100 }}
-          animate={s1 ? {opacity: 1, display: "block", x:0}: ""}
+          initial={{opacity:0, display:"none", y:100 }}
+          animate={s1 ? {opacity: 1, display: "block", y:0}: ""}
           className="parent2">
             <div className="div12">
             <h2>Social media management</h2>
@@ -180,8 +180,8 @@ const Services = ({width}) => {
             </div>
           </m.div>
           <m.div 
-          initial={{opacity:0, display:"none", x:100 }}
-          animate={s2 ? {opacity: 1, display: "block", x:0}: ""}
+          initial={{opacity:0, display:"none", y:100 }}
+          animate={s2 ? {opacity: 1, display: "block", y:0}: ""}
           className="parent2">
             <div className="div12">
             <h2>Paid media management</h2>
@@ -200,8 +200,8 @@ const Services = ({width}) => {
             </div>
           </m.div>
           <m.div 
-          initial={{opacity:0, display:"none", x:100 }}
-          animate={s3 ? {opacity: 1, display: "block", x:0}: ""}
+          initial={{opacity:0, display:"none", y:100 }}
+          animate={s3 ? {opacity: 1, display: "block", y:0}: ""}
           className="parent2">
             <div className="div12">
             <h2>Creación de contenidos</h2>
@@ -225,8 +225,8 @@ const Services = ({width}) => {
             </div>
           </m.div>
           <m.div 
-          initial={{opacity:0, display:"none", x:100 }}
-          animate={s4 ? {opacity: 1, display: "block", x:0}: ""}
+          initial={{opacity:0, display:"none", y:100 }}
+          animate={s4 ? {opacity: 1, display: "block", y:0}: ""}
           className="parent2">
             <div className="div12">
             <h2>Diseño gráfico</h2>
@@ -250,8 +250,8 @@ const Services = ({width}) => {
             </div>
           </m.div>
           <m.div 
-          initial={{opacity:0, display:"none", x:100 }}
-          animate={s5 ? {opacity: 1, display: "block", x:0}: ""}
+          initial={{opacity:0, display:"none", y:100 }}
+          animate={s5 ? {opacity: 1, display: "block", y:0}: ""}
           className="parent2">
             <div className="div12">
             <h2>Influencer marketing</h2>

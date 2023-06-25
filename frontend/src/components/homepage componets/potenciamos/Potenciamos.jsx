@@ -8,16 +8,16 @@ import { useEffect, useState } from "react"
 const Potenciamos = () => {
   const [width, setWidth] = useState(window.innerWidth);
     const firstAnimation = {
-        initial: {x:120, opacity: 0},
-        whileInView :{x: 0, opacity: 1, transition: {
+        initial: {y:60, opacity: 0},
+        whileInView :{y: 0, opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
           duration: 2
         }}
       }
       const secundAnimation = {
-        initial: {x:-120, opacity: 0},
-        whileInView :{x: 0, opacity: 1, transition: {
+        initial: {y:60, opacity: 0},
+        whileInView :{y: 0, opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
           duration: 2
@@ -25,8 +25,8 @@ const Potenciamos = () => {
       }
 
       const treAnimation = {
-        initial: {x:-110, opacity: 0},
-        whileInView :{x: 0, opacity: 1, transition: {
+        initial: {y:60, opacity: 0},
+        whileInView :{y: 0, opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
           duration: 2
@@ -94,8 +94,8 @@ const Potenciamos = () => {
                         width <= 500 ? {width: "60px"} 
                         :width <= 1090 ? {width:"120px"}
                         : {width: "8vw"}} 
-                      initial={{x: -100, opacity: 0}}
-                      whileInView={{x: 0, opacity: 1, transition: {
+                      initial={{y: 60, opacity: 0}}
+                      whileInView={{y: 0, opacity: 1, transition: {
                                 type: "spring",
                                 bounce: 0.4,  
                                 duration: 2

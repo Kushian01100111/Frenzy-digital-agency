@@ -5,8 +5,8 @@ import { useState } from "react"
 const Button = ({text}) => {
     const [hoverState, setHover] = useState(false)
     const firstAnimation = {
-        initial: {x:120, opacity: 0},
-        whileInView :{x: 0, opacity: 1, transition: {
+        initial: {y:120, opacity: 0},
+        whileInView :{y: 0, opacity: 1, transition: {
           type: "spring",
           bounce: 0.4,
           duration: 2

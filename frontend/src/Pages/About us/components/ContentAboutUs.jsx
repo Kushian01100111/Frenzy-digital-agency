@@ -6,8 +6,8 @@ import Yanina from "./../../../assects/imgs/About us/Yanina.png"
 
 const ContentAboutUs = () => {
     const firstAnimation = {
-      initial: {x:120, opacity: 0.5},
-      whileInView :{x: 0, opacity: 1, transition: {
+      initial: {y:60, opacity: 0.5},
+      whileInView :{y: 0, opacity: 1, transition: {
         type: "spring",
         bounce: 0.4,
         duration: 2
@@ -15,8 +15,8 @@ const ContentAboutUs = () => {
     }
 
     const secundAnimation = {
-      initial: {x:-120, opacity: 0.5},
-      whileInView :{x: 0, opacity: 1, transition: {
+      initial: {y:60, opacity: 0.5},
+      whileInView :{y: 0, opacity: 1, transition: {
         type: "spring",
         bounce: 0.4,
         duration: 2
