@@ -29,15 +29,7 @@ const Navbar = ({width}) => {
     }, [scrollYProgress])
   return (
     <> 
-    { yPosition < 0.12 && location === "" ? <header className="firstNav">
-        <div className="navbar">
-            <div>
-            <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
-            </div>
-            <SocialsButton/>
-        </div>
-    </header>
-    : width <= 900 ? <m.header className={yPosition > 0.01 ? "color" : ""}
+    { width <= 900 ? <m.header className={yPosition > 0.01 ? "color" : ""}
         animate={hidden && yPosition > 0.01 ? {display: "hidden", y: -290} : {display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">

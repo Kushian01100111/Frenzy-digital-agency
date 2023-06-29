@@ -30,12 +30,15 @@
 .principalBanner{
   scroll-snap-align: start;
   height: 100lvh;
+  min-height: 100vh;
+  margin-bottom: 50vh;
   width: 100%;
 }
 
 .contents, .contentsLastSection{
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   max-width: 100%;
@@ -51,7 +54,7 @@
   min-height: 100lvh;
   padding-top: 2.5lvh;
   flex-direction: column;
-  gap: 1lvh;
+  gap: 0.5lvh;
   padding: 0 0;
   justify-content: space-between;
 }
