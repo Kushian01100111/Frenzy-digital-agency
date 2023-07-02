@@ -1,10 +1,10 @@
 
 .serviceCard{
-    width: 40vw;
+    width: 45vw;
     font-family: "GothicStd-Heavy";
     border-radius: 30px;
     max-height: 400px;
-    padding: 10px 10px 7px 10px;
+    padding: 20px 20px 17px 20px;
     background-color: #DAE9F2;
     box-shadow: inset 0px 0px 10px #000000;
     border: none;
@@ -19,38 +19,47 @@
     grid-row-gap: 0px;
     }
     
-    .div1 { grid-area: 1 / 1 / 2 / 2; 
+    /* .div1 { grid-area: 1 / 1 / 2 / 2; 
         display: flex;
         align-items: center;
-        justify-content: center; }
-    .div2 { grid-area: 1 / 2 / 2 / 3;
+        justify-content: center; } */
+    .div122 { grid-area: 1 / 1 / 2 / 3;
         display: flex;
         align-items: center;
         justify-content: center; }
 
-.div2 span{
+.div122 span{
     font-size: 2.8rem;
     text-transform: uppercase;
+}
+
+@media (max-width: 1250px) {
+    .div122 span{
+        font-size: 2.4rem;
+    }
 }
 
 @media (max-width: 1090px) {
     .serviceCard{
         width: 80vw;
     }
-    .div2 span{
-        font-size: 2.4rem;
+    .div122 span{
+        font-size: 2rem;
     }
 }
 
 
 @media (max-width: 500px) {
-    .div2 span{
+    .serviceCard{
+        padding: 10px 10px 7px 10px;
+    }
+    .div122 span{
         font-size: 1.8rem;
     }
 }
 
 @media (max-width: 370px) {
-    .div2 span{
+    .div122 span{
         font-size: 1.4rem;
     }
 }

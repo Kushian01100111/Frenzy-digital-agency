@@ -42,7 +42,7 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
   max-width: 100%;
-  padding: 0 20px;
+  padding: 30px 20px;
   display: flex;
   text-align: center;
   justify-content: center;

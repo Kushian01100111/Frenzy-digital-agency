@@ -8,10 +8,7 @@ const ServicesCards = ({title,condicional,icon}) => {
       animate={ condicional ? {backgroundColor: "#9CEDFF", boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.75)"}: ""} className="serviceCard"
       transition={{duration: "0.4", ease: "easeOut", }}>
         <div className="insideStyle parent">
-          <div className="div1">
-            {icon}
-          </div>
-          <div className="div2">
+          <div className="div122">
             <span>{title}</span>
           </div>
         </div>
