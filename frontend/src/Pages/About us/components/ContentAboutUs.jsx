@@ -41,11 +41,7 @@ const ContentAboutUs = () => {
     }
   return (
     <div className="contentAboutUs">
-      <m.h1 
-      variants={firstAnimation}
-                initial="initial"
-                whileInView="whileInView"
-                viewport={{ once: true }}>QUIÉNES ESTÁN DETRÁS DE FRENZY</m.h1>
+      
       <div className="contentCaro">
         <m.div className="div51"
         variants={firstAnimation}
@@ -58,16 +54,7 @@ const ContentAboutUs = () => {
                 whileInView="whileInView"
                 viewport={{ once: true }}>
             <h3>CAROLINA ALBARRACÍN</h3>
-            <p>soy un creativa multidisciplinaria y experta en
-            redes sociales. directora en frenzy media
-            boutique.<br/>
-            fanática de la estética, la fotografía, generar
-            contenido, contar historias y enseñar sobre
-            el mundo digital.<br/>
-            arranqué hace 5 años trabajando con clientes
-            emprendedores muy chicos. hoy somos un
-            equipo de profesionales que gestionan
-            comunidades en las redes sociales.
+            <p>carolina, creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el rubro y un master en marketing y comunicación de moda en ied barcelona.
             </p>
         </m.div>
       </div>
@@ -85,16 +72,7 @@ const ContentAboutUs = () => {
                 whileInView="whileInView"
                 viewport={{ once: true }}>
             <h3>YANINA FAOUR</h3>
-            <p>el área de expertise de yanina faour es el
-                diseño, marketing- ventas y emprendedurismo,
-                siendo la más comercial “de las creativas” hoy
-                es la cara comercial de la agencia.<br/>
-                su background comienza siendo la infante
-                terrible de la joyería de lujo en la argentina,
-                una diseñadora de joyas con materiales preciosos, bajo la firma oleana jewelry.<br/>
-                en los últimos años ha participado de contados
-                programas de fellowship y mentoreo de mujeres
-                líderes en el área de empoderamiento económico.</p>
+            <p>el área de expertise de yanina faour es el marketing de ventas, siendo la más comercial “de las creativas”.ha participado de contados programas de fellowship y mentoreo de mujeres líderes en el área deempoderamiento económico.</p>
         </m.div>
       </div>
     </div>

@@ -1,21 +1,7 @@
 .mainContact{
-    background: linear-gradient(45deg, #387280, #5AB7CC, #70E5FF, #fff, #fff, #fff, #BDF3FF, #9CEDFF, #4FDFFF, #5AB7CC);
-     background-size: 400% 400%;
-    animation: gradient1 15s ease infinite;
+    background: #F1EFEF;
     height: auto;
     padding: 100px 0;
-}
-
-@keyframes gradient1 {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 

@@ -77,7 +77,7 @@ const ContentContact = () => {
                     : ""}`}>
                     {formik.touched.mensaje && formik.errors.mensaje 
                     ? formik.errors.mensaje
-                    : "en que te podemos ayudar?"}</label>
+                    : "¿en que te podemos ayudar?"}</label>
                     <textarea 
                     name="mensaje" 
                     id="mensaje" 

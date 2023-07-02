@@ -4,9 +4,20 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
+.masTestimonios{
+    padding: 40px 20px 20px 20px;
+}
+
+.masTestimonios .buttonContainer{
+    margin: 0 auto;
+}
+
+.parentCarusel>h2{
+    margin-bottom: 35px;
+}
 
 
 .testShowCase{

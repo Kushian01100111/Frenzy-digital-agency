@@ -23,14 +23,14 @@ const Footer = () => {
     <footer className="footer">
         <div className="contentFooter">
             <div className="div41">
-                <small> &copy;2018 - {date} Frenzy, Boutique digital agency.</small>
+                <small> &copy;2018 - {date} Frenzy - Media Boutique.</small>
             </div>
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" style={ width <= 790 ?{width: "60px", height: "auto"}: {width: "84px", height: "auto"}}/></Link>
             </div>
             <div>
                 <ul className="linksFooter">
-                    <li><a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"35px"}}/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/"  target="_blank"><img src={Instagram} alt="Instagram" style={{width:"35px"}}/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"35px"}}/></a></li>
                 </ul>

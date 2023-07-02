@@ -1,6 +1,4 @@
 import "./Navbar.css"
-
-import SocialsButton from "../socials button/Socials Button";
 import Frenzy from "./../../assects/imgs/Frenzy_05.png";
 import LinkeDin from "./../../assects/imgs/Link.png";
 import Instagram from "./../../assects/imgs/Insta.png";
@@ -11,22 +9,28 @@ import {motion as m, useScroll} from "framer-motion"
 
 const Navbar = ({width}) => {
     const { scrollYProgress } = useScroll()
+    const [scrollY, setScrollY] = useState(window.scrollY)
     const [hidden, setHidden] = useState(true)
     const [yPosition, setYPosition] = useState(0);
     const [active, setActive] = useState(false)
     const location = useLocation().pathname.split("/")[1]
   
     useEffect(()=>{
-        
-      scrollYProgress.onChange(v => {
-        if(scrollYProgress.getPrevious() > v){
-            setHidden(false)
-        }else if(scrollYProgress.getPrevious() < v ){
-            setHidden(true)
-        }
+        window.addEventListener("scroll", ()=>{
+            if(scrollY < window.scrollY){
+                setHidden(true)
+            }else{
+                setHidden(false)
+            }
+            setScrollY(window.scrollY)
+        })
+    }, [scrollY])
 
-        setYPosition(v)})
+    useEffect(()=>{
+        scrollYProgress.onChange(v => {
+            setYPosition(v)})
     }, [scrollYProgress])
+
   return (
     <> 
     { width <= 900 ? <m.header className={yPosition > 0.01 ? "color" : ""}
@@ -57,7 +61,7 @@ const Navbar = ({width}) => {
                 <li><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
-                    <li><a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
                 </div>
@@ -76,7 +80,7 @@ const Navbar = ({width}) => {
                     <li><a href="#">PROJECTS</a></li>
                     <li><Link to={"/about_us"}>ABOUT US</Link></li>
                     <li><Link to={"/contact"}>CONTACT</Link></li>
-                    <li><a href="https://www.linkedin.com/in/carolina-albarracin-90146593/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
                     <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
                 </ul>

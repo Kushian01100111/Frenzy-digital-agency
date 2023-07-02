@@ -1,6 +1,19 @@
 .mainAboutUs{
-    background-color: #000;
-    padding: 100px 0;
+    background-color: #F1EFEF;
+}
+
+.contentAboutUsTitle{
+    min-height: 170px;
+    background-color: #001F28;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentAboutUsTitle h1{
+    text-align: center;
 }
 
 

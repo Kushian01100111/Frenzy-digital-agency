@@ -1,15 +1,8 @@
 
 .testContainers{
+    min-height: 280px;
     height: fit-content;
     width: fit-content;
-}
-
-.imgTest{
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    border-radius: 100%;
 }
 
 .containerTest{
@@ -24,10 +17,10 @@
 }
 
 .cardTest{
-    max-width: 400px;
+    max-width: 1310px;
     max-height: 500px;
-    height: 350px;
-    border: black solid 1px;
+    min-height: 250px;
+    height: auto;
     border-radius: 30px;
     background-color: #FFF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
@@ -35,47 +28,77 @@
 }
 
 .content{
-    padding: 20px 20px 0px 20px;
-    max-height: 175px;
-    min-height: 175px;
+    min-height: 280px;
+    padding: 30px;
 }
 
 .content h2{
     font-family: "GothicStd-Heavy";
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
+    padding-bottom: 5px;
 }
 
 .content span{
     color: #4F4F4F;
     font-size: 1.6rem;
     font-family: "chivo mono",'Courier New', Courier, monospace;
-    margin-bottom: -5px;
-    line-height: 18px;
+    padding: 2px 0;
 }
 
 .content span+span{
     font-style: italic;
     display: block;
-    margin-top: -5px;
 }
 
 .content p {
-    font-size: 1.6rem;
-    line-height: 13px;
-    padding-top: 10px;
+    font-size: 2.2rem;
+    padding-top: 5px;
 }
 
-p .longtext{
-    height: 0;
-    transition: max-height 0.4s;
-    display: inline-block;
-    cursor: pointer;
-    color: #2388FF ;
-    line-height: 12px;
-    font-family: 'GothicStd-Light';
-    font-size: 1.6rem; 
+
+@media (max-width: 1090) {
+    .content h2{
+        font-size: 1.6rem;
+    }
+
+    .content span{
+        font-size: 1.4rem;
+    }
+    .content p {    
+        font-size: 1.6rem;
+    }
+    
 }
+
+
+@media (max-width: 500px) {
+    .content h2{
+        font-size: 1.4rem;
+    }
+
+    .content span{
+        font-size: 1.2rem;
+    }
+    .content p {    
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .content h2{
+        font-size: 1.2rem;
+    }
+
+    .content span{
+        font-size: 1rem;
+    }
+    .content p {    
+        font-size: 1.2rem;
+    }
+}
+
 
 
 
