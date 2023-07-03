@@ -2,7 +2,7 @@
     font-size: 10.2rem;
     width: 60vw;
     height: 95lvh;
-    display: flex;
+    display: -webkit-flex;
     align-items: end;
     justify-content: start;
     text-align: start;

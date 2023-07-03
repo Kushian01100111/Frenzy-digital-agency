@@ -1,6 +1,6 @@
 .mainAboutUs >div{
     max-width: 1310px;
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     gap: 30px;
     margin: 0 auto;

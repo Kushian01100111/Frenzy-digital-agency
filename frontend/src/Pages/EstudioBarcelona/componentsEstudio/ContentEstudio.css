@@ -7,7 +7,7 @@
 .mapSliceImgs{
     padding-top: 50px;
     padding-bottom: 90px;
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     gap: 50px;
 }

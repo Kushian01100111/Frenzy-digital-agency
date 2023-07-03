@@ -1,21 +1,13 @@
-import "./PageTestimonios.css"
+import "./BySofiaLeather.css"
 import { useState, useEffect } from "react"
-import {motion as m} from "framer-motion"
 import Navbar from "../../components/navbar/Navbar"
 import ContactBar from "../../components/contact bar/ContactBar"
+import ComponentsBySofia from "./componentsBySofia/ComponentsBySofia"
 import Footer from "../../components/footer/Footer"
-import ContentTesti from "./ContentTesti/ContentTesti"
+import TitlesProjects from "../../components/title projects/TitlesProjects"
 
-const PageTestimonios = () => {
+const BySofiaLeather = () => {
     const [width, setWidth] = useState(window.innerWidth);
-    const firstAnimation = {
-      initial: {y:60, opacity: 0.5},
-      whileInView :{y: 0, opacity: 1, transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2
-      }}
-    }
     function handleWindowSizeChange() {
       setWidth(window.innerWidth);
   }
@@ -32,15 +24,11 @@ const PageTestimonios = () => {
   return (
     <div>
         <Navbar width={width}/>
-        <div className="contentTestimoniosTitle">
-        <m.h1 
-          variants={firstAnimation}
-                    initial="initial"
-                    whileInView="whileInView"
-                    viewport={{ once: true }}>TESTIMONIOS</m.h1>
-      </div>
-        <div className="contentTesti">
-            <ContentTesti/>
+        <TitlesProjects title={"by sofia leather"}
+            services={"shooting"}
+        />
+        <div>
+            <ComponentsBySofia />
         </div>
         <div>
             <ContactBar/>
@@ -50,4 +38,4 @@ const PageTestimonios = () => {
   )
 }
 
-export default PageTestimonios
+export default BySofiaLeather

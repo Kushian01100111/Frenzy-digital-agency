@@ -1,6 +1,6 @@
 
 .contentServices{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
@@ -12,7 +12,7 @@
 
 .services{
     margin: 0 auto;
-    display: flex;
+    display: -webkit-flex;
     flex-direction:  row;
     align-items: center;
     gap: 20px;
@@ -30,7 +30,7 @@
 
 
 .parent2{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     height: fit-content;
     width: 50vw;
@@ -50,7 +50,7 @@
 }
 
 .div22{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;

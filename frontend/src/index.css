@@ -134,10 +134,6 @@ a{
   p, pre{
     font-size: 1.6rem;
   }
-  span, p{
-    line-height: initial;
-    letter-spacing: initial;
-  }
 }
 
 

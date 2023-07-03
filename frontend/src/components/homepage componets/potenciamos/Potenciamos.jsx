@@ -132,7 +132,7 @@ const Potenciamos = () => {
                     />
                     </div>
                     <div className="div8">
-                      <m.img src={companiesImgs[0]} alt="Desiderata" style={
+                      <m.img src={companiesImgs[7]} alt="Vichka" style={
                         width <= 500 ? {width: "80px"} 
                         :width <= 1090 ? {width: "140px"}
                         : {width: "10vw"}}  variants={treAnimation}

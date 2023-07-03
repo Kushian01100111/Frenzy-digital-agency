@@ -27,7 +27,7 @@ header{
 }
 
 .navbar{
-    display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
     height: 100%;
     margin: 0 auto 25px auto;
@@ -42,7 +42,7 @@ header{
 }
 
 .links{
-    display: flex;
+    display: -webkit-flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -67,7 +67,7 @@ header{
         box-shadow: 0px 16px 12px 0px rgba(0, 0, 0, 0.09);
     }
     .linksSmaller{
-        display: flex;
+        display: -webkit-flex;
         flex-direction: column;
         padding-top: 10px;
         gap: 20px;
@@ -83,7 +83,7 @@ header{
         margin-bottom: 0;
     }
     .socialsLinks{
-        display: flex;
+        display: -webkit-flex;
         flex-direction: row;
         justify-content: center;
         gap: 10px;

@@ -1,5 +1,5 @@
 .linksButton{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     border-radius: 15px;
     margin-top: 5px;

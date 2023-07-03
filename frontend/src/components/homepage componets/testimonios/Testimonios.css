@@ -1,5 +1,5 @@
 .balls{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,11 @@
 
 
 .testShowCase{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
+    
     gap: 10px;
 }
 
@@ -33,6 +34,7 @@
 @media (max-width: 1090px) {
     .testShowCase{
         margin-top: 50px;
+        padding: 0 20px;
     }
 
     .parentCarusel{
@@ -48,6 +50,10 @@
 }
 
 @media (max-width: 500px) {
+    .masTestimonios{
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
     .testShowCase{
         margin-top: 0px;
     }
@@ -55,6 +61,6 @@
         margin-bottom: 20px;
     }
     .balls{
-        margin-top: 80px;
+        margin-top: 40px;
     }
 }

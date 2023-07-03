@@ -2,7 +2,7 @@
     height: 130px;
     width: 100%;
     background-color: #001F28;
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -55,5 +55,6 @@
     }
     .contactBar .button span{
         font-size: 1.2rem;
+        text-align: center;
     }
 }

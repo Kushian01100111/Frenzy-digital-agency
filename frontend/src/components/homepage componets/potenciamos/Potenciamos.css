@@ -1,12 +1,12 @@
     .contentPoten{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 
 .poten{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     padding-top: 50px;
     align-items: center;
@@ -19,7 +19,7 @@
 
 
 .marcas{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;

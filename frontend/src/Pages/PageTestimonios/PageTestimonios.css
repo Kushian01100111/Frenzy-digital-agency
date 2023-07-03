@@ -1,3 +1,20 @@
 .contentTesti{
     background-color: #F1EFEF;
 }
+
+.contentTestimoniosTitle{
+    min-height: 170px;
+    background-color: #001F28;
+    color: #fff;
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 500px) {
+    .contentTestimoniosTitle{
+        min-height: 120px;
+    }
+}

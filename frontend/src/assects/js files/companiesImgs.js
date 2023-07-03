@@ -5,5 +5,8 @@ import Ole from "./../imgs/Marcas/Oleana.png"
 import Sara from "./../imgs/Marcas/Sarapura.png"
 import Tre from "./../imgs/Marcas/Trebol.png"
 import Sal from "./../imgs/Marcas/Selve.png"
+import Vic from "./../imgs/Marcas/vichka.png"
 
-export default [Desi, Galp, Ole, Sara, Bloo, Tre, Sal]
+const imgs = [Desi, Galp, Ole, Sara, Bloo, Tre, Sal, Vic]
+
+export default imgs

@@ -1,6 +1,7 @@
 
 .root{
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .App {  
@@ -43,7 +44,7 @@
   scroll-snap-stop: always;
   max-width: 100%;
   padding: 30px 20px;
-  display: flex;
+  display: -webkit-flex;
   text-align: center;
   justify-content: center;
 }

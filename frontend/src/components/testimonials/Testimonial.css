@@ -23,7 +23,7 @@
     height: auto;
     border-radius: 30px;
     background-color: #FFF;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: height 2s;
 }
 
@@ -41,14 +41,16 @@
 
 .content span{
     color: #4F4F4F;
-    font-size: 1.6rem;
-    font-family: "chivo mono",'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    font-family: "Clearface",'Courier New', Courier, monospace;
+
+    font-weight: 700;
     padding: 2px 0;
 }
 
-.content span+span{
-    font-style: italic;
+.content span+span{ 
     display: block;
+    font-family:"Clearface Italic",'Courier New', Courier, monospace; 
 }
 
 .content p {
@@ -57,7 +59,16 @@
 }
 
 
-@media (max-width: 1090) {
+@media (max-width: 1090px) {
+    .cardTest{
+        min-height: 240px;
+    }
+    .testContainers{
+        min-height: 240px;
+    }
+    .content{
+        min-height: 240px;
+    }
     .content h2{
         font-size: 1.6rem;
     }
@@ -73,6 +84,12 @@
 
 
 @media (max-width: 500px) {
+    .testContainers{
+        min-height: 310px;
+    }
+    .content{
+        padding: 30px 15px;
+    }
     .content h2{
         font-size: 1.4rem;
     }
@@ -101,7 +118,7 @@
 
 
 
-
+/* 
 @media (max-width: 700px) {
     .preContainerTest{
         width: 120px;
@@ -135,4 +152,4 @@
     p .clickReadMore{
         line-height: 5px;
     }
-}
+} */

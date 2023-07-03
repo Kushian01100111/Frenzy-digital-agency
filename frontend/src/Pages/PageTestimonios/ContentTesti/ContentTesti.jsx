@@ -1,10 +1,33 @@
 import "./ContentTesti.css"
+import {motion as m} from "framer-motion"
+import { useState } from "react"
+import companiesImgs from "../../../assects/js files/companiesImgs"
 
 const ContentTesti = () => {
+    const [vichka, setVichka] = useState(false)
+    const [desiderata, setDesiderata] = useState(false)
+    const [sarapura, setSarapura] = useState(false)
+    const firstAnimation = {
+        initial: {y:60, opacity: 0.5},
+        whileInView :{y: 0, opacity: 1, transition: {
+          type: "spring",
+          bounce: 0.4,
+          duration: 2
+        }}
+      }
   return (
     <div className="testiContent">
-      <div id="emilia">
-            <div style={{backgroundImage:"url(https://res.cloudinary.com/dpsobnvtv/image/upload/v1684079156/Frenzy/Captura_htfmzn.png)"}} className="imgTest div111"></div>
+      <m.div 
+      variants={firstAnimation}
+                    initial="initial"
+                    whileInView="whileInView"
+                    viewport={{ once: true }}
+      id="emilia">
+            <m.img 
+            onHoverStart={() => setVichka(true)}
+            onHoverEnd={() =>setVichka(false)}
+            animate={vichka ? {boxShadow: "rgba(0, 0, 0, 0.09) 0px 5px 5px 0px"}: ""}
+            src={companiesImgs[7]} alt="Vichka Oficial"  className="div111"/>
             <div className="div112">
                 <div>
                     <h2>emilia gazotti</h2>
@@ -16,9 +39,18 @@ const ContentTesti = () => {
                 </div>
             </div>
             <div className="div113"></div>
-      </div>
-      <div id="agustina">
-            <div style={{backgroundImage:"url(https://res.cloudinary.com/dpsobnvtv/image/upload/v1684107306/Rectangle_3857_awwf2t.png)"}} className="imgTest div111"></div>
+      </m.div>
+      <m.div
+      variants={firstAnimation}
+                    initial="initial"
+                    whileInView="whileInView"
+                    viewport={{ once: true }}
+      id="agustina">
+            <m.img 
+            onHoverStart={() => setDesiderata(true)}
+            onHoverEnd={() => setDesiderata(false)}
+            animate={desiderata ? {boxShadow: "rgba(0, 0, 0, 0.09) 0px 5px 5px 0px"}: ""}
+            src={companiesImgs[0]} alt="Desiderata"  className="div111"/>
             <div className="div112">
                 <div>
                     <h2>agustina petralia</h2>
@@ -30,9 +62,18 @@ const ContentTesti = () => {
                 </div>
             </div>
             <div className="div113"></div>
-      </div>
-      <div id="monserrat">
-            <div style={{backgroundImage:"url(https://res.cloudinary.com/dpsobnvtv/image/upload/v1684277664/Frenzy/Rectangleg_3857_gwtgo2.png)"}} className="imgTest div111"></div>
+      </m.div>
+      <m.div 
+      variants={firstAnimation}
+                    initial="initial"
+                    whileInView="whileInView"
+                    viewport={{ once: true }}
+      id="monserrat">
+            <m.img 
+            onHoverStart={() => setSarapura(true)}
+            onHoverEnd={() => setSarapura(false)}
+            animate={sarapura ? {boxShadow: "rgba(0, 0, 0, 0.09) 0px 5px 5px 0px"}: ""}
+            src={companiesImgs[3]} alt="Desiderata"  className="div111"/>
             <div className="div112">
                 <div>
                     <h2>montserrat zaefferer</h2>
@@ -44,7 +85,7 @@ const ContentTesti = () => {
                 </div>
             </div>
             <div className="div113"></div>
-      </div>
+      </m.div>
     </div>
   )
 }

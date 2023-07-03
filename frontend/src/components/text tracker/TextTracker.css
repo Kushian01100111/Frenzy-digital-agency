@@ -1,6 +1,6 @@
 
 section {
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,11 @@ section {
   }
 
   .ref{
-    display: flex;
+    display: -webkit-flex;
   }
 
   .other{
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     gap: 5px;
   }
