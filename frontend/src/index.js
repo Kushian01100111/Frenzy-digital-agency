@@ -10,6 +10,7 @@ import Contact from './Pages/Contact/Contact';
 import PageTestimonios from './Pages/PageTestimonios/PageTestimonios';
 import EstudioBarcelona from './Pages/EstudioBarcelona/EstudioBarcelona';
 import BySofiaLeather from './Pages/BySofiaLeather/BySofiaLeather';
+import Desiderata from './Pages/Desiderata/Desiderata';
 
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([{
       {
         path: "/projects/by_sofía_leather",
         element: <BySofiaLeather/>
+      },
+      {
+        path: "/projects/desiderata",
+        element: <Desiderata/>
       }
     ]
 }])

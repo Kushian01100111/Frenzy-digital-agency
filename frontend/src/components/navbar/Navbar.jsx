@@ -33,8 +33,9 @@ const Navbar = ({width}) => {
 
   return (
     <> 
-    { width <= 900 ? <m.header className={yPosition > 0.01 ? "color" : ""}
-        animate={hidden && yPosition > 0.01 ? {display: "hidden", y: -290} : {display: "bloc", y: 0}}
+    { width <= 900 ? <m.header className={yPosition > 0.2 ? "color" : ""}
+        animate={hidden && yPosition > 0.2 && location === "" > 0.2 ? {display: "hidden", y: -120}:
+        hidden && yPosition > 0.01 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
             <div>
@@ -68,8 +69,9 @@ const Navbar = ({width}) => {
             </ul>      
         </m.div>
     </m.header> 
-    : <m.header className={yPosition > 0.01 ? "color" : ""}
-        animate={hidden && yPosition > 0.01 ? {display: "hidden", y: -120} : {display: "bloc", y: 0}}
+    : <m.header className={yPosition > 0.2 ? "color" : ""}
+        animate={hidden && yPosition > 0.2 && location === "" > 0.2 ? {display: "hidden", y: -120}:
+        hidden && yPosition > 0.01 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
             <div>

@@ -1,12 +1,13 @@
-import "./BySofiaLeather.css"
+import "./Desiderata.css"
 import { useState, useEffect } from "react"
 import Navbar from "../../components/navbar/Navbar"
 import ContactBar from "../../components/contact bar/ContactBar"
-import ComponentsBySofia from "./componentsBySofia/ComponentsBySofia"
 import Footer from "../../components/footer/Footer"
 import TitlesProjects from "../../components/title projects/TitlesProjects"
+import ContentDesiderata from "./ContentDesiderata/ContentDesiderata"
 
-const BySofiaLeather = () => {
+
+const Desiderata = () => {
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -22,13 +23,13 @@ const BySofiaLeather = () => {
     window.scrollTo(0, 0);
     }, []);
   return (
-    <div>
+    <div className="mainDesi">
         <Navbar width={width}/>
-        <TitlesProjects title={"by sofia leather"}
-            services={"shooting"}
+        <TitlesProjects title={"desiderata"}
+            services={"social media"}
         />
-        <div className="mainBySofia">
-            <ComponentsBySofia />
+        <div className="mainDesiderata">
+            <ContentDesiderata/>
         </div>
         <div>
             <ContactBar/>
@@ -38,4 +39,4 @@ const BySofiaLeather = () => {
   )
 }
 
-export default BySofiaLeather
+export default Desiderata

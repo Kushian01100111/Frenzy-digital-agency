@@ -13,7 +13,7 @@ const ComponentsBySofia = () => {
         }}
       }
   return (
-    <div>
+    <div className="contentBySofia">
         <div>
             <div className="inicialBySofia">
                 <TextImgPro
@@ -25,7 +25,43 @@ const ComponentsBySofia = () => {
                 />
             </div>
             <div>
-
+                <m.div className="bySofiaFlex1"
+                variants={firstAnimation}
+                  initial="initial"
+                  whileInView="whileInView">
+                    <div className="imgContent">
+                    <img src={bySofiaImgs[1]} alt="By Sofia Shooting" />
+                    </div>
+                    <div className="imgContent">
+                    <img src={bySofiaImgs[2]} alt="By Sofia Shooting" />
+                    </div>
+                    <div className="imgContent">
+                    <img src={bySofiaImgs[3]} alt="By Sofia Shooting" />
+                    </div>
+                </m.div>
+                <m.div className="bySofiaFlex2"
+                variants={firstAnimation}
+                  initial="initial"
+                  whileInView="whileInView">
+                    <div className="imgContent1">
+                        <img src={bySofiaImgs[4]} alt="By Sofia Shooting" />
+                    </div>
+                    <div className="imgContent1">
+                        <img src={bySofiaImgs[5]} alt="By Sofia Shooting" />
+                    </div>
+                </m.div>
+                <m.div className="bySofiaFlex3"
+                variants={firstAnimation}
+                  initial="initial"
+                  whileInView="whileInView">
+                    <div className="imgContent1">
+                        <img src={bySofiaImgs[6]} alt="By Sofia Shooting" />
+                    </div>
+                    <div className="imgContent1">
+                        <img src={bySofiaImgs[7]} alt="By Sofia Shooting" />
+                    </div>
+                    
+                </m.div>
             </div>
         </div>
     </div>

@@ -1,12 +1,12 @@
-import "./BySofiaLeather.css"
+import "./Oleana.css"
 import { useState, useEffect } from "react"
 import Navbar from "../../components/navbar/Navbar"
 import ContactBar from "../../components/contact bar/ContactBar"
-import ComponentsBySofia from "./componentsBySofia/ComponentsBySofia"
 import Footer from "../../components/footer/Footer"
 import TitlesProjects from "../../components/title projects/TitlesProjects"
+import ContentOleana from "./ContentOleana/ContentOleana"
 
-const BySofiaLeather = () => {
+const Oleana = () => {
     const [width, setWidth] = useState(window.innerWidth);
     function handleWindowSizeChange() {
       setWidth(window.innerWidth);
@@ -38,4 +38,4 @@ const BySofiaLeather = () => {
   )
 }
 
-export default BySofiaLeather
+export default Oleana
