@@ -6,7 +6,7 @@
     min-height: 170px;
     background-color: #001F28;
     color: #fff;
-    display: flex;
+    display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

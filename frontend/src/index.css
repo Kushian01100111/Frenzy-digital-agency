@@ -55,12 +55,11 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: 'Clearface',-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'GothicStd-Light',"Clearface", "FrankGoth",-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 
@@ -148,7 +147,6 @@ a{
   }
   
   p{
-    font-family: 'GothicStd-Light';
     font-size: 1.4rem;
   }
 }
@@ -164,7 +162,6 @@ a{
   }
   
   p{
-    font-family: 'GothicStd-Light';
     font-size: 1.2rem;
   }
 }
