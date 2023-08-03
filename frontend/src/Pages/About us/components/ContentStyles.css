@@ -13,7 +13,7 @@
 
 .contentCaro{
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 0.5fr;
     grid-column-gap: 40px;
     grid-row-gap: 0px;
@@ -22,7 +22,7 @@
 
 .contentYanina{
     display: grid;
-    grid-template-columns: 1fr 0.4fr;
+    grid-template-columns: 1fr 0.5fr;
     grid-template-rows: 0.5fr;
     grid-column-gap: 40px;
     grid-row-gap: 0px;

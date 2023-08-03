@@ -11,6 +11,7 @@ import PageTestimonios from './Pages/PageTestimonios/PageTestimonios';
 import EstudioBarcelona from './Pages/EstudioBarcelona/EstudioBarcelona';
 import BySofiaLeather from './Pages/BySofiaLeather/BySofiaLeather';
 import Desiderata from './Pages/Desiderata/Desiderata';
+import Oleana from './Pages/Oleana/Oleana';
 
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -48,6 +49,10 @@ const router = createBrowserRouter([{
       {
         path: "/projects/desiderata",
         element: <Desiderata/>
+      },
+      {
+        path: "/projects/oleana",
+        element: <Oleana/>
       }
     ]
 }])

@@ -28,7 +28,7 @@ const Oleana = () => {
             services={"shooting"}
         />
         <div className="mainBySofia">
-            <ComponentsBySofia />
+            <ContentOleana />
         </div>
         <div>
             <ContactBar/>
