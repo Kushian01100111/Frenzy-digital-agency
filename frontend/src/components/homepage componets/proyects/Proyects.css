@@ -7,12 +7,15 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 20px;
+    column-gap: 10px;
+    max-width: 1310px;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
 .buttonMoreProjects{
-    margin-top: 50px;
+    margin-top: 25px;
     display: -webkit-flex;
     justify-content: center;
 }

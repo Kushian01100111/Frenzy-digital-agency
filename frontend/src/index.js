@@ -7,6 +7,7 @@ import App from './App';
 import Root from "./Root";
 import AboutUs from './Pages/About us/aboutUs';
 import Contact from './Pages/Contact/Contact';
+import MainProjects from './Pages/Projects/MainProjects';
 import PageTestimonios from './Pages/PageTestimonios/PageTestimonios';
 import EstudioBarcelona from './Pages/EstudioBarcelona/EstudioBarcelona';
 import BySofiaLeather from './Pages/BySofiaLeather/BySofiaLeather';
@@ -36,6 +37,10 @@ const router = createBrowserRouter([{
       {
         path: "/testimonials",
         element: <PageTestimonios/>
+      },
+      {
+        path: "/projects",
+        element: <MainProjects/>
       },
       {
         path: "/projects/estudio_barcelona",

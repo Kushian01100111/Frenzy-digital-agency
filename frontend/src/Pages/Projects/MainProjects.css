@@ -1,0 +1,26 @@
+
+
+.mainProjects{
+    padding: 20px 0;
+    background-color:#F1EFEF;
+}
+
+.contentProjectsTitle{
+        min-height: 130px;
+        background-color: #001F28;
+        color: #fff;
+        display: -webkit-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.contentProjectsTitle h1{
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .contentProjectsTitle{
+        min-height: 100px;
+    }
+}

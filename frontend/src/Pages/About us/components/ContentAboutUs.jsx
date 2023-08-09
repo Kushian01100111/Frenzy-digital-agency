@@ -53,9 +53,12 @@ const ContentAboutUs = () => {
                 initial="initial"
                 whileInView="whileInView"
                 viewport={{ once: true }}>
-            <h3>CAROLINA ALBARRACÍN</h3>
-            <p>carolina, creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el rubro y un master en marketing y comunicación de moda en ied barcelona.
-            </p>
+            <div className="ky">
+              <h3>CAROLINA ALBARRACÍN</h3>
+              <p>carolina, creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el rubro y un master en marketing y comunicación de moda en ied barcelona.
+              </p>
+            </div>
+            
         </m.div>
       </div>
       <div className="contentYanina">
@@ -71,8 +74,10 @@ const ContentAboutUs = () => {
                 initial="initial"
                 whileInView="whileInView"
                 viewport={{ once: true }}>
-            <h3>YANINA FAOUR</h3>
-            <p>el área de expertise de yanina faour es el marketing de ventas, siendo la más comercial “de las creativas”.ha participado de contados programas de fellowship y mentoreo de mujeres líderes en el área deempoderamiento económico.</p>
+            <div className="ky">
+              <h3>YANINA FAOUR</h3>
+              <p>el área de expertise de yanina faour es el marketing de ventas, siendo la más comercial “de las creativas”.ha participado de contados programas de fellowship y mentoreo de mujeres líderes en el área deempoderamiento económico.</p>
+            </div>
         </m.div>
       </div>
     </div>

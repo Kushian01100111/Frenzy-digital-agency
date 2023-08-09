@@ -1,0 +1,12 @@
+.contentMainProjects{
+    max-width: 1310px;
+    margin: 0 auto;
+}
+
+.contenProjects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}

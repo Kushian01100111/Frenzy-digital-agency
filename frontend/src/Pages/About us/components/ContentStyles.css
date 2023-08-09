@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 30px;
     margin: 0 auto;
-    padding: 0 35px;
+    padding: 0 20px;
     color: #000;
 }
 
@@ -13,7 +13,7 @@
 
 .contentCaro{
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr;
     grid-column-gap: 40px;
     grid-row-gap: 0px;
@@ -22,7 +22,7 @@
 
 .contentYanina{
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr;
     grid-column-gap: 40px;
     grid-row-gap: 0px;
@@ -49,6 +49,11 @@
 .yanina{
     grid-area: 1 / 1 / 2 / 2; 
     text-align: right;
+}
+
+.ky{
+    position: sticky;
+    top: 5px;
 }
 
 .caro h3, .yanina h3{
@@ -84,12 +89,35 @@
     }
 }
 
+
+@media (max-width: 700px) {
+    .contentCaro, .contentYanina{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        padding: 10px 0 10px 0;
+    }
+
+    .div51, .div61{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .caro, .yanina{
+        text-align: center;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+}
+
 @media (max-width: 500px) {
+    .mainAboutUs > div{
+        padding: 0;
+    }
     .caro h3, .yanina h3{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
     .caro p, .yanina p{
-        font-size: 2.0rem;
+        font-size: 1.4rem;
         margin-top: 20px;
     }
 }
@@ -97,10 +125,10 @@
 
 @media (max-width: 370px) {
     .caro h3, .yanina h3{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .caro p, .yanina p{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin-top: 20px;
     }
 }

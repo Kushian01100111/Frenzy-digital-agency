@@ -1,0 +1,38 @@
+
+
+.gridMainProjects{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    max-width: 460px;
+    min-height: 250px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.div131{
+    grid-area: 1 / 1 / 2 / 2;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+}
+
+.div132{
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div132 h3{
+    text-transform: uppercase;
+}
+
+.div132 li{
+    padding: 2px 0;
+}

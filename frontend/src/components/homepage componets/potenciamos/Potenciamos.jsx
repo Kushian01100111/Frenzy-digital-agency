@@ -1,6 +1,7 @@
 import "./Potenciamos.css"
 import {motion as m} from "framer-motion"
 import companiesImgs from "../../../assects/js files/companiesImgs"
+import companies from "../../../assects/imgs/Marcas/Compañias.png"
 import { useEffect, useState } from "react"
 
 
@@ -60,7 +61,8 @@ const Potenciamos = () => {
             </div>
             <div className="marcas">
                 <div className="imgsMarcas">
-                    <div className="div1">
+                    <img src={companies} alt="Compañias"  className="compañias"/>
+                    {/* <div className="div1">
                       <m.img src={companiesImgs[0]} alt="Desiderata" style={
                       width <= 500 ? {width: "80px"} 
                       :width <= 1090 ? {width: "140px"}
@@ -150,7 +152,7 @@ const Potenciamos = () => {
                       whileInView="whileInView"
                       viewport={{ once: true }}
                       />
-                    </div>
+                    </div> */}
                 </div>
                 <m.div className="nameMarcas" variants={secundAnimation}
                     initial="initial"

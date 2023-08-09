@@ -1,4 +1,4 @@
-    .contentPoten{
+.contentPoten{
     display: -webkit-flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,18 +26,23 @@
 }
 
 .imgsMarcas{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    height: 100%;
+    height: 100%; */
     align-items: center;
     justify-items: center;
 }
 
+.compañias{
+    width: 100%;
+    height: auto;
+}
+
 .nameMarcas{
-    width: 50vw;
+    width: 60vw;
 }
 
 .nameMarcas  div{
@@ -51,7 +56,7 @@
     text-align: center;
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 2; }
+/* .div1 { grid-area: 1 / 1 / 2 / 2; }
 .div2 { grid-area: 1 / 2 / 2 / 3; }
 .div3 { grid-area: 1 / 3 / 2 / 4; }
 .div4 { grid-area: 2 / 1 / 3 / 2; }
@@ -60,7 +65,7 @@
 .div7 { grid-area: 3 / 2 / 4 / 3; }
 .div7 { grid-area: 3 / 1 / 4 / 2; }
 .div8 { grid-area: 3 / 2 / 4 / 3; }
-.div9 { grid-area: 3 / 3 / 4 / 4; }
+.div9 { grid-area: 3 / 3 / 4 / 4; } */
 
 
 

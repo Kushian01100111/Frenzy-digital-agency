@@ -17,8 +17,13 @@
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .mainAboutUs{
-        padding: 50px 0;
+        padding: 20px ;
+    }
+
+    .contentAboutUsTitle{
+        min-height: 130px;
     }
 }
+
