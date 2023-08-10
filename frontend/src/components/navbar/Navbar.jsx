@@ -56,7 +56,7 @@ const Navbar = ({width}) => {
         <m.div className="contentLinksSmaller"
         animate={active ? {x: 0 , y: -1, display: "block", opacity: 1, zIndex: 1} : ""} initial={{x: -1000,y: 0, display: "hidden", opacity: 0, zIndex: -1}} transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
             <ul className="linksSmaller">
-                <li><a href="#">PROJECTS</a></li>
+                <li><Link to={"/projects"}>PROJECTS</Link></li>
                 <li><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
@@ -67,7 +67,7 @@ const Navbar = ({width}) => {
             </ul>      
         </m.div>
     </m.header> 
-    : width <= 900 ? <m.header className={yPosition > 0.2 ? "color" : ""}
+    : width <= 900 ? <m.header className={"color"}
         animate={hidden && yPosition > 0.2 && location === "" ? {display: "hidden", y: -120}:
         hidden && yPosition > 0.03 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
@@ -92,7 +92,7 @@ const Navbar = ({width}) => {
         <m.div className="contentLinksSmaller"
         animate={active ? {x: 0 , y: -1, display: "block", opacity: 1, zIndex: 1} : ""} initial={{x: -1000,y: 0, display: "hidden", opacity: 0, zIndex: -1}} transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
             <ul className="linksSmaller">
-                <li><a href="#">PROJECTS</a></li>
+                <li><Link to={"/projects"}>PROJECTS</Link></li>
                 <li><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
@@ -110,7 +110,7 @@ const Navbar = ({width}) => {
             </div>
             <div>
                 <ul className="links">
-                    <li><a href="#">PROJECTS</a></li>
+                    <li><Link to={"/projects"}>PROJECTS</Link></li>
                     <li><Link to={"/about_us"}>ABOUT US</Link></li>
                     <li><Link to={"/contact"}>CONTACT</Link></li>
                     <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
@@ -120,7 +120,7 @@ const Navbar = ({width}) => {
             </div>
         </div>
     </m.header>
-    : <m.header className={yPosition > 0.2 ? "color" : ""}
+    : <m.header className={"color"}
         animate={hidden && yPosition > 0.2 && location === "" > 0.2 ? {display: "hidden", y: -120}:
         hidden && yPosition > 0.01 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
@@ -130,7 +130,7 @@ const Navbar = ({width}) => {
             </div>
             <div>
                 <ul className="links">
-                    <li><a href="#">PROJECTS</a></li>
+                    <li><Link to={"/projects"}>PROJECTS</Link></li>
                     <li><Link to={"/about_us"}>ABOUT US</Link></li>
                     <li><Link to={"/contact"}>CONTACT</Link></li>
                     <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>

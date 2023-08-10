@@ -24,7 +24,7 @@ const Oleana = () => {
   return (
     <div>
         <Navbar width={width}/>
-        <TitlesProjects title={"by sofia leather"}
+        <TitlesProjects title={"oleana jewelry"}
             services={"shooting"}
         />
         <div className="mainBySofia">

@@ -40,7 +40,8 @@ useEffect(() => {
           variants={firstAnimation}
                     initial="initial"
                     whileInView="whileInView"
-                    viewport={{ once: true }}>QUIÉNES ESTÁN DETRÁS DE FRENZY</m.h1>
+                    viewport={{ once: true }}
+                    className="greenH3">QUIÉNES ESTÁN DETRÁS DE FRENZY</m.h1>
       </div>
       <div className="mainAboutUs">
       <ContentAboutUs/>

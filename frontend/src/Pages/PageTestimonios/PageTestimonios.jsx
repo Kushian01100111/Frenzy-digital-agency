@@ -37,7 +37,8 @@ const PageTestimonios = () => {
           variants={firstAnimation}
                     initial="initial"
                     whileInView="whileInView"
-                    viewport={{ once: true }}>TESTIMONIOS</m.h1>
+                    viewport={{ once: true }}
+                    className="greenH3">TESTIMONIOS</m.h1>
       </div>
         <div className="contentTesti">
             <ContentTesti/>

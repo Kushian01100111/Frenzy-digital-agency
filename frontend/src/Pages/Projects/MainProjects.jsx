@@ -37,7 +37,8 @@ const MainProjects = () => {
             variants={firstAnimation}
                         initial="initial"
                         whileInView="whileInView"
-                        viewport={{ once: true }}>PROYECTOS</m.h1>
+                        viewport={{ once: true }}
+                        className="greenH3">PROYECTOS</m.h1>
         </div>
         <div className="mainProjects">
             <ContentProjects/>

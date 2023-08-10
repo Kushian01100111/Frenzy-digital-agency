@@ -4,6 +4,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    align-items: flex-start;
     margin-top: 30px;  
 }
 
@@ -15,6 +16,8 @@
     grid-area: 1 / 2 / 2 / 3;
     font-size: 1.8rem;
     font-family: 'GothicStd-Light','Courier New', Courier, monospace;
+    position: sticky;
+    top: 5px;
 }
 
 .imgDiv71{
@@ -72,7 +75,8 @@
         grid-area: 2 / 1 / 3 / 2;
     }
     .div72{
-        grid-area: 1 / 1 / 2 / 2; 
+        grid-area: 1 / 1 / 2 / 2;
+        position: inherit; 
     }
 
     .titleDiv72{

@@ -18,7 +18,8 @@ const CardMainProjects = ({img,title,list,anchor}) => {
     <m.div
     variants={firstAnimation}
             initial="initial"
-            whileInView="whileInView">
+            whileInView="whileInView"
+            viewport={{ once: true }}>
         <Link to={anchor}>
             <m.div className="gridMainProjects"
             animate={hover ? {boxShadow: `rgba(0, 0, 0, 0.35) 0px 5px 15px`}: ""}
@@ -29,9 +30,9 @@ const CardMainProjects = ({img,title,list,anchor}) => {
                 <div className="div131"
                 style={{backgroundImage: `linear-gradient(314.36deg, rgba(0, 0, 0, 0.4) 2.29%, rgba(0, 0, 0, 0) 98.94%), url(${img})`}}></div>
                 <div className="div132">
-                    <h3>{title}</h3>
+                    <h2>{title}</h2>
                     {list.map(n => {
-                        return <li>{n}</li>
+                        return <li className="buttelt liProjects">{n}</li>
                     })}
                 </div>
             </m.div>

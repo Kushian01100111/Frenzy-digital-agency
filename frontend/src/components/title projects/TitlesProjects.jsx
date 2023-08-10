@@ -24,7 +24,7 @@ const TitlesProjects = ({title, services}) => {
         <m.h1 variants={firstAnimation}
                 initial="initial"
                 whileInView="whileInView"
-                >{title}</m.h1>
+                className="greenH3">{title}</m.h1>
         <m.div className="titleServices"
         variants={secundAnimation}
                 initial="initial"
