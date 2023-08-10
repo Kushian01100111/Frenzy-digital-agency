@@ -12,7 +12,9 @@ import PageTestimonios from './Pages/PageTestimonios/PageTestimonios';
 import EstudioBarcelona from './Pages/EstudioBarcelona/EstudioBarcelona';
 import BySofiaLeather from './Pages/BySofiaLeather/BySofiaLeather';
 import Desiderata from './Pages/Desiderata/Desiderata';
-import Oleana from './Pages/Oleana/Oleana';
+import Oleana from './Pages/Oleana/Oleana'
+import Sarapura from './Pages/Sapura/Sarapura';
+import ShootingVichka from './Pages/Shooting Vichka/ShootingVichka';
 
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -58,6 +60,14 @@ const router = createBrowserRouter([{
       {
         path: "/projects/oleana",
         element: <Oleana/>
+      },
+      {
+        path: "/projects/sarapura",
+        element: <Sarapura/>
+      },
+      {
+        path: "/projects/shooting_vichka",
+        element: <ShootingVichka/>
       }
     ]
 }])

@@ -3,11 +3,6 @@ import ServicesCards from "../../services cards/ServicesCards"
 import { useState } from "react"
 import {motion as m} from "framer-motion"
 import companiesImgs from "../../../assects/js files/companiesImgs"
-import SocialImg1 from "../../../assects/imgs/d-B.png"
-import SocialImg2 from "../../../assects/imgs/d-Bb.png"
-import InfluImg from "../../../assects/imgs/I-B.png"
-import DesigImg from "../../../assects/imgs/Design.png"
-import VideoLiberyImg from "../../../assects/imgs/video-library.png"
 
 const Services = ({width}) => {
   const [s1, setS1] = useState(true);
@@ -59,7 +54,8 @@ const Services = ({width}) => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Social media management"} condicional={s1} icon={<img src={SocialImg1} alt="icon" className="imgCards"/>}/></m.div>
+            <ServicesCards title={"Social media management"} condicional={s1}/>
+            </m.div>
             <m.div 
             initial={{y:60, display: "hidden", opacity: 0}}
             whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
@@ -82,7 +78,7 @@ const Services = ({width}) => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"Paid media management"} condicional={s2} icon={<img src={SocialImg2} alt="icon" className="imgCards"/>}/></m.div>
+            <ServicesCards title={"Paid media management"} condicional={s2}/></m.div>
             <m.div 
             initial={{y:60, display: "hidden", opacity: 0}}
             whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
@@ -105,7 +101,7 @@ const Services = ({width}) => {
               setS4(false)
               setS5(false)
             }}>
-            <ServicesCards title={"CREACIÓN DE CONTENIDOS"} condicional={s3} icon={<img src={VideoLiberyImg} alt="icon"  className="imgCards"/>}/></m.div>
+            <ServicesCards title={"CREACIÓN DE CONTENIDOS"} condicional={s3}/></m.div>
             <m.div 
             initial={{y:60, display: "hidden", opacity: 0}}
             whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
@@ -129,7 +125,7 @@ const Services = ({width}) => {
               if(!s4){setS4(!s4)}
               setS5(false)
             }}>
-            <ServicesCards title={"DISEÑO GRÁFICO"} condicional={s4} icon={<img src={DesigImg} alt="icon" className="imgCards"/>}/></m.div>
+            <ServicesCards title={"DISEÑO GRÁFICO"} condicional={s4}/></m.div>
             <m.div 
             initial={{y:60, display: "hidden", opacity: 0}}
             whileInView={{y: 0, display: "bloc",  opacity: 1, transition: {
@@ -152,7 +148,7 @@ const Services = ({width}) => {
               setS4(false)
               if(!s5){setS5(!s5)}
             }}>
-            <ServicesCards title={"Influencer marketing"} condicional={s5} icon={<img src={InfluImg} alt="icon" className="imgCards"/>  }/></m.div>
+            <ServicesCards title={"Influencer marketing"} condicional={s5}/></m.div>
           </div>
           <m.div 
           initial={{opacity:0, display:"none", y:100 }}

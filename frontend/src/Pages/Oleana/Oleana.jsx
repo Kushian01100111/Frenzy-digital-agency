@@ -27,7 +27,7 @@ const Oleana = () => {
         <TitlesProjects title={"oleana jewelry"}
             services={"shooting"}
         />
-        <div className="mainBySofia">
+        <div className="mainByOleana">
             <ContentOleana />
         </div>
         <div>

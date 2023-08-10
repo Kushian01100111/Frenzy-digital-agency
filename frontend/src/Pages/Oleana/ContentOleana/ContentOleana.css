@@ -1,0 +1,117 @@
+.contentOleana{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.oleanaFlex1, .oleanaFlex2, .oleanaFlex3{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 0 0 50px 0;
+}
+
+.inicialOleana .contentText{
+    display: grid;
+    grid-template-columns: 0.51fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    align-items: flex-start;
+    padding: 15px 0 50px 0;
+}
+
+ .initilOleana .contentText .div71{
+    grid-area: 1 / 2 / 2 / 3;
+ }
+
+ .initilOleana .contentText .div72{
+     grid-area: 1 / 1 / 2 / 2;
+ }
+
+ .initilOleana img{
+    max-width: 410px;
+    width: auto;
+    height: auto;
+ }
+
+.oleContent1{
+    max-width: 410px;
+    height: auto;
+    width: auto;
+}
+
+.oleContent1 img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.oleContent2{
+    max-width: 1290px;
+    width: auto;
+    height: auto;
+}
+
+.oleContent2 img{
+    width: 100%;
+    height: auto;
+}
+
+.oleContent3{
+    max-width: 620px;
+    width: auto;
+    height: auto;
+}
+
+.oleContent3 img{
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1090px) {
+    .inicialOleana .contentText .div71{
+        grid-area: 1 / 1 / 2 / 2;
+     }
+    
+     .inicialOleana .contentText .div72{
+        grid-area: 1 / 2 / 2 / 3;
+     }
+    
+}
+
+
+@media (max-width: 750px) {
+    .inicialOleana .contentText{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+    }
+
+    .inicialOleana .contentText .div71{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .inicialOleana .contentText .div72{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .oleanaFlex1, .oleanaFlex2, .oleanaFlex3{
+        flex-direction: column;
+    }
+
+    .oleContent1, .oleContent2, .oleContent3{
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .contentOleana{
+        padding: 0 15px;
+    }
+}

@@ -22,11 +22,13 @@ const CardMainProjects = ({img,title,list,anchor}) => {
             viewport={{ once: true }}>
         <Link to={anchor}>
             <m.div className="gridMainProjects"
-            animate={hover ? {boxShadow: `rgba(0, 0, 0, 0.35) 0px 5px 15px`}: ""}
+            initial={{boxShadow: `rgba(0, 0, 0, 0.35) 0px 5px 15px`, backgroundColor:` #DAE9F2;`}}
+            animate={hover ? {scale: 1.05}: ""}
             onMouseEnter={()=> setHover(true)}
             onMouseLeave={()=> setHover(false)}
             onTouchStart={()=> setHover(true)}
-            onTouchEnd={()=>setHover(false)}>
+            onTouchEnd={()=>setHover(false)}
+            transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.4}}>
                 <div className="div131"
                 style={{backgroundImage: `linear-gradient(314.36deg, rgba(0, 0, 0, 0.4) 2.29%, rgba(0, 0, 0, 0) 98.94%), url(${img})`}}></div>
                 <div className="div132">
