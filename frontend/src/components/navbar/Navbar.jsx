@@ -14,6 +14,7 @@ const Navbar = ({width}) => {
     const [yPosition, setYPosition] = useState(0);
     const [active, setActive] = useState(false)
     const location = useLocation().pathname.split("/")[1]
+    const onCurrentPage = useLocation().pathname
   
     useEffect(()=>{
         window.addEventListener("scroll", ()=>{
@@ -31,7 +32,8 @@ const Navbar = ({width}) => {
             setYPosition(v)})
     }, [scrollYProgress])
 
-    console.log(yPosition)
+
+    console.log(onCurrentPage)
   return (
     <> 
     { yPosition <= 0.1 && width <= 900 && location === "" ? <m.header className={"color"}>
@@ -56,19 +58,19 @@ const Navbar = ({width}) => {
         <m.div className="contentLinksSmaller"
         animate={active ? {x: 0 , y: -1, display: "block", opacity: 1, zIndex: 1} : ""} initial={{x: -1000,y: 0, display: "hidden", opacity: 0, zIndex: -1}} transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
             <ul className="linksSmaller">
-                <li><Link to={"/projects"}>PROJECTS</Link></li>
-                <li><Link to={"/about_us"}>ABOUT US</Link></li>
-                <li><Link to={"/contact"}>CONTACT</Link></li>
+                <li className={location.includes("projects") ? "currentPage": ""}><Link to={"/projects"}>PROJECTS</Link></li>
+                <li className={location.includes("about_us") ? "currentPage": ""}><Link to={"/about_us"}>ABOUT US</Link></li>
+                <li className={location.includes("contact") ? "currentPage": ""}><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
                     <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
-                    <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
                 </div>
             </ul>      
         </m.div>
     </m.header> 
     : width <= 900 ? <m.header className={"color"}
-        animate={hidden && yPosition > 0.2 && location === "" ? {display: "hidden", y: -120}:
+        animate={hidden && (yPosition > 0.2) && (location === "") ? {display: "hidden", y: -120}:
         hidden && yPosition > 0.03 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
@@ -92,18 +94,18 @@ const Navbar = ({width}) => {
         <m.div className="contentLinksSmaller"
         animate={active ? {x: 0 , y: -1, display: "block", opacity: 1, zIndex: 1} : ""} initial={{x: -1000,y: 0, display: "hidden", opacity: 0, zIndex: -1}} transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
             <ul className="linksSmaller">
-                <li><Link to={"/projects"}>PROJECTS</Link></li>
-                <li><Link to={"/about_us"}>ABOUT US</Link></li>
-                <li><Link to={"/contact"}>CONTACT</Link></li>
+                <li className={location.includes("projects") ? "currentPage": ""}><Link to={"/projects"}>PROJECTS</Link></li>
+                <li className={location.includes("about_us") ? "currentPage": ""}><Link to={"/about_us"}>ABOUT US</Link></li>
+                <li className={location.includes("contact") ? "currentPage": ""}><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
                     <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
-                    <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
                 </div>
             </ul>      
         </m.div>
     </m.header>
-    : yPosition <= 0.1 && width > 900 && location === "" ? <m.header className={"color" }>
+    : (yPosition <= 0.1) && (width > 900) && (location === "") ? <m.header className={"color" }>
         <div className="navbar">
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
@@ -115,13 +117,13 @@ const Navbar = ({width}) => {
                     <li><Link to={"/contact"}>CONTACT</Link></li>
                     <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
-                    <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
                 </ul>
             </div>
         </div>
     </m.header>
     : <m.header className={"color"}
-        animate={hidden && yPosition > 0.2 && location === "" > 0.2 ? {display: "hidden", y: -120}:
+        animate={hidden && (yPosition > 0.2) && (location === "") > 0.2 ? {display: "hidden", y: -120}:
         hidden && yPosition > 0.01 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
         transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
         <div className="navbar">
@@ -130,12 +132,12 @@ const Navbar = ({width}) => {
             </div>
             <div>
                 <ul className="links">
-                    <li><Link to={"/projects"}>PROJECTS</Link></li>
-                    <li><Link to={"/about_us"}>ABOUT US</Link></li>
-                    <li><Link to={"/contact"}>CONTACT</Link></li>
+                <li className={location.includes("projects") ? "currentPage": ""}><Link to={"/projects"}>PROJECTS</Link></li>
+                <li className={location.includes("about_us") ? "currentPage": ""}><Link to={"/about_us"}>ABOUT US</Link></li>
+                <li className={location.includes("contact") ? "currentPage": ""}><Link to={"/contact"}>CONTACT</Link></li>
                     <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
                     <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
-                    <li><a href="#"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
                 </ul>
             </div>
         </div>

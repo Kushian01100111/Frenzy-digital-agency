@@ -6,6 +6,9 @@
     border-radius: 30px;
 }
 
+
+
+
 .container  a{
     color: black;
     text-transform: none;
@@ -48,6 +51,19 @@
     font-family: "GothicStd-Light",'Courier New', Courier, monospace;
     color: #656565;
     font-size: 2rem;
+}
+
+
+@media (min-height: 600px) and (max-height: 700px) and (max-width: 1300px) {
+    .container{
+        min-width: 27lvw;
+        height: 34lvh;
+    }
+
+    .text{
+        padding: 0 15px 10px 15px;
+        transform: translateY(-70px) !important;
+    }
 }
 
 
