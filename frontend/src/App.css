@@ -30,7 +30,8 @@
 
 .principalBanner{
   scroll-snap-align: start;
-  height: auto;
+  scroll-snap-stop: always;
+  max-height: 100vh;
   min-height: 100vh;
   margin-bottom: 50vh;
   width: 100%;
@@ -42,11 +43,12 @@
   height: auto;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  max-width: 100%;
-  padding: 30px 20px;
+  max-width: 139rem;
+  padding: 3rem 2rem;
   display: -webkit-flex;
   text-align: center;
   justify-content: center;
+
 }
 
 
@@ -55,13 +57,17 @@
   min-height: 100vh;
   padding-top: 2.5vh;
   flex-direction: column;
+  max-width: 100%;
   gap: 5vh;
   padding: 0 0;
   justify-content: flex-end;
-  
+  scroll-snap-stop: always;
 }
 
 
 
 
-
+.end{
+  position: sticky;
+  bottom: 0;
+}

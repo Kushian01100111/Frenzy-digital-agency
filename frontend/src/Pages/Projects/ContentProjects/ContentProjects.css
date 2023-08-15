@@ -1,5 +1,5 @@
 .contentMainProjects{
-    max-width: 1310px;
+    max-width: 131.0rem;
     margin: 0 auto;
 }
 
@@ -7,6 +7,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2.0rem;
     justify-content: center;
 }

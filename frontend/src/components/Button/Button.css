@@ -6,8 +6,8 @@
 
 .button{
     width: fit-content;
-    border-radius: 15px;
-    padding: 25px 25px 20px 25px;
+    border-radius: 1.5rem;
+    padding: 2.5rem 2.5rem 2.0rem 2.5rem;
     background-color: #DAE9F2;
    
     box-shadow: inset 0px 0px 10px #000000;

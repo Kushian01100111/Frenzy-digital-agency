@@ -1,10 +1,10 @@
 .mainAboutUs >div{
-    max-width: 1310px;
+    max-width: 131.0rem;
     display: -webkit-flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 3.0rem;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 2.0rem;
     color: #000;
 }
 
@@ -15,18 +15,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 4.0rem;
     grid-row-gap: 0px;
-    padding: 50px 0 10px 0;
+    padding: 5.0rem 0 1.0rem 0;
 }
 
 .contentYanina{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 4.0rem;
     grid-row-gap: 0px;
-   padding: 10px 0 50px 0;
+   padding: 1.0rem 0 5.0rem 0;
 }
 
 .div51{
@@ -53,7 +53,7 @@
 
 .ky{
     position: sticky;
-    top: 5px;
+    top: .5rem;
 }
 
 .caro h3, .yanina h3{
@@ -63,15 +63,15 @@
 
 .caro p, .yanina p{
     font-size: 2.2rem;
-    margin-top: 20px;
+    margin-top: 2rem;
 }
 
 .caro p{
-    padding-left: 5px;
+    padding-left: .5rem;
 }
 
 .yanina p{
-    padding-right: 10px;
+    padding-right: 1.0rem;
 }
 
 @media (max-width: 1200px) {
@@ -96,8 +96,8 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         grid-column-gap: 0px;
-        grid-row-gap: 20px;
-        padding: 10px 0 10px 0;
+        grid-row-gap: 2.0rem;
+        padding: 1.0rem 0 1.0rem 0;
     }
 
     .div51, .div61{
@@ -118,7 +118,7 @@
     }
     .caro p, .yanina p{
         font-size: 1.4rem;
-        margin-top: 20px;
+        margin-top: 2.0rem;
     }
 }
 
@@ -129,7 +129,7 @@
     }
     .caro p, .yanina p{
         font-size: 1.2rem;
-        margin-top: 20px;
+        margin-top: 2.0rem;
     }
 }
 

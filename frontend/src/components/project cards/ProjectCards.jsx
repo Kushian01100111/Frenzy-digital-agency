@@ -51,6 +51,8 @@ const ProjectCards = ({img, link, title, description, pageWidth}) => {
               animate={ 
               hoverCard && pageWidth <= 500  ? {opacity: 1, y:-35 }
               : !hoverCard && pageWidth <= 500 ? {opacity: 0, y:-35}
+              : hoverCard && pageWidth <= 1390  ? {opacity: 1, y:-60 }
+              : !hoverCard && pageWidth <= 1390 ? {opacity: 0, y:-60}
               : hoverCard ? {opacity: 1, y: -80} 
               : {opacity: 0, y: -80} 
               }

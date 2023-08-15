@@ -9,22 +9,46 @@ import {motion as m, useScroll} from "framer-motion"
 
 const Navbar = ({width}) => {
     const { scrollYProgress } = useScroll()
-    const [scrollY, setScrollY] = useState(window.scrollY)
-    const [hidden, setHidden] = useState(true)
+    const [scrollY, setScrollY] = useState({
+            y: 0,
+            lastY:0
+    })
+    const [hidden, setHidden] = useState(false)
     const [yPosition, setYPosition] = useState(0);
     const [active, setActive] = useState(false)
     const location = useLocation().pathname.split("/")[1]
     const onCurrentPage = useLocation().pathname
   
     useEffect(()=>{
-        window.addEventListener("scroll", ()=>{
-            if(scrollY < window.scrollY){
-                setHidden(true)
-            }else{
-                setHidden(false)
-            }
-            setScrollY(window.scrollY)
-        })
+
+        const handleScroll = () =>{
+            setScrollY(prevState =>{
+                return{
+                    y: window.scrollY,
+                    lastY: prevState.y
+                }
+            })
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        console.log(scrollY)
+        return () => window.removeEventListener("scroll", handleScroll )
+    }, [])
+
+    useEffect(()=>{
+        if(scrollY.y < scrollY.lastY && (location === "" && scrollY.y > 500)){
+            setHidden(false)
+        }else if(scrollY.y > scrollY.lastY && (location === "" && scrollY.y > 500)){
+            setHidden(true)
+        }
+
+        if(scrollY.y < scrollY.lastY && location !== ""){
+            setHidden(false)
+        }else if(scrollY.y > scrollY.lastY && location !== ""){
+            setHidden(true)
+        }
+
     }, [scrollY])
 
     useEffect(()=>{
@@ -33,10 +57,11 @@ const Navbar = ({width}) => {
     }, [scrollYProgress])
 
 
-    console.log(onCurrentPage)
+
+    console.log(hidden, scrollY, scrollYProgress)
   return (
     <> 
-    { yPosition <= 0.1 && width <= 900 && location === "" ? <m.header className={"color"}>
+    { yPosition <= 0.1 && width <= 900 && location === "" ? <m.header className={hidden ? "color hiddenNav header" : "color header"}>
         <div className="navbar">
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
@@ -69,10 +94,8 @@ const Navbar = ({width}) => {
             </ul>      
         </m.div>
     </m.header> 
-    : width <= 900 ? <m.header className={"color"}
-        animate={hidden && (yPosition > 0.2) && (location === "") ? {display: "hidden", y: -120}:
-        hidden && yPosition > 0.03 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
-        transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
+    : width <= 900 ? 
+    <m.header className={hidden ? "color hiddenNav header" : "color header"}>
         <div className="navbar">
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
@@ -105,7 +128,7 @@ const Navbar = ({width}) => {
             </ul>      
         </m.div>
     </m.header>
-    : (yPosition <= 0.1) && (width > 900) && (location === "") ? <m.header className={"color" }>
+    : (yPosition <= 0.1) && (width > 900) && (location === "") ? <m.header className={hidden ? "color hiddenNav header" : "color header"}>
         <div className="navbar">
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
@@ -122,10 +145,7 @@ const Navbar = ({width}) => {
             </div>
         </div>
     </m.header>
-    : <m.header className={"color"}
-        animate={hidden && (yPosition > 0.2) && (location === "") > 0.2 ? {display: "hidden", y: -120}:
-        hidden && yPosition > 0.01 ? {display: "hidden", y: -120}:{display: "bloc", y: 0}}
-        transition={{ease: [0.1, 0.25, 0.3, 1], duration: 0.6}}>
+    : <m.header className={hidden ? "color hiddenNav header" : "color header"}>
         <div className="navbar">
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>

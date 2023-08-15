@@ -1,12 +1,12 @@
 .mainDesiderata{
-    padding: 15px 0 30px 0;
+    padding: 1.5rem 0 3.0rem 0;
     background-color: #F1EFEF;
 }
 
 
 @media (max-width: 500px) {
     .mainDesi .titleServices span{
-        width: 125px;
+        width: 12.5rem;
     }
 }
 

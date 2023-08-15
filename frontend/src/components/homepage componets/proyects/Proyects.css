@@ -1,5 +1,9 @@
 .containerProjects{
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .projectsGrid{
@@ -7,33 +11,15 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    row-gap: 20px;
-    column-gap: 10px;
-    max-width: 1310px;
+    row-gap: 2.0rem;
+    column-gap: 1.0rem;
+    max-width: 131.0rem;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 2.0rem;
 }
 
 .buttonMoreProjects{
-    margin-top: 25px;
+    margin-top: 2.5rem;
     display: -webkit-flex;
     justify-content: center;
 }
-
-.responsiveProyects{
-    height: auto;
-    min-height: 100lvh;
-    padding-bottom: 10lvh;
-        margin-bottom: 50lvh;
-}
-
-
-@media (max-width: 500px) {
-    .responsiveProyects{
-        height: auto;
-        padding-bottom: 10lvh;
-        margin-bottom: 50lvh;
-        padding-top: 20px;
-    }
-}
-

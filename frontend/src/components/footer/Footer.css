@@ -1,20 +1,20 @@
 .footer{
     background-color: #151515;
     width: 100%;
-    min-height: 150px;
-    max-height: 200px;
+    min-height: 15.0rem;
+    max-height: 20.0rem;
     color: #fff;
 }
 
 .contentFooter{
-    max-width: 1310px;
+    max-width: 131.0rem;
     height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
-    padding-top: 20px;
+    padding-top: 2rem;
     align-items: center;
     justify-items: center;
 }
@@ -28,7 +28,7 @@ small{
     display: -webkit-flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 
@@ -46,6 +46,6 @@ small{
     }
     .div41{
         grid-area: 3 / 1 / 4 / 2;
-        padding-bottom: 20px;
+        padding-bottom: 2.0rem;
     }
 }

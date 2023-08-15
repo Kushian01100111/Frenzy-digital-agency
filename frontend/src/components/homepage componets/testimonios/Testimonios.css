@@ -3,12 +3,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 40px;
+    gap: 1.0rem;
+    margin-top: 4.0rem;
 }
 
 .masTestimonios{
-    padding: 40px 20px 20px 20px;
+    padding: 4.0rem 2.0rem 2.0rem 2.0rem;
 }
 
 .masTestimonios .buttonContainer{
@@ -16,8 +16,8 @@
 }
 
 .parentCarusel>h2{
-    margin-bottom: 35px;
-    margin-top: 20px;
+    margin-bottom: 3.5rem;
+    margin-top: 2.0rem;
 }
 
 
@@ -26,42 +26,42 @@
     flex-direction: row;
     justify-content: center;
     margin: 0 auto;
-    padding: 0 20px;
-    gap: 10px;
+    padding: 0 2.0rem;
+    gap: 1.0rem;
 }
 
 
 
 @media (max-width: 1090px) {
     .testShowCase{
-        margin-top: 50px;
-        padding: 0 20px;
+        margin-top: 5.0rem;
+        padding: 0 2.0rem;
     }
 
     .parentCarusel{
-        margin-top: 20px;
+        margin-top: 2.0rem;
     }
 
 }
 
 @media (max-width:  790px) {
     .parentCarusel>h2{
-        margin-bottom: 50px;
+        margin-bottom: 5.0rem;
     }
 }
 
 @media (max-width: 500px) {
     .masTestimonios{
-        padding-top: 20px;
+        padding-top: 2.0rem;
         padding-bottom: 0;
     }
     .testShowCase{
-        margin-top: 0px;
+        margin-top: 0rem;
     }
     .parentCarusel>h2{
-        margin-bottom: 20px;
+        margin-bottom: 2.0rem;
     }
     .balls{
-        margin-top: 40px;
+        margin-top: 4.0rem;
     }
 }

@@ -1,18 +1,17 @@
 .typewriter{
     font-size: 10.2rem;
     width: 70vw;
-    height: 95lvh;
+    height: 95vh;
     display: -webkit-flex;
-    align-items: end;
-    justify-content: start;
+    align-items: flex-end;
     text-align: start;
-    padding-left: 25px;
-    padding-bottom: 5lvh;
+    padding-left: 2.5rem;
+    padding-bottom: 5vh;
 }
 
 .Typewriter__wrapper{
-    line-height: 0.2px;
-    letter-spacing: -5px;
+    line-height: 0.02rem;
+    letter-spacing: -0.5rem;
 }
 
 
@@ -31,8 +30,8 @@
 @media (max-width: 500px) {
     .typewriter{
         font-size: 5.2rem;
-        padding-left: 5px;
-        margin-bottom: 30px;
-        height: 85lvh;
+        padding-left: 0.5rem;
+        margin-bottom: 3.0rem;
+        height: 85vh;
     }
 }

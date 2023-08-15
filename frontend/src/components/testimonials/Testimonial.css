@@ -1,6 +1,6 @@
 
 .testContainers{
-    min-height: 280px;
+    min-height: 28rem;
     height: fit-content;
     width: fit-content;
 }
@@ -11,73 +11,80 @@
 }
 
 .preContainerTest{
-    width: 250px;
-    height: 250px;
+    width: 25rem;
+    height: 25rem;
     margin: 0 auto;  
 }
 
 .cardTest{
-    max-width: 1310px;
-    max-height: 500px;
-    min-height: 250px;
+    max-width: 131rem;
+    max-height: 50rem;
+    min-height: 25rem;
     height: auto;
-    border-radius: 30px;
+    border-radius: 3rem;
     background-color: #FFF;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: height 2s;
 }
 
 .content{
-    min-height: 280px;
-    padding: 30px;
+    min-height: 28rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h2{
     font-family: "GothicStd-Heavy";
     font-size: 2.2rem;
     text-transform: uppercase;
-    padding-bottom: 5px;
+    margin-bottom: -.2rem;
 }
 
 .content span{
     color: #4F4F4F;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-family: "Clearface",'Courier New', Courier, monospace;
-
     font-weight: 700;
-    padding: 2px 0;
 }
 
-.content span+span{ 
-    display: block;
-    font-family:"Clearface Italic",'Courier New', Courier, monospace; 
+.content span>span{ 
+    font-family:"Clearface Italic",'Courier New', Courier, monospace;
 }
 
 .content p {
-    font-size: 2.2rem;
-    padding-top: 5px;
+    font-size: 2.4rem;
+    padding-top: .5rem;
+}
+
+.contentTitle{
+    display: flex;
+    gap: 3rem;
 }
 
 
 @media (max-width: 1090px) {
     .cardTest{
-        min-height: 240px;
+        min-height: 24rem;
     }
     .testContainers{
-        min-height: 240px;
+        min-height: 24rem;
     }
     .content{
-        min-height: 240px;
+        min-height: 24rem;
     }
     .content h2{
         font-size: 1.6rem;
     }
 
     .content span{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     .content p {    
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     
 }
@@ -85,20 +92,20 @@
 
 @media (max-width: 500px) {
     .testContainers{
-        min-height: 310px;
+        min-height: 31.0rem;
     }
     .content{
-        padding: 30px 15px;
+        padding: 3.0rem 1.5rem;
     }
     .content h2{
         font-size: 1.4rem;
     }
 
     .content span{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .content p {    
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -109,47 +116,11 @@
     }
 
     .content span{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .content p {    
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 }
 
 
-
-/* 
-@media (max-width: 700px) {
-    .preContainerTest{
-        width: 120px;
-        height: 120px;
-    }
-    .cardTest{
-        height: 220px;
-        max-width: 200px;
-    }
-    .content{
-        padding: 10px 10px 0 10px;
-        max-height: 130px;
-        min-height: 130px;
-    }
-    .content h2{
-        font-size: 1.2rem;
-    }
-    .content p {
-        font-size: 1rem;
-        line-height: 10px;
-        padding-top: 10px;
-    }
-    .content span{
-        font-size: 1rem;
-        line-height: 14px;
-        word-spacing: -2px;
-    }
-    p .readMore{
-        font-size: 1rem;
-    }
-    p .clickReadMore{
-        line-height: 5px;
-    }
-} */

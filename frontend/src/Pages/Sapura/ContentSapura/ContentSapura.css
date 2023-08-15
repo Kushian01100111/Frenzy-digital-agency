@@ -1,19 +1,19 @@
 .contentSapura{
-    max-width: 1290px;
+    max-width: 129.0rem;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 3.0rem;
 }
 
 
 .sapuraFlex{
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    padding: 0 0 50px 0;
+    gap: 1.5rem;
+    padding: 0 0 5.0rem 0;
 }
 
 .sapContent1{
-    max-width: 1290px;
+    max-width: 129.0rem;
     width: auto;
     height: auto;
 }
@@ -27,7 +27,7 @@
 .sapContent2{
     display: flex;
     justify-content: center;
-    max-width: 410px;
+    max-width: 41.0rem;
     width: auto;
     height: auto;
 }
@@ -38,15 +38,15 @@
 }
 
 .sapContent2 video{
-    max-width: 410px;
-    min-width: 250px;
+    max-width: 41.0rem;
+    min-width: 25.0rem;
     width: 100%;
     height: auto;
 }
 
 
 .sapContent3{
-    max-width: 620px;
+    max-width: 62.0rem;
     width: auto;
     height: auto;
 }
@@ -61,10 +61,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 2.0rem;
         grid-row-gap: 0px;
         align-items: flex-start;
-        margin-top: 30px;
+        margin-top: 3.0rem;
     }
     .inicialSapura .contentText .div71{
         grid-area: 1 / 1 / 2 / 2;
@@ -82,7 +82,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
         grid-column-gap: 0px;
-        grid-row-gap: 20px;
+        grid-row-gap: 2.0rem;
     }
 
     .inicialSapura .contentText .div71{

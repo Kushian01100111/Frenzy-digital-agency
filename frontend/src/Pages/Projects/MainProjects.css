@@ -1,12 +1,12 @@
 
 
 .mainProjects{
-    padding: 30px;
+    padding: 3.0rem;
     background-color:#F1EFEF;
 }
 
 .contentProjectsTitle{
-        min-height: 130px;
+        min-height: 13.0rem;
         background-color: #001F28;
         color: #fff;
         display: -webkit-flex;
@@ -21,6 +21,6 @@
 
 @media (max-width: 700px) {
     .contentProjectsTitle{
-        min-height: 100px;
+        min-height: 10.0rem;
     }
 }

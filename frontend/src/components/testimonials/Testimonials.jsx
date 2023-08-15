@@ -1,5 +1,4 @@
 import "./../testimonials/Testimonial.css"
-import { Link } from "react-router-dom"
 import {motion as m} from "framer-motion"
 
 
@@ -20,10 +19,9 @@ const Testimonials = ({name,company,position,exp,link}) => {
     viewport={{ once: true }}>
       <div className="cardTest">
         <div className="content" >
-            <div>
+            <div className="contentTitle">
                 <h2>{name}</h2>
-                <span>{company}</span>
-                <span>{position}</span>
+                <span>{company} - <span>{position}</span></span>
             </div>  
             <div>
                <p>{exp}</p>

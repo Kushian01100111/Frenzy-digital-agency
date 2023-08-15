@@ -1,12 +1,12 @@
 .mainContact{
     background: #F1EFEF;
     height: auto;
-    padding: 100px 0;
+    padding: 10rem 0;
 }
 
 
 @media (max-width: 900px) {
     .mainContact{
-        padding: 100px 20px;
+        padding: 10.0rem 2.0rem;
     }
 }

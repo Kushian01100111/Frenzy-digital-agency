@@ -38,7 +38,7 @@ useEffect(() => {
         </div>
         <div className='contentsLastSection'>
              <Testimonios/>
-             <div>
+             <div className='end'>
                 <ContactBar/>
                 <Footer/>
              </div>

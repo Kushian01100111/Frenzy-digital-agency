@@ -1,12 +1,12 @@
 .areaTitle{
-    min-height: 200px;
+    min-height: 20.0rem;
     background-color: #001F28;
     color: #fff;
     display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2.5lvh;
+    gap: 2.5vh;
 }
 
 .areaTitle h1{
@@ -23,21 +23,21 @@
 .titleServices span{
     font-family: 'GothicStd-Light','Courier New', Courier, monospace;
     font-size: 2rem; 
-    margin-top: -5px;
+    margin-top: -0.5rem;
 }
 .titleBar{
     text-align: left;
     width: 15vw;
     color: #fff;
     display: block;
-    height: 0.5px;
+    height: 0.05rem;
 }
 
 
 
 @media (max-width: 500px) {
     .areaTitle{
-        gap: 5lvh;
+        gap: 5vh;
     }
     .titleServices span{
         font-size: 1.6rem;
