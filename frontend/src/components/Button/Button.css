@@ -17,20 +17,20 @@
 
 .button span{
     font-family:"GothicStd-Heavy" ,"GothicStd-Light",'Courier New', Courier, monospace;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     line-height: 0.5;
     text-align: center;
 }
 
 @media (max-width: 1090px) {
     .button span{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 }
 
 
 @media (max-width: 500px) {
     .button span{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }

@@ -1,5 +1,5 @@
 .contactBar{
-    height: 13.0rem;
+    height: 16.0rem;
     width: 100%;
     background-color: #001F28;
     display: -webkit-flex;
@@ -16,7 +16,7 @@
 }
 
 .contactBar h3{
-    font-size: 4.5rem;
+    font-size: 8rem;
 }
 
 
@@ -36,7 +36,7 @@
         grid-area: 1 / 2 / 2 / 3;
     }
     .contactBar h3{
-        font-size: 3.5rem;
+        font-size: 6rem;
         margin-top: 1.0rem;
         text-align: center;
     }
@@ -50,11 +50,19 @@
         gap: 2rem;
     }
     .contactBar h3{
-        font-size: 2.4rem;
+        font-size: 5rem;
         margin-top: 1rem;
     }
     .contactBar .button span{
         font-size: 1.2rem;
         text-align: center;
     }
+}
+
+@media (max-width: 370px) {
+
+    .contactBar h3{
+        font-size: 4rem;
+    }
+
 }

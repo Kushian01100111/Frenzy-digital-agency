@@ -53,7 +53,7 @@
     font-size: 2rem;
 }
 
-
+/* 
 @media (min-height: 600px) and (max-height: 700px) and (max-width: 1300px) {
     .container{
         min-width: 27vw;
@@ -64,7 +64,7 @@
         padding: 0 15rem 10rem 15rem;
         transform: translateY(-7.0rem) !important;
     }
-}
+} */
 
 
 @media (max-width: 1090px) {

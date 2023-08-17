@@ -45,7 +45,8 @@
 
 .parent2 h2{
     text-align: end;
-    font-size: 5.4rem;
+    font-size: 8rem;
+    letter-spacing: -1px;
     text-transform: uppercase;
 }
 
@@ -66,7 +67,7 @@
 
 @media (max-width: 1200px) {
     .parent2 h2{
-        font-size: 4.4rem;
+        font-size: 5.5rem;
     }
 }
 
@@ -86,7 +87,7 @@
         text-align: center;
     }
     .parent2 h2{
-        font-size: 3.4rem;
+        font-size: 6rem;
         text-align: center;
     }
     .div22{
@@ -117,7 +118,7 @@
         font-size: 1.2rem;
     }
     .parent2 h2{
-        font-size: 2.4rem;
+        font-size: 5rem;
     }
     .div22{
         gap: 10rem;
@@ -141,7 +142,7 @@
         font-size: 1.2rem;
     }
     .parent2 h2{
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .div22{
         gap: 10.0rem;
