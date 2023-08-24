@@ -35,7 +35,7 @@
 
 #emilia span, #agustina span, #monserrat span{
     color: #4F4F4F;
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: "Clearface",'Courier New', Courier, monospace;
 }
@@ -47,8 +47,8 @@
 
 .titleDiv112{
     display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 
@@ -94,7 +94,7 @@
             font-size: 1.8rem;
         }
         #emilia span, #agustina span, #monserrat span{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
     }
 
@@ -128,7 +128,7 @@
             font-size: 1.6rem;
         }
         #emilia span, #agustina span, #monserrat span{
-            font-size: 1.6rem;
+            font-size: 1.2rem;
         }
     }
 
@@ -140,6 +140,6 @@
             font-size: 1.6rem;
         }
         #emilia span, #agustina span, #monserrat span{
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
     }

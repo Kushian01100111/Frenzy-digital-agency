@@ -33,8 +33,8 @@
 }
 
 .div72 li{
-    line-height: 22px;
-    margin-left: 20px;
+    line-height: 2.2rem;
+    margin-left: 2.0rem;
 }
 
 .buttelt{
@@ -43,7 +43,7 @@
 
 
 .serviceDiv72{
-    padding-top: 30px;
+    padding-top: 3.0rem;
 }
 
 .servicePara{
@@ -56,11 +56,11 @@
 }
 
 .bar1{
-    margin: 20px 0;
+    margin: 2.0rem 0;
 }
 
 .bar2{
-    margin: 20px 0;
+    margin: 2.0rem 0;
 }
 
 
@@ -69,7 +69,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 0.5fr;
         align-items: center;
-        margin-top: 5px;
+        margin-top: .5rem;
     }
     .div71{
         grid-area: 2 / 1 / 3 / 2;

@@ -56,9 +56,6 @@ const Navbar = ({width}) => {
             setYPosition(v)})
     }, [scrollYProgress])
 
-
-
-    console.log(hidden, scrollY, scrollYProgress)
   return (
     <> 
     { yPosition <= 0.1 && width <= 900 && location === "" ? <m.header className={hidden ? "color hiddenNav header" : "color header"}>

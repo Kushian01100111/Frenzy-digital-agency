@@ -12,7 +12,7 @@ section {
   }
 
   .main{
-    width: 522px;
+    width: 52.2rem;
     height: auto;
   }
 
@@ -23,12 +23,12 @@ section {
   .other{
     display: -webkit-flex;
     flex-direction: row;
-    gap: 5px;
+    gap: .5rem;
   }
 
   .others{
     
-    width: 410px;
+    width: 41.0rem;
     height: auto;
   }
 
