@@ -17,7 +17,6 @@ const Navbar = ({width}) => {
     const [yPosition, setYPosition] = useState(0);
     const [active, setActive] = useState(false)
     const location = useLocation().pathname.split("/")[1]
-    const onCurrentPage = useLocation().pathname
   
     useEffect(()=>{
 
@@ -84,8 +83,8 @@ const Navbar = ({width}) => {
                 <li className={location.includes("about_us") ? "currentPage": ""}><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li className={location.includes("contact") ? "currentPage": ""}><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
-                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
-                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank" rel="noreferrer"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank" rel="noreferrer"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
                 </div>
             </ul>      
@@ -118,8 +117,8 @@ const Navbar = ({width}) => {
                 <li className={location.includes("about_us") ? "currentPage": ""}><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li className={location.includes("contact") ? "currentPage": ""}><Link to={"/contact"}>CONTACT</Link></li>
                 <div className="socialsLinks">
-                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
-                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank" rel="noreferrer"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}} className="linkLogo"/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank" rel="noreferrer"><img src={Instagram} alt="Instagram" style={{width:"40px"}} className="linkLogo"/></a></li>
                     <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}} className="linkLogo"/></a></li>
                 </div>
             </ul>      
@@ -135,9 +134,9 @@ const Navbar = ({width}) => {
                     <li><Link to={"/projects"}>PROJECTS</Link></li>
                     <li><Link to={"/about_us"}>ABOUT US</Link></li>
                     <li><Link to={"/contact"}>CONTACT</Link></li>
-                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
-                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
-                    <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank" rel="noreferrer"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank" rel="noreferrer"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer" ><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
                 </ul>
             </div>
         </div>
@@ -152,8 +151,8 @@ const Navbar = ({width}) => {
                 <li className={location.includes("projects") ? "currentPage": ""}><Link to={"/projects"}>PROJECTS</Link></li>
                 <li className={location.includes("about_us") ? "currentPage": ""}><Link to={"/about_us"}>ABOUT US</Link></li>
                 <li className={location.includes("contact") ? "currentPage": ""}><Link to={"/contact"}>CONTACT</Link></li>
-                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
-                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://www.linkedin.com/company/frenzy-digital-media-boutique/" target="_blank" rel="noreferrer"><img src={LinkeDin} alt="Linkedin" style={{width:"40px"}}/></a></li>
+                    <li><a href="https://www.instagram.com/________frenzy/" target="_blank" rel="noreferrer"><img src={Instagram} alt="Instagram" style={{width:"40px"}}/></a></li>
                     <li><a href="https://wa.link/45nwa9" target="_blank" rel="noreferrer"><img src={WhatsApp} alt="Whatsapp" style={{width:"40px"}}/></a></li>
                 </ul>
             </div>

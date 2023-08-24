@@ -19,7 +19,8 @@ const CardMainProjects = ({img,title,list,anchor}) => {
     variants={firstAnimation}
             initial="initial"
             whileInView="whileInView"
-            viewport={{ once: true }}>
+            viewport={{ once: true }}
+            className="anchorCont">
         <Link to={anchor}>
             <m.div className="gridMainProjects"
             initial={{boxShadow: `rgba(0, 0, 0, 0.35) 0px 5px 15px`, backgroundColor:` #DAE9F2;`}}

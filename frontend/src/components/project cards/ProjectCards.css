@@ -6,9 +6,6 @@
     border-radius: 3.0rem;
 }
 
-
-
-
 .container  a{
     color: black;
     text-transform: none;
@@ -39,6 +36,7 @@
 
 .text{
     padding: 0 1.5rem 2.0rem 1.5rem;
+    transform: translateY(-60px) !important ;
 }
 
 .text h3{
@@ -73,14 +71,46 @@
     }
 }
 
+@media (max-width: 800px) {
+    .container{
+        /* 37.0rem * 0.85 = 31.45rem */
+        min-width: 31.45rem; 
+        /* 33.0rem * 0.85 = 28.05rem */
+        height: 28.05rem;
+    }
+
+    .text{
+        transform: translateY(-45px) !important ;
+    }
+}
+
+@media (max-width: 690px) {
+    .container{
+        /* 31.45rem * 0.85 = 26.74rem */
+        min-width: 26.74rem;
+        /* 28.05rem * 0.85 = 23.87rem */
+        height: 23.87rem;
+    }
+}
+
+
+@media (max-width: 590px) {
+    .container{
+        /* 26.74rem * 0.85 = 22.72rem */
+        min-width: 22.72rem;
+        /* 23.87rem * 0.85 = 20.12rem */
+        height: 20.12rem;
+    }
+    .text{
+        padding: 0 1rem 1.5rem 1rem;
+        transform: translateY(-40px) !important ;
+    }
+
+}
+
+
 @media (max-width: 500px) {
     .text h3, .text span{
         font-size: 1.2rem;
     } 
-    .text{
-        padding: 0 5rem;
-    }
-    .text h3{
-        padding: 2rem 0;
-    }
 }

@@ -6,7 +6,7 @@
 }
 
 .contentProjectsTitle{
-        min-height: 13.0rem;
+        min-height: 17.0rem;
         background-color: #001F28;
         color: #fff;
         display: -webkit-flex;
@@ -21,6 +21,6 @@
 
 @media (max-width: 700px) {
     .contentProjectsTitle{
-        min-height: 10.0rem;
+        min-height: 15.0rem;
     }
 }
