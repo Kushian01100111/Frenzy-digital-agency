@@ -25,7 +25,7 @@ const ContentTesti = () => {
             <div className="div112">
                 <div className="titleDiv112">
                     <h2>emilia gazotti</h2>
-                    <span>Vichka Oficial - <span>Co-Fundadora</span></span>
+                    <span>Vichka Oficial | <span>Co-Fundadora</span></span>
                 </div>
                 <div>
                     <p>conocí a la agencia frenzy desde sus inicios. es una agencia con la que podes contar para crear una estrategia 360 de comunicación para tu empresa. entendiendo 100% el mundo digital proponen también ideas para conectar con el mundo físico. lo logran teniendo un equipo creativo, responsable, innovador y alegre. trabajar con las chicas de frenzy siempre es un verdadero placer.</p>
@@ -45,7 +45,7 @@ const ContentTesti = () => {
             <div className="div112">
                 <div className="titleDiv112">
                     <h2>agustina petralia</h2>
-                    <span>Desiderata, Grupo Mazalosa - <span>Analista de marketing</span></span>
+                    <span>Desiderata, Grupo Mazalosa | <span>Analista de marketing</span></span>
                     
                 </div>
                 <div>
@@ -66,7 +66,7 @@ const ContentTesti = () => {
             <div className="div112">
                 <div className="titleDiv112">
                     <h2>montserrat zaefferer</h2>
-                    <span>Sarapura DJs - <span>Marketing Manager</span></span>
+                    <span>Sarapura DJs | <span>Marketing Manager</span></span>
                 </div>
                 <div>
                     <p>hace más de un año que trabajo con Frenzy y no dejan de soprenderme. fui parte de todo su crecimiento profesional y puedo dar fe que todo lo que hacen lo hacen con la mayor dedicación y profesionalismo pero sobre todo con amor. estoy muy agradecida del gran equipo que me acompaña, asesora y ayuda a llevar mi marca al lugar que siempre soñé. Sin dudas hoy no estaríamos donde estamos sin la agencia. Vamos por más!.</p>

@@ -21,8 +21,7 @@ const Testimonials = ({name,company,position,exp,link}) => {
         <div className="content" >
             <div className="contentTitle">
                 <h2>{name}</h2>
-                <span>{company}</span>
-                <span>{position}</span>
+                <span>{company} | <span>{position}</span></span>
             </div>  
             <div>
                <p>{exp}</p>

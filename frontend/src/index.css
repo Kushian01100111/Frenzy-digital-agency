@@ -46,7 +46,7 @@ html{
   font-size: 62.5% !important;
 }
 
-@media (max-width: 1390px) {
+@media (max-width: 1500px) {
   html{
     font-size: 41.5% !important;
   }
