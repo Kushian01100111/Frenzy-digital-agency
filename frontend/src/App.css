@@ -58,7 +58,7 @@
   padding-top: 2.5vh;
   flex-direction: column;
   max-width: 100%;
-  gap: 2.5vh;
+  gap: 5vh;
   padding: 0 0;
   justify-content: flex-end;
   scroll-snap-stop: always;
