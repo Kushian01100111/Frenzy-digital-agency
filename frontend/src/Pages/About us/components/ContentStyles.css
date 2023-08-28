@@ -82,10 +82,13 @@
 
 @media (max-width: 1090px) {
     .mainAboutUs h1{
-        font-size: 3;
+        font-size: 3rem;
     }
     .caro h3, .yanina h3{
         font-size: 2.4rem;
+    }
+    .caro p, .yanina p{
+        font-size: 2rem;
     }
 }
 
@@ -114,10 +117,10 @@
         padding: 0;
     }
     .caro h3, .yanina h3{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .caro p, .yanina p{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         margin-top: 2.0rem;
     }
 }
@@ -125,10 +128,10 @@
 
 @media (max-width: 370px) {
     .caro h3, .yanina h3{
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
     .caro p, .yanina p{
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         margin-top: 2.0rem;
     }
 }

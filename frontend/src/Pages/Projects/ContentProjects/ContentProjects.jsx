@@ -41,12 +41,6 @@ const ContentProjects = () => {
             anchor={"/projects/shooting_vichka"}
             list={["producción de fotos y estilismo para vichka."]}
             />
-            {/* <CardMainProjects
-            img={}
-            title={}
-            anchor={}
-            list={[]}
-            /> */}
         </div>
       
     </div>

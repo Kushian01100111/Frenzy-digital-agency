@@ -1,7 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import Testimonios from './components/homepage componets/testimonios/Testimonios';
-import TestimoniosTablet from './components/homepage componets/testimonios/TestimoniosTablet';
 import Services from './components/homepage componets/services/Services';
 import Navbar from './components/navbar/Navbar';
 import Typewriter from './components/typewriter/Typewriter';

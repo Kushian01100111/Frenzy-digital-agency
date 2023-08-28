@@ -3,7 +3,7 @@
 }
 
 .contentTestimoniosTitle{
-    min-height: 17.0rem;
+    min-height: 24.0rem;
     background-color: #001F28;
     color: #fff;
     display: -webkit-flex;
@@ -15,6 +15,6 @@
 
 @media (max-width: 500px) {
     .contentTestimoniosTitle{
-        min-height: 12.0rem;
+        min-height: 20.0rem;
     }
 }

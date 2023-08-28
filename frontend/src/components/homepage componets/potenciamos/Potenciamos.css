@@ -80,7 +80,8 @@
     }
     .nameMarcas div{
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 2rem;
+        margin: 0;
     }
 }
 
@@ -99,11 +100,17 @@
         text-align: center;
     }
     .nameMarcas div{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         margin: 0;
     }
     .nameMarcas{
         width: 100%;
     }
     
+}
+
+@media (max-width: 370px) {
+    .nameMarcas div{
+        font-size: 1.7rem;
+    }
 }

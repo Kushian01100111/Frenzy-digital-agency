@@ -3,7 +3,7 @@
 }
 
 .contentAboutUsTitle{
-    min-height: 17.0rem;
+    min-height: 24.0rem;
     background-color: #001F28;
     color: #fff;
     display: -webkit-flex;
@@ -23,7 +23,14 @@
     }
 
     .contentAboutUsTitle{
-        min-height: 13.0rem;
+        min-height: 20.0rem;
+        padding: 0 3rem;
     }
 }
 
+
+@media (max-width: 500px) {
+    .mainAboutUs{
+        padding: 5rem 3rem;
+    }
+}

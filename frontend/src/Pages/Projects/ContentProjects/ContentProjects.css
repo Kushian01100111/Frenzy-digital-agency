@@ -10,3 +10,10 @@
     gap: 2.0rem;
     justify-content: center;
 }
+
+
+@media (max-width: 500px) {
+    .contenProjects{
+        gap: 5rem;
+    }
+}

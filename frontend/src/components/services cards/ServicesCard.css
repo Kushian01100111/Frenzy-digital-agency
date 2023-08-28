@@ -33,24 +33,13 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 1250px) {
-    .div122 span{
-        font-size: 1.8rem;
-    }
-}
 
 @media (max-width: 1090px) {
     .serviceCard{
         width: 80vw;
     }
     .div122 span{
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 1090px) {
-    .div122 span{
-        font-size: 1.4rem;
+        font-size: 1.9rem;
     }
 }
 
@@ -59,7 +48,7 @@
         padding: 1.0rem 1.0rem .7rem 1.0rem;
     }
     .div122 span{
-        font-size: 1rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -68,6 +57,6 @@
         padding: 1.5rem 1.0rem 1.2rem 1.0rem;
     }
     .div122 span{
-        font-size: 1rem;
+        font-size: 1.6rem;
     }
 }

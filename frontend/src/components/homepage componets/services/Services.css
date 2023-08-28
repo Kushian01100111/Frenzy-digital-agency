@@ -74,8 +74,17 @@
 
 
 @media (max-width: 1090px) {
+    .contentServices{
+        justify-content: center;
+        gap: 5vh;
+    }
     .services{
+        gap: 5vh;
         flex-direction: column; 
+    }
+
+    .textServices h2{
+        padding-bottom: 1rem;
     }
     .parent2{
         margin-top: 2rem;
@@ -83,15 +92,16 @@
         min-height: 33rem;
     }
     .parent2 p{
-        font-size: 1.6rem;
+        font-size: 2rem;
         text-align: center;
     }
     .parent2 h2{
         font-size: 6rem;
         text-align: center;
+        padding-bottom: 1rem;
     }
     .div22{
-        justify-content: space-evenly;
+        justify-content: center;
     }
 }
 
@@ -115,7 +125,7 @@
         min-height: 23rem;
     }
     .parent2 p{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .parent2 h2{
         font-size: 5rem;
@@ -139,7 +149,7 @@
         min-height: 23.0rem;
     }
     .parent2 p{
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
     .parent2 h2{
         font-size: 4rem;
