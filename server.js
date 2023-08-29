@@ -2,7 +2,7 @@ import express  from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import path from "path";
-import connectDB from "./config/database.js";
+import formControl from "./form/formControl.js";
 import { fileURLToPath } from "url";
 // import formRoute from "./form/formController"
 
@@ -26,10 +26,11 @@ app.use(cors({
 }))
 
 // Static folder || React files
-app.use(express.static("frontend"))
+app.use(express.static("frontend/build"))
 
 //Setup routes
-// app.use("/api/form", formRoute)
+app.use("/api/form", formControl)
+
 app.use("*",(_, res)=>{
     res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
 } )

@@ -1,5 +1,6 @@
 import "./ContentContact.css"
 import { useFormik } from "formik"
+import * as Yup from "yup"
 import { useState } from "react"
 import {motion as m} from "framer-motion"
 
@@ -12,6 +13,42 @@ const ContentContact = () => {
           email:"",
           mensaje: ""
         },
+
+        validationSchema: Yup.object({
+          nameCompanies: Yup.string()
+          .max(20, "name must be 20 charracter or less")
+          .required("Debe de escribir un nombre"),
+          email: Yup.string()
+          .email("Email invalido")
+          .required("debe de escribir un mail"),
+          mensaje: Yup.string()
+          .min(20, "el mensaje debe de poseer minimo 5 caracteres o mas")
+          .required("debe de escribir un mensaje para ser enviado.")
+        }),
+
+      onSubmit: async (values, resetForm)=>{
+        setWaitingForm(true)
+          const response = await fetch("/api/form", {
+            method: "POST",
+            headers:{
+              'Content-type': 'application/json',
+            },
+            body: JSON.stringify(values),
+            credentials: "include",
+          })
+
+          const json = await response.json()
+
+          if(json){
+            console.log("form submitted")
+            setWaitingForm(false)
+            resetForm()
+          }else{
+            console.log("Error")
+          }
+
+      }
+
     })
 
     const firstAnimation = {
@@ -39,19 +76,18 @@ const ContentContact = () => {
             onSubmit={formik.handleSubmit}>
             <div className="parent1">
                 <div className="div101">
-                  <label htmlFor="name"
-                  className={`${formik.touched.name &&formik.errors.name 
+                  <label htmlFor="nameCompanies"
+                  className={`${formik.touched.nameCompanies &&formik.errors.nameCompanies 
                   ? "error"
                   : ""}`}>
-                  {formik.touched.name && formik.errors.name 
-                  ? formik.errors.name
+                  {formik.touched.nameCompanies && formik.errors.nameCompanies 
+                  ? formik.errors.nameCompanies
                   : "tu nombre o el nombre tu empresa"}</label>
                     <input type="text" 
                     placeholder="escribe tu nombre"
                     id="nameCompanies"
                     value={formik.values.nameCompanies}
                     onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
                     />
                 </div>
                 <div className="div102">
