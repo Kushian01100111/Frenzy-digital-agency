@@ -5,8 +5,6 @@ const OAuth2 = google.auth.OAuth2
 dotenv.config({path: "./../config/.env"})
 
 const formControl = async (req, res) =>{
-
-  console.log(req)
     const { nameCompanies, email, mensaje } = req.body;
 
 

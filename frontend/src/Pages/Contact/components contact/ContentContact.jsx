@@ -2,6 +2,7 @@ import "./ContentContact.css"
 import { useFormik } from "formik"
 import * as Yup from "yup"
 import { useState } from "react"
+import swal from "sweetalert"
 import {motion as m} from "framer-motion"
 
 const ContentContact = () => {
@@ -26,8 +27,9 @@ const ContentContact = () => {
           .required("debe de escribir un mensaje para ser enviado.")
         }),
 
-      onSubmit: async (values, resetForm)=>{
+      onSubmit: async (values, {resetForm})=>{
         setWaitingForm(true)
+        console.log(values)
           const response = await fetch("/api/form", {
             method: "POST",
             headers:{
@@ -40,15 +42,18 @@ const ContentContact = () => {
           const json = await response.json()
 
           if(json){
-            console.log("form submitted")
             setWaitingForm(false)
-            resetForm()
+            resetForm({values: ""})
+            console.log("form submitted")
+            swal({
+              title: "tu mensaje fue enviado!",
+              text: "tu mensaje ha sido enviado, ¡espera en breve a que te respondamos!",
+              icon: "success",
+          })
           }else{
             console.log("Error")
           }
-
       }
-
     })
 
     const firstAnimation = {
@@ -121,7 +126,8 @@ const ContentContact = () => {
                     onChange={formik.handleChange}>
                     </textarea>
                 </div>
-              {waitingForm ? (<div className="div104" key={waitingForm}>
+              {waitingForm ? (
+                <div className="div105" key={waitingForm}>
                   <div className="loader-container">
                     <div className="spinner"></div>
                   </div>

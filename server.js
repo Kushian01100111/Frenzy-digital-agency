@@ -25,6 +25,10 @@ app.use(cors({
     credentials: true
 }))
 
+// Body Parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 // Static folder || React files
 app.use(express.static("frontend/build"))
 
