@@ -34,8 +34,8 @@ const CardMainProjects = ({img,title,list,anchor}) => {
                 style={{backgroundImage: `linear-gradient(314.36deg, rgba(0, 0, 0, 0.4) 2.29%, rgba(0, 0, 0, 0) 98.94%), url(${img})`}}></div>
                 <div className="div132">
                     <h2>{title}</h2>
-                    {list.map(n => {
-                        return <li className="buttelt liProjects">{n}</li>
+                    {list.map((n, i) => {
+                        return <li key={i} className="buttelt liProjects">{n}</li>
                     })}
                 </div>
             </m.div>

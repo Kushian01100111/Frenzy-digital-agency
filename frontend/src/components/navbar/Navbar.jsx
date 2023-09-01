@@ -30,8 +30,6 @@ const Navbar = ({width}) => {
         }
 
         window.addEventListener("scroll", handleScroll)
-
-        console.log(scrollY)
         return () => window.removeEventListener("scroll", handleScroll )
     }, [])
 
@@ -57,7 +55,8 @@ const Navbar = ({width}) => {
 
   return (
     <> 
-    { yPosition <= 0.1 && width <= 900 && location === "" ? <m.header className={hidden ? "color hiddenNav header" : "color header"}>
+    { yPosition <= 0.1 && width <= 900 && location === "" ? 
+    <m.header className={hidden ? "color hiddenNav header" : "color header"}>
         <div className="navbar">
             <div>
                 <Link to={"/"}><img src={Frenzy} alt="Logo" className="logo" /></Link>
@@ -67,7 +66,7 @@ const Navbar = ({width}) => {
                     <div onClick={()=> setActive(!active)}>
                         <m.div animate={ !active ? {width: 35, height:4, backgroundColor: "#000", margin: 5, borderRadius: 20, 
                         transform: "translateY(0px) rotate(0deg)"}:
-                        {width: 35, height:4, backgroundColor: "#000", margin: 5, borderRadius: 20, transform: "translateY(8px) rotate(45deg)"}    }></m.div>
+                        {width: 35, height:4, backgroundColor: "#000", margin: 5, borderRadius: 20, transform: "translateY(8px) rotate(45deg)"}}></m.div>
                         <m.div animate={ !active ? {width: 35, height:4, backgroundColor: "#000", margin: 5, borderRadius: 20}:
                         {width: 35, height:4, backgroundColor: "#000", margin: 5, borderRadius: 20, opacity: 0}    }></m.div>
                         <m.div animate={ !active ? {width: 35, height:4, backgroundColor: "#000", margin: 5, borderRadius: 20, transform: "translateY(0px) rotate(0deg)"}:
