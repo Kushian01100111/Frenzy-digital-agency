@@ -64,6 +64,16 @@
     }
 } */
 
+@media (min-width: 1500px) {
+    
+    .text{
+        padding: 0 1.5rem 2.0rem 1.5rem;
+        transform: translateY(-80px) !important ;
+    }
+
+}
+
+
 
 @media (max-width: 1090px) {
     .text h3, .text span{
