@@ -28,18 +28,6 @@ const ContentDesiderata = () => {
             </div>
         </div>
         <div>
-             <m.div className="desiderataFlex1"
-             variants={firstAnimation}
-                  initial="initial"
-                  whileInView="whileInView">
-                <div className="desiContent iframe">
-                    <img src={desiderataImgs[1]} alt="Desiderata" />
-                </div>
-                <div className="desiContent">
-                    <img src={desiderataImgs[1]} alt="Desiderata" />
-                </div>
-                
-             </m.div>
              <m.div className="desiderataFlex2"
              variants={firstAnimation}
                   initial="initial"
@@ -49,6 +37,14 @@ const ContentDesiderata = () => {
                 </div>
                 <div className="desiContent">
                     <img src={desiderataImgs[4]} alt="Desiderata" />
+                </div>
+             </m.div>
+             <m.div className="desiderataFlex1"
+             variants={firstAnimation}
+                  initial="initial"
+                  whileInView="whileInView">
+                <div className="desiContent">
+                    <img src={desiderataImgs[1]} alt="Desiderata" />
                 </div>
              </m.div>          
         </div>
