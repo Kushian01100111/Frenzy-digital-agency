@@ -3,6 +3,7 @@ import { google } from "googleapis";
 import dotenv from "dotenv";
 const OAuth2 = google.auth.OAuth2
 dotenv.config({path: "./../config/.env"})
+ 
 
 const formControl = async (req, res) =>{
     const { nameCompanies, email, mensaje } = req.body;
