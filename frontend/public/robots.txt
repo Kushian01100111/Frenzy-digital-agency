@@ -3,3 +3,4 @@ allow: /
 allow: /projects
 allow: /contact
 allow: /about_us
+sitemap: https://frenzymedia.net/api/sitemap.xml

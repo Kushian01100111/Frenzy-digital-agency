@@ -24,7 +24,7 @@ const Sarapura = () => {
   return (
     <div className="sarapura">
         <Navbar width={width}/>
-        <TitlesProjects title={"sapura"}
+        <TitlesProjects title={"sarapura"}
             services={"diseño grafico"}
         />
         <div className="mainSapura">

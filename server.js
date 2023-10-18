@@ -35,6 +35,10 @@ app.use(express.static("frontend/build"))
 //Setup routes
 app.use("/api/form", formControl)
 
+app.use("/api/sitemap.xml", (_, res) =>{
+    res.sendFile(path.join(__dirname, "sitemap.xml"));
+})
+
 app.use("*",(_, res)=>{
     res.sendFile(path.join(__dirname, 'frontend/build/index.html'));
 } )
