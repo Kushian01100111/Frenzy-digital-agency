@@ -1,0 +1,5 @@
+User-agent: *
+allow: /
+allow: /projects
+allow: /contact
+allow: /about_us
