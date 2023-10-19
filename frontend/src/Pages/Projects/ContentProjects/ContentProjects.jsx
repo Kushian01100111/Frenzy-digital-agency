@@ -24,6 +24,18 @@ const ContentProjects = () => {
             list={["social media management para la marca de indumentaria femenina desiderata.","diseño de feed, redacción de copies, diseño de Instagram Stories.","estrategia digital."]}
             />
             <CardMainProjects
+            img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697741158/Frenzy/01_exsvfh.jpg"}
+            title={"ginebra - perfume"}
+            anchor={"/projects/ginebra_perfume"}
+            list={["cobertura audiovisual en evento - perfume metanoia de la marca de indumentaria femenina Ginebra. entrega de contenido (foto y video) en vivo."]}
+            />
+            <CardMainProjects
+            img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697743651/Frenzy/01_1_qhg6ja.jpg"}
+            title={"ginebra - indumentaria"}
+            anchor={"/projects/ginebra_indumentaria"}
+            list={["cobertura audiovisual de foto y video para feria de la marca de indumentaria femenina Ginebra."]}
+            />
+            <CardMainProjects
                 img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677536/Frenzy/Rectangle_3852d_ahsptw.png"}
             title={"oleana jewelry"}
             anchor={"/projects/oleana"}
@@ -37,7 +49,7 @@ const ContentProjects = () => {
             />
             <CardMainProjects
                 img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683679383/Frenzy/Rectangle_3904_cqwcpa.png"}
-            title={"shooting vichka"}
+            title={"vichka"}
             anchor={"/projects/shooting_vichka"}
             list={["producción de fotos y estilismo para vichka."]}
             />

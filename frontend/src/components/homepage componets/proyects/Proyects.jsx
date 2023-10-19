@@ -24,7 +24,7 @@ useEffect(() => {
           <ProjectCards link={"/projects/desiderata"} title={"desiderata"} description={"social media"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677461/Frenzy/Rectangle_3852_il5ar8.png"} pageWidth={width}/>
           <ProjectCards link={"/projects/oleana"} title={"oleana jewelry"} description={"shooting"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677536/Frenzy/Rectangle_3852d_ahsptw.png"} pageWidth={width}/>
           <ProjectCards link={"/projects/sarapura"} title={"sarapura"} description={"diseño gráfico"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677470/Frenzy/Rectangle_385g2_oh94ow.png"} pageWidth={width}/>
-          <ProjectCards link={"/projects/shooting_vichka"} title={"shooting vichka"} description={"shooting"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683679383/Frenzy/Rectangle_3904_cqwcpa.png"} pageWidth={width}/> 
+          <ProjectCards link={"/projects/shooting_vichka"} title={"vichka"} description={"shooting"} img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683679383/Frenzy/Rectangle_3904_cqwcpa.png"} pageWidth={width}/> 
         </div>
         <div className="buttonMoreProjects"><Link to={"/projects"}><Button text={"MÁS PROYECTOS"}/></Link></div>
     </div>

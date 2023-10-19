@@ -48,8 +48,6 @@ const TextImgPro = ({img, description, service, date}) => {
                         >
                     <p className="servicePara">servicios: <span>{service}</span></p>
                     <hr  className="bar1"/>
-                    <p className="servicePara">fecha: <span>{date}</span></p>
-                    <hr className="bar2"/>
                 </m.div>
             </div>
         </div>

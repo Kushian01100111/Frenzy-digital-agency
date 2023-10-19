@@ -41,7 +41,7 @@ useEffect(() => {
                     initial="initial"
                     whileInView="whileInView"
                     viewport={{ once: true }}
-                    className="greenH3">QUIÉNES ESTÁN DETRÁS DE FRENZY</m.h1>
+                    className="greenH3">QUIÉN ESTÁ DETRÁS DE FRENZY</m.h1>
       </div>
       <div className="mainAboutUs">
       <ContentAboutUs/>

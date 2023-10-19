@@ -1,8 +1,6 @@
 import "./ContentStyles.css"
 import {motion as m} from "framer-motion"
 import Caro from "./../../../assects/imgs/About us/Caro.png"
-import Yanina from "./../../../assects/imgs/About us/Yanina.png"
-
 
 const ContentAboutUs = () => {
     const firstAnimation = {
@@ -13,26 +11,8 @@ const ContentAboutUs = () => {
         duration: 2
       }}
     }
-
-    const secundAnimation = {
-      initial: {y:60, opacity: 0.5},
-      whileInView :{y: 0, opacity: 1, transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2
-      }}
-    }
-
     const treAnimation = {
       initial: {x:120, opacity: 0.5},
-      whileInView :{x: 0, opacity: 1, transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2.5
-      }}
-    }
-    const fourAnimation = {
-      initial: {x:-120, opacity: 0.5},
       whileInView :{x: 0, opacity: 1, transition: {
         type: "spring",
         bounce: 0.4,
@@ -55,28 +35,9 @@ const ContentAboutUs = () => {
                 viewport={{ once: true }}>
             <div className="ky">
               <h3>CAROLINA ALBARRACÍN</h3>
-              <p>carolina, creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el rubro y un master en marketing y comunicación de moda en ied barcelona.
+              <p>
+                soy una creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el mundo digital y un master en marketing y comunicación de moda en ied barcelona. mi propuesta es llevar el perfil de mis clientes un paso más allá, a través de estrategias de marketing y comunicación persuasivas, establecidas en el tiempo. somos una agencia 24/7, porque sabemos que las redes sociales hoy en día son muy exigentes. no aceptamos a cualquier cliente, solo a aquellos que estén alineados con nuestros objetivos, y a los que sabemos que podemos ayudar.
               </p>
-            </div>
-            
-        </m.div>
-      </div>
-      <div className="contentYanina">
-        <m.div className="div61"
-        variants={secundAnimation}
-                initial="initial"
-                whileInView="whileInView"
-                viewport={{ once: true }}>
-            <img src={Yanina} alt="ImageYanina" />
-        </m.div>
-        <m.div className="yanina"
-        variants={ fourAnimation}
-                initial="initial"
-                whileInView="whileInView"
-                viewport={{ once: true }}>
-            <div className="ky">
-              <h3>YANINA FAOUR</h3>
-              <p>el área de expertise de yanina faour es el marketing de ventas, siendo la más comercial “de las creativas”.ha participado de contados programas de fellowship y mentoreo de mujeres líderes en el área deempoderamiento económico.</p>
             </div>
         </m.div>
       </div>

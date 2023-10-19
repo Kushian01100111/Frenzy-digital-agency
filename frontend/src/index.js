@@ -15,6 +15,8 @@ import Desiderata from './Pages/Desiderata/Desiderata';
 import Oleana from './Pages/Oleana/Oleana'
 import Sarapura from './Pages/Sapura/Sarapura';
 import ShootingVichka from './Pages/Shooting Vichka/ShootingVichka';
+import Ginebra from './Pages/Ginebra/Ginebra';
+import GineIndumentaria from './Pages/GinebraIndumentaria/GineIndumentaria';
 
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -68,6 +70,14 @@ const router = createBrowserRouter([{
       {
         path: "/projects/shooting_vichka",
         element: <ShootingVichka/>
+      },
+      {
+        path: "/projects/ginebra_perfume",
+        element: <Ginebra/>
+      },
+      {
+        path: "/projects/ginebra_indumentaria",
+        element: <GineIndumentaria/>
       }
     ]
 }])
