@@ -1,12 +1,8 @@
 import "./Potenciamos.css"
 import {motion as m} from "framer-motion"
 import companies from "../../../assects/imgs/Marcas/Compañias.png"
-import { useEffect, useState } from "react"
-
-
 
 const Potenciamos = () => {
-  const [width, setWidth] = useState(window.innerWidth);
     const firstAnimation = {
         initial: {y:60, opacity: 0},
         whileInView :{y: 0, opacity: 1, transition: {
@@ -24,24 +20,6 @@ const Potenciamos = () => {
         }}
       }
 
-      const treAnimation = {
-        initial: {y:60, opacity: 0},
-        whileInView :{y: 0, opacity: 1, transition: {
-          type: "spring",
-          bounce: 0.4,
-          duration: 2
-        }}
-      }
-
-      function handleWindowSizeChange() {
-        setWidth(window.innerWidth);
-    }
-    useEffect(() => {
-        window.addEventListener('resize', handleWindowSizeChange);
-        return () => {
-            window.removeEventListener('resize', handleWindowSizeChange);
-        }
-    }, []);
   return (
     <div className='contentPoten'>
             <div className="poten">

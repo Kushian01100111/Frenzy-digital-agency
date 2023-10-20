@@ -5,5 +5,7 @@ import num4 from "./../imgs/Estudio Barcelona/image 3.png"
 import num5 from "./../imgs/Estudio Barcelona/image4.png"
 import num6 from "./../imgs/Estudio Barcelona/image 5.png"
 
-export default [num1, num2, num3, num4, num5, num6]
+const barcelonaImgs = [num1, num2, num3, num4, num5, num6];
+
+export default barcelonaImgs
 

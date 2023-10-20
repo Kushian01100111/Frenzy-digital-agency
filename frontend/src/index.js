@@ -17,6 +17,7 @@ import Sarapura from './Pages/Sapura/Sarapura';
 import ShootingVichka from './Pages/Shooting Vichka/ShootingVichka';
 import Ginebra from './Pages/Ginebra/Ginebra';
 import GineIndumentaria from './Pages/GinebraIndumentaria/GineIndumentaria';
+import SB from './Pages/SB/SB';
 
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -66,6 +67,10 @@ const router = createBrowserRouter([{
       {
         path: "/projects/sarapura",
         element: <Sarapura/>
+      },
+      {
+        path: "/projects/sb_collection",
+        element: <SB/>
       },
       {
         path: "/projects/shooting_vichka",

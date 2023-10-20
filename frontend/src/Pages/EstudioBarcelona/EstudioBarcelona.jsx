@@ -1,4 +1,5 @@
 import "./EstudioBarcelona.css"
+import Helmet from "react-helmet"
 import { useState, useEffect } from "react"
 import ContactBar from "../../components/contact bar/ContactBar"
 import Footer from "../../components/footer/Footer"
@@ -22,6 +23,13 @@ const EstudioBarcelona = () => {
     window.scrollTo(0, 0);
     }, []);
   return (
+    <>
+    <Helmet>
+        <title>Estudio Barcelona | Frenzy Media</title>
+        <meta name="description" content="Rediseño de logo que identificara a la marca. Se desarrollaron 3 propuestas y sus aplicaciones, de dónde salió la propuesta elegida. Entrega de contenido (foto y video) en vivo. Con Frenzy transforma tu presencia en línea, Potencia tu marca, conecta con tu audiencia y alcanza resultados excepcionales en el mundo digital, All Rights Reserved 2023© Frenzy Media. All materials on these pages are copyrighted."/>
+        <meta property="og:title" content="Estudio Barcelona | Frenzy Media"></meta>
+        <meta name="twitter:title" content="Estudio Barcelona | Frenzy Media"></meta>
+    </Helmet>
     <div>
         <Navbar width={width}/>
         <TitlesProjects title={"estudio barcelona"} services={"rebranding"}/>
@@ -33,6 +41,7 @@ const EstudioBarcelona = () => {
             <Footer/>
         </div>
     </div>
+    </>
   )
 }
 

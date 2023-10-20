@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Helmet from "react-helmet"
 import Navbar from "../../components/navbar/Navbar";
 import ContactBar from "../../components/contact bar/ContactBar";
 import Footer from "../../components/footer/Footer";
@@ -21,6 +22,13 @@ useEffect(() => {
   }, []);
 
   return (
+    <>
+    <Helmet>
+        <title>Ginebra Indumentaria | Frenzy Media</title>
+        <meta name="description" content="Cobertura audiovisual de foto y video para feria de la marca de indumentaria femenina ginebra. Con Frenzy transforma tu presencia en línea, Potencia tu marca, conecta con tu audiencia y alcanza resultados excepcionales en el mundo digital, All Rights Reserved 2023© Frenzy Media. All materials on these pages are copyrighted."/>
+        <meta property="og:title" content="Ginebra Indumentaria | Frenzy Media"></meta>
+        <meta name="twitter:title" content="Ginebra Indumentaria | Frenzy Media"></meta>
+    </Helmet>
     <div className="mainGine">
         <Navbar width={width}/>
         <TitlesProjects title={"ginebra - indumentaria"}
@@ -34,6 +42,7 @@ useEffect(() => {
             <Footer/>
         </div>
     </div>
+    </>
   )
 }
 

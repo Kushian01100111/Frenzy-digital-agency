@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import Helmet from "react-helmet";
 import Testimonios from './components/homepage componets/testimonios/Testimonios';
 import Services from './components/homepage componets/services/Services';
 import Navbar from './components/navbar/Navbar';
@@ -21,6 +22,13 @@ useEffect(() => {
     }
 }, []);
   return (
+    <>
+    <Helmet>
+        <title>Frenzy Media - Boutique</title>
+        <meta name="description" content="Con Frenzy transforma tu presencia en línea, Potencia tu marca, conecta con tu audiencia y alcanza resultados excepcionales en el mundo digital, All Rights Reserved 2023© Frenzy Media. All materials on these pages are copyrighted."/>
+        <meta property="og:title" content="Frenzy Media - Boutique"></meta>
+        <meta name="twitter:title" content="Frenzy Media - Boutique"></meta>
+    </Helmet>
     <div className="App">
       <Navbar width={width}/>
         <div className='principalBanner'>
@@ -43,6 +51,7 @@ useEffect(() => {
              </div>
         </div>
     </div>
+    </>
   );
 }
 

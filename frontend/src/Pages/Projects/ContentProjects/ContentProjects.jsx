@@ -36,6 +36,12 @@ const ContentProjects = () => {
             list={["cobertura audiovisual de foto y video para feria de la marca de indumentaria femenina Ginebra."]}
             />
             <CardMainProjects
+            img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697813815/Frenzy/01_jugpmp.jpg"}
+            title={"sb collection"}
+            anchor={"/projects/sb_collection"}
+            list={["social media management y diseño gráfico para la empresa de sb collection."]}
+            />
+            <CardMainProjects
                 img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677536/Frenzy/Rectangle_3852d_ahsptw.png"}
             title={"oleana jewelry"}
             anchor={"/projects/oleana"}

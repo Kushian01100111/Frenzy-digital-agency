@@ -1,4 +1,5 @@
 import "./MainProjects.css"
+import Helmet from "react-helmet"
 import Navbar from "../../components/navbar/Navbar";
 import ContactBar from "../../components/contact bar/ContactBar";
 import Footer from "../../components/footer/Footer";
@@ -30,6 +31,13 @@ const MainProjects = () => {
     window.scrollTo(0, 0);
     }, []);
   return (
+    <>
+    <Helmet>
+        <title>Projects | Frenzy Media</title>
+        <meta name="description" content="Explora nuestra cartera de proyectos innovadores y soluciones digitales de vanguardia. Descubre cómo hemos transformado ideas en resultados tangibles para nuestros clientes. Con Frenzy transforma tu presencia en línea, Potencia tu marca, conecta con tu audiencia y alcanza resultados excepcionales en el mundo digital, All Rights Reserved 2023© Frenzy Media. All materials on these pages are copyrighted."/>
+        <meta property="og:title" content="Projects | Frenzy Media"></meta>
+        <meta name="twitter:title" content="Projects | Frenzy Media"></meta>
+    </Helmet>
     <div>
         <Navbar width={width}/>
         <div className="contentProjectsTitle">
@@ -48,6 +56,7 @@ const MainProjects = () => {
             <Footer/>
         </div>
     </div>
+    </>
   )
 }
 

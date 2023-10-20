@@ -1,4 +1,5 @@
 import "./PageTestimonios.css"
+import Helmet from "react-helmet"
 import { useState, useEffect } from "react"
 import {motion as m} from "framer-motion"
 import Navbar from "../../components/navbar/Navbar"
@@ -30,6 +31,13 @@ const PageTestimonios = () => {
     window.scrollTo(0, 0);
     }, []);
   return (
+    <>
+    <Helmet>
+        <title>Testimonios | Frenzy Media</title>
+        <meta name="description" content="Descubre lo que nuestros clientes dicen sobre su experiencia trabajando con nosotros. Lee testimonios auténticos que destacan nuestro compromiso con la excelencia y la satisfacción del cliente en cada proyecto. Con Frenzy transforma tu presencia en línea, Potencia tu marca, conecta con tu audiencia y alcanza resultados excepcionales en el mundo digital, All Rights Reserved 2023© Frenzy Media. All materials on these pages are copyrighted."/>
+        <meta property="og:title" content="Testimonios | Frenzy Media"></meta>
+        <meta name="twitter:title" content="Testimonios | Frenzy Media"></meta>
+    </Helmet>
     <div>
         <Navbar width={width}/>
         <div className="contentTestimoniosTitle">
@@ -48,6 +56,7 @@ const PageTestimonios = () => {
             <Footer/>
         </div>
     </div>
+    </>
   )
 }
 
