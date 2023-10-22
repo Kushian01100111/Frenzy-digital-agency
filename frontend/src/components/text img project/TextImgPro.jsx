@@ -30,7 +30,7 @@ const TextImgPro = ({img, description, service, date}) => {
             variants={secundAnimation}
                 initial="initial"
                 whileInView="whileInView"
-                ><span>descripcion del proyecto:</span></m.div>
+                ><span>descripción del proyecto:</span></m.div>
             <div>
                 <m.ul
                     variants={secundAnimation}

@@ -39,16 +39,12 @@
 }
 
 .div132 li{
+    list-style: none;
     padding: 1rem 0;
 }
-
-.div132  li::before{
-    content: "";
-    margin-left: -1.3rem;
-}
-
 .liProjects{
     font-size: 2.2rem;
+    text-transform: lowercase;
 }
 
 
