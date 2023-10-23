@@ -1,6 +1,3 @@
-User-agent: *
-allow: /
-allow: /projects
-allow: /contact
-allow: /about_us
-sitemap: https://frenzymedia.net/api/sitemap.xml
+User-agent: Googlebot
+Allow: /
+sitemap:https://frenzymedia.net/api/sitemap.xml

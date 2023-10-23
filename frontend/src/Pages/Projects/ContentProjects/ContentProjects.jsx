@@ -39,7 +39,7 @@ const ContentProjects = () => {
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697813815/Frenzy/01_jugpmp.jpg"}
             title={"sb collection"}
             anchor={"/projects/sb_collection"}
-            list={["social media management y diseño gráfico para la empresa de sb collection."]}
+            list={<span className="buttelt liProjects">social media management y diseño gráfico para la empresa de sb&nbsp;collection.</span>}
             />
             <CardMainProjects
                 img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677536/Frenzy/Rectangle_3852d_ahsptw.png"}
@@ -51,7 +51,7 @@ const ContentProjects = () => {
                 img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677470/Frenzy/Rectangle_385g2_oh94ow.png"}
             title={"sarapura"}
             anchor={"/projects/sarapura"}
-            list={["social media management y diseño gráfico para la empresa de dj´s sarapura."]}
+            list={<span className="buttelt liProjects">social media management y diseño gráfico para la empresa de dj´s&nbsp;sarapura.</span>}
             />
             <CardMainProjects
                 img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683679383/Frenzy/Rectangle_3904_cqwcpa.png"}

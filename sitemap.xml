@@ -1,67 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
   <loc>https://frenzymedia.net/</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>1.00</priority>
 </url>
-
 <url>
   <loc>https://frenzymedia.net/projects</loc>
   <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://frenzymedia.net/about_us</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://frenzymedia.net/contact</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.80</priority>
 </url>
 
 <url>
   <loc>https://frenzymedia.net/projects/estudio_barcelona</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://frenzymedia.net/projects/by_sofia_leather</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://frenzymedia.net/projects/desiderata</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://frenzymedia.net/projects/oleana</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://frenzymedia.net/projects/sarapura</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://frenzymedia.net/projects/shooting_vichkas</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <loc>https://frenzymedia.net/projects/shooting_vichka</loc>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
-
+<url>
+  <loc>https://frenzymedia.net/projects/sb_collection</loc>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frenzymedia.net/projects/ginebra_indumentaria</loc>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://frenzymedia.net/projects/ginebra_perfume</loc>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.64</priority>
+</url>
 <url>
   <loc>https://frenzymedia.net/projects/testimonials</loc>
-  <lastmod>2023-10-17T22:58:26+00:00</lastmod>
+  <lastmod>2023-10-23</lastmod>
+  <changefreq>monthly</changefreq>
   <priority>0.30</priority>
 </url>
-
 </urlset>

@@ -20,7 +20,7 @@ import GineIndumentaria from './Pages/GinebraIndumentaria/GineIndumentaria';
 import SB from './Pages/SB/SB';
 
 
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import {createBrowserRouter, RouterProvider, } from "react-router-dom";
 
 const router = createBrowserRouter([{
   path: "/",
