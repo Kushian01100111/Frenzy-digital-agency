@@ -36,8 +36,11 @@ const ContentAboutUs = () => {
             <div className="ky">
               <h3>CAROLINA ALBARRACÍN</h3>
               <p>
-                soy una creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el mundo digital y un master en marketing y comunicación de moda en ied barcelona. mi propuesta es llevar el perfil de mis clientes un paso más allá, a través de estrategias de marketing y comunicación persuasivas, establecidas en el tiempo. somos una agencia 24/7, porque sabemos que las redes sociales hoy en día son muy exigentes. no aceptamos a cualquier cliente, solo a aquellos que estén alineados con nuestros objetivos, y a los que sabemos que podemos ayudar.
+                soy una creativa multidisciplinaria y experta en redes sociales. directora de frenzy media boutique,con alta experiencia en el mundo digital y un master en marketing y comunicación de moda en ied barcelona. 
               </p>
+              <p>mi propuesta es llevar el perfil de mis clientes un paso más allá, a través de estrategias de marketing y comunicación persuasivas, establecidas en el tiempo.</p>
+              <p>somos una agencia 24/7, porque sabemos que las redes sociales hoy en día son muy exigentes.</p>
+              <p>no aceptamos a cualquier cliente, solo a aquellos que estén alineados con nuestros objetivos, y a los que sabemos que podemos ayudar.</p>
             </div>
         </m.div>
       </div>

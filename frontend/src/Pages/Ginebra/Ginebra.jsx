@@ -33,7 +33,7 @@ useEffect(() => {
     </Helmet>
     <div className="mainGine">
         <Navbar width={width}/>
-        <TitlesProjects title={"ginebra - perfume"}
+        <TitlesProjects title={"ginebra"}
             services={"shooting"}
         />
         <div className="mainGinebra">

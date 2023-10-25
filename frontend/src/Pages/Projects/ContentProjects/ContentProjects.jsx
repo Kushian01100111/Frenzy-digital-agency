@@ -9,31 +9,31 @@ const ContentProjects = () => {
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683483889/Frenzy/Rectangle_3852_yte9pp.png"}
             title={"estudio barcelona"}
             anchor={"/projects/estudio_barcelona"}
-            list={["rediseño de logo que identificara a la marca.", "se desarrollaron 3 propuestas y sus aplicaciones, de dónde salió la propuesta elegida.", "se realizó un manual de marca de uso normativo básico que incluyó el diseño de los distintos elementos visuales que darían identidad a la marca.", "Propuesta de re branding y re naming para estudio de arquitectura."]}
+            list={["Propuesta de re branding y re naming para estudio de arquitectura."]}
             />
             <CardMainProjects
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683484342/Frenzy/Rectangle_3865_x6dq4o.png"}
             title={"by sofía leather"}
             anchor={"/projects/by_sofía_leather"}
-            list={["organización y producción de fotos para la marca de carteras.", "se realizó la selección y contratación del equipo.", "modelo, fotógrafa, estilista, maquilladora.", "Producción de fotos y estilismo."]}
+            list={["Producción de fotos y estilismo."]}
             />
             <CardMainProjects
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/f_auto/v1683677461/Frenzy/Rectangle_3852_il5ar8.png"}
             title={"desiderata"}
             anchor={"/projects/desiderata"}
-            list={["social media management para la marca de indumentaria femenina desiderata.","diseño de feed, redacción de copies, diseño de instagram Stories.","Estrategia Social Media Management"]}
+            list={["Estrategia Social Media Management."]}
             />
             <CardMainProjects
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697741158/Frenzy/01_exsvfh.jpg"}
-            title={"ginebra - perfume"}
+            title={"ginebra"}
             anchor={"/projects/ginebra_perfume"}
-            list={["cobertura audiovisual en evento - perfume metanoia de la marca de indumentaria femenina Ginebra. entrega de contenido (foto y video) en vivo."]}
+            list={["cobertura audiovisual foto/video en evento."]}
             />
             <CardMainProjects
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697743651/Frenzy/01_1_qhg6ja.jpg"}
-            title={"ginebra - indumentaria"}
+            title={"ginebra"}
             anchor={"/projects/ginebra_indumentaria"}
-            list={["cobertura audiovisual de foto y video para feria de la marca de indumentaria femenina Ginebra."]}
+            list={["cobertura audiovisual foto/video en evento."]}
             />
             <CardMainProjects
             img={"https://res.cloudinary.com/dpsobnvtv/image/upload/v1697813815/Frenzy/01_jugpmp.jpg"}

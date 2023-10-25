@@ -42,6 +42,9 @@
     text-align: end;
     padding-top: 1.55rem;
 }
+.parent2 p+p{
+    padding-top: 0rem;
+}
 
 .parent2 h2{
     text-align: end;

@@ -171,7 +171,8 @@ const Services = () => {
           className="parent2">
             <div className="div12">
             <h2>Creación de contenidos</h2>
-            <p>cómo mostrar tu producto de la forma mas atractiva y creativa</p>
+            <p>cómo mostrar tu producto</p>
+            <p>de la forma mas atractiva y creativa.</p>
             </div>
           </m.div>
           <m.div 
