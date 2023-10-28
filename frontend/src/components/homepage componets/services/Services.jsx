@@ -164,6 +164,9 @@ const Services = () => {
             <h2>Paid media management</h2>
             <p>gestión de estrategias y compañas de marketing digital personalizadas para el negocio con el objetivo de lograr un posicionamiento de marca sostenido y maximizar el retorno de la inversón.</p>
             </div>
+
+
+            
           </m.div>
           <m.div 
           initial={{opacity:0, display:"none", y:100 }}
